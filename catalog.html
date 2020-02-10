@@ -49,22 +49,47 @@
             </ul>
             <h1>Перфораторы</h1>
             <section>
-                <h2>Производители</h2>
-                <!-- Здесь будет форма -->
-            </section>
-            <section>
-                <h2>Питание</h2>
-                <!-- Здесь будет форма -->
-                <button type="submit">Показать</button> 
-            </section> 
-            <section>
-                <p>Фильтр:</p>
-                <!-- Здесь будет форма -->
-            </section>
-            <section>
-                <h2>Сортировка:</h2>
-                <!-- Здесь будет форма -->
-            </section> 
+                <form method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
+                    <h2>Сортировка:</h2>
+                    <ul>
+                        <li><a>По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По функционалу</a></li>
+                    </ul>
+                    <h2>Фильтр:</h2>  <!-- Как сделать 2 ползунка -->       
+                    <h3>Цена:</h3>
+                    0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
+                    <div>
+                        <output name="priceoutput"></output>
+                    </div>
+                    <h3>Производители:</h3>       
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="bosch" id="filter_bosch" checked>
+                            <label for="filter_bosch">Bosch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interskol" id="filter_interskol">
+                            <label for="filter_interskol">Интерскол</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="makita" id="filter_makita" checked>
+                            <label for="filter-makita">Makita</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="dewalt" id="filter_dewalt">
+                            <label for="filter_dewalt">Dewalt</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="hitachi" id="filter_hitachi">
+                            <label for="filter_hitachi">Hitachi</label>
+                    </ul>   
+                    <h3>Питание:</h3>
+                    <label><input type="radio" name="charge_type" value="battery" checked>Аккумуляторные</label><br>  
+                    <label><input type="radio" name="charge_type" value="power">Сетевые</label><br>
+                    <button type="submit">Показать</button>       
+                </form>    
+            </section>  
             <section>
                 <h2>Cписок товаров</h2>
                 <ul>
