@@ -53,7 +53,7 @@
             </ul>
             <h1>Перфораторы</h1>
             <section>
-                <form method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
+                <form method="get" action="https://echo.htmlacademy.ru">
                     <h2>Сортировка:</h2>
                     <ul>
                         <li><a>По цене</a></li>
@@ -63,9 +63,6 @@
                     <h2>Фильтр:</h2>  <!-- Как сделать 2 ползунка -->       
                     <h3>Цена:</h3>
                     0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
-                    <div>
-                        <output name="priceoutput"></output>
-                    </div>
                     <h3>Производители:</h3>       
                     <ul>
                         <li>
@@ -78,7 +75,7 @@
                         </li>
                         <li>
                             <input type="checkbox" name="makita" id="filter_makita" checked>
-                            <label for="filter-makita">Makita</label>
+                            <label for="filter_makita">Makita</label>
                         </li>
                         <li>
                             <input type="checkbox" name="dewalt" id="filter_dewalt">
@@ -87,10 +84,19 @@
                         <li>
                             <input type="checkbox" name="hitachi" id="filter_hitachi">
                             <label for="filter_hitachi">Hitachi</label>
+                        </li>
                     </ul>   
                     <h3>Питание:</h3>
-                    <label><input type="radio" name="charge_type" value="battery" checked>Аккумуляторные</label><br>  
-                    <label><input type="radio" name="charge_type" value="power">Сетевые</label><br>
+                    <ul>
+                        <li>
+                            <input type="radio" name="charge_type" value="battery" id="battery_charge" checked>
+                            <label for="battery_charge">Аккумуляторные</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="charge_type" value="power" id="power_charge">
+                            <label for="power_charge">Сетевые</label>
+                        </li>
+                    </ul>
                     <button type="submit">Показать</button>       
                 </form>    
             </section>  
@@ -155,18 +161,16 @@
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <p>22500 ₽</p>
                         <a href="#">15500 ₽</a> 
-                        <section>
+                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                            <button type="submit">В закладки</button> 
-                        </section>
-                        <section>
-                            <form action="https://echo.htmlacademy.ru" method="post">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="submit">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button">Закрыть</button>
-                            </form>
-                        </section>                
+                            <button type="button">В закладки</button> 
+                        </div>
+                        <div>
+                            <p>Товар добавлен в корзину!</p>
+                            <button type="button">Оформить заказ</button> <br>
+                            <button type="button">Продолжить покупки</button> <br>
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>                
                     </li>
                     <li>
                         <img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="bosch_bfg_6000.jpg">
