@@ -15,19 +15,19 @@
                     </p>
                     <button type="submit">Найти</button> <!--отправка формы при нажатии на иконку лупы-добавить ссылку на иконку? -->
                 </form>  
-                <ul>
+                <ul class="user-button">
                     <li><a href="#">Закладки</a></li>
                     <li><a href="#">Корзина</a></li>
                     <li><a class="make-order" href="#">Оформить заказ</a></li>
                 </ul>
             </div>
-            <div class="user-info">
+            <div class="shop-info">
                 <p>Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</p>
                 <a class="phone-number" href="tel:+78125550555">+7(812)555-05-55</a>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <ul class="user-info-button">
-                    <li><a class="login-link" href="#">Войти</a></li>
-                    <li><a class="login-link" href="#">Регистрация</a></li>
+                <ul class="shop-info-button">
+                    <li><a href="#">Войти</a></li>
+                    <li><a href="#">Регистрация</a></li>
                 </ul>
             </div>
             <nav class="main-navigation">
@@ -53,10 +53,14 @@
                     <li><img src="delivery_icon.svg" width="78" height="63" alt="доставка"></li>
                 </ul>
                 <div>
-                    <ul>
-                        <li><a href="catalog.html"><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели">Открыть каталог</a></li> 
-                        <li><a href="catalog.html"><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы">Открыть каталог</a></li>
-                    </ul>
+                    <figure class="figure-content">
+                        <p>Дрели</p>
+                        <p>Соседям на радость!</p>
+                        <ul>
+                            <li><a href="catalog.html"><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели"><br>Открыть каталог</a></li> 
+                            <li><a href="catalog.html"><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы"><br>Открыть каталог</a></li>
+                        </ul>
+                    </figure>
                     <button type="button"><!-- здесь будет иконка --></button> <!-- листает слайды влево -->
                     <button type="button"><!-- здесь будет иконка --></button> <!-- листает слайды вправо -->
                 </div>
@@ -177,37 +181,37 @@
                 </div>
                 <img src="img/delivery.jpg" width="468" height="261" alt="Доставка">
             </section>
-            <section>
+            <section class="features">
                 <h2>Компания "Техномарт"</h2>
                 <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
                 строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
                 Техномарт работает со многими транспортными компаниями: </p>
-                <ul>
+                <ul class="partners">
                     <li>Деловые линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="#">Подробнее о компании</a>
+                <a class="button" href="#">Подробнее о компании</a>
             </section>
-            <section>
+            <section class="contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p><!--при нажатии на картинку с картой открывается сервис карт-->
-                <p><a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208534,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474"><img src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a><br>
+                <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208534,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474"><img src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a><br>
                 <button type="button">Закрыть</button><br> <!--кнопка закрывает окно с картой-->
-                <button type="button">Заблудились? Напишите нам!</button> 
+                <button class="button" type="button">Заблудились? Напишите нам!</button> 
             </section>
-            <div>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                    <p>
+            <div class="map-message">
+                <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p class="message-user-name">
                       <label for="user_name">Ваше имя</label>
                       <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
                     </p>
-                    <p>
+                    <p class="message-user-email">
                         <label for="user_email">Ваш e-mail</label>
                         <input id="user_email" type="email" name="login" placeholder="email@example.com">
                     </p>
-                    <p>
+                    <p class="message-user-text">
                         <label for="mail_text">Текст письма:</label><br>
                         <textarea name="mail" id="mail_text" rows="10" placeholder="В свободной форме"></textarea>
                     </p>
@@ -216,37 +220,35 @@
                 <button type="button">Закрыть</button>
             </div>
         </main>
-        <footer>
-            <p><img src="#" width="150" height="100" alt="Лого"></p><!--ссылка на картинку-->
-            <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br></p>
-            <a href="tel:+78125550555">+7(812)555-05-55</a>
-            <div>
-                <ul>
+        <footer class="main-footer">
+            <div class="main-footer-navigation">
+                <img src="#" width="150" height="100" alt="Лого"><!--ссылка на картинку-->
+                <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br></p>
+                <a href="tel:+78125550555">+7(812)555-05-55</a>
+                <ul class="footer-navigation">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
-                 </ul>
-            </div>
-            <div>
-                <ul>
+                </ul>
+                <ul class="footer-link">
                     <li><a href="#">Материалы</a></li>
                     <li><a href="#">Техника</a></li>
                     <li><a href="#">Инструмент</a></li>
                     <li><a href="#">Спецпредложения</a></li>
-                </ul>
+                </ul>   
             </div>
-            <div>
-                <p>2010-2017 Компания "Техномарт"<br>Все права защищены</p>
+            <div class="main-footer-info">
+                <p class="footer-copyright">2010-2017 Компания "Техномарт"<br>Все права защищены</p>
                 <ul>
-                    <li><!--здесь будет иконка вк--></li> <!--иконки будут свг вставленные в ссылку?-->
-                    <li><!--здесь будет иконка фб--> </li> 
-                    <li><!--здесь будет иконка инст--></li> 
+                    <li><a class="social-button" href="#">Вконтакте</a></li><!--здесь будет иконка вк--><!--иконки будут свг вставленные в ссылку?-->
+                    <li><a class="social-button" href="#">Фейсбук</a></li><!--здесь будет иконка фб-->
+                    <li><a class="social-button" href="#">Инстаграм</a></li><!--здесь будет иконка инст-->
                 </ul>
-             </div>
-             <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-             <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a></p>
-         </footer>
+                <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+                <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a></p>
+            </div>  
+        </footer>
     </body>
 </html>
