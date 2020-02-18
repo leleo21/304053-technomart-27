@@ -3,11 +3,14 @@
     <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div>
-                <p><a href="index.html"><img src="#" width="150" height="100" alt="logo"></a></p><!--ссылка на картинку, на главную-->  
+        <header class="main-header">
+            <div class="user-navigation">
+                <a class="main-header-logo" href="index.html"><img src="#" width="150" height="100" alt="logo"></a><!--ссылка на картинку, на главную-->  
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label for="search">Поиск:</label>
@@ -15,25 +18,25 @@
                     </p>
                     <button type="submit">Найти</button> <!--отправка формы при нажатии на иконку лупы-добавить ссылку на иконку? -->
                 </form>
-                <ul>
+                <ul class="user-button">
                     <li><a href="#">Закладки</a></li>
                     <li><a href="#">Корзина</a></li>
-                    <li><a href="#">Оформить заказ</a></li>
+                    <li><a class="make-order" href="#">Оформить заказ</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="shop-info">
                 <p>Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</p>
                 <a href="tel:+78125550555">+7(812)555-05-55</a>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <a href= #>Равшан Джамшутович</a>
                 <a href= #></a> <!--ссылка на иконку.svg--> 
-                <ul>
+                <ul class="user-link">
                     <li><a href="#">Мои заказы</a></li> 
                     <li><a href= "#">Личный кабинет</a></li>
                 </ul>
             </div>
-            <nav>
-                <ul>
+            <nav class="main-navigation">
+                <ul class="site-navigation">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="#">Компания</a></li>
                     <li>Каталог</li> <!--здесь как и в случае с номерами страниц - когда мы на текущей, нужна ссылка без href? --> 
@@ -45,8 +48,8 @@
             </nav>  
         </header>
         <main>
-            <ul>
-                <li><a href="index.html">Главная</a></li> 
+            <ul class="catalog-navigation">
+                <li><a href="index.html">Главная</a></li> <!-- вставить иконку --> 
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Инструмент</a></li>
                 <li>Перфораторы</li>     
@@ -64,7 +67,7 @@
                     <h3>Цена:</h3>
                     0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
                     <h3>Производители:</h3>       
-                    <ul>
+                    <ul class="select-company">
                         <li>
                             <input type="checkbox" name="bosch" id="filter_bosch" checked>
                             <label for="filter_bosch">Bosch</label>
@@ -87,7 +90,7 @@
                         </li>
                     </ul>   
                     <h3>Питание:</h3>
-                    <ul>
+                    <ul class="select-charge-type">
                         <li>
                             <input type="radio" name="charge_type" value="battery" id="battery_charge" checked>
                             <label for="battery_charge">Аккумуляторные</label>
@@ -102,147 +105,147 @@
             </section>  
             <section>
                 <h2 class="visually-hidden">Cписок товаров</h2>
-                <ul>
-                    <li>
+                <ul class="item-list">
+                    <li class="item">
                         <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <p>22500 ₽</p>
                         <a href="#">15500 ₽</a> <br>
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
                             <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
                         </div>                 
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="bosch_bfg_6000.jpg">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>30500 ₽</p>
                         <a href="#">22500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                 
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>               
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <a href="#">12500 ₽</a>   
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                       
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>                  
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <p>22500 ₽</p>
                         <a href="#">15500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
                             <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                        </div>                
+                        </div>              
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="bosch_bfg_6000.jpg">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>30500 ₽</p>
                         <a href="#">22500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                   
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>                 
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <a href="#">12500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                       
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>                      
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000"> 
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <p>22500 ₽</p>
                         <a href="#">15500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                    
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>                  
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="bosch_bfg_6000.jpg"> 
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>30500 ₽</p>
                         <a href="#">22500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                    
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>                   
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <a href="#">12500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                       
+                            <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
+                        </div>                    
                     </li>
                 </ul>
             </section>
@@ -261,33 +264,31 @@
                 В <br>ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </section>
         </main>
-        <footer>
-            <p><a href="index.html"><img src="#" width="150" height="100" alt="Лого"></a></p><!--ссылка на картинку-->
-            <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br></p>
-            <a href="tel:+78125550555">+7(812)555-05-55</a>
-            <div>
-                <ul>
+        <footer class="main-footer">
+            <div class="main-footer-navigation">
+                <img src="#" width="150" height="100" alt="Лого"><!--ссылка на картинку-->
+                <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br></p>
+                <a href="tel:+78125550555">+7(812)555-05-55</a>
+                <ul class="footer-navigation">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
                     <li>Каталог</li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-            </div>
-            <div>
-                <ul>
+                <ul class="footer-link">
                     <li><a href="#">Материалы</a></li>
                     <li><a href="#">Техника</a></li>
                     <li><a href="#">Инструмент</a></li>
                     <li><a href="#">Спецпредложения</a></li>
                 </ul>
             </div>
-            <div>
-                <p>2010-2017 Компания "Техномарт"<br>Все права защищены</p>
+            <div class="main-footer-info">
+                <p class="footer-copyright">2010-2017 Компания "Техномарт"<br>Все права защищены</p>
                 <ul>
-                    <li><!--здесь будет иконка вк--></li> <!--иконки будут свг вставленные в ссылку?-->
-                    <li><!--здесь будет иконка фб--></li> 
-                    <li><!--здесь будет иконка инст--></li> 
+                    <li><a class="social-button" href="#">Вконтакте</a></li><!--здесь будет иконка вк--><!--иконки будут свг вставленные в ссылку?-->
+                    <li><a class="social-button" href="#">Фейсбук</a></li><!--здесь будет иконка фб-->
+                    <li><a class="social-button" href="#">Инстаграм</a></li><!--здесь будет иконка инст-->
                 </ul>
             </div>
             <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
