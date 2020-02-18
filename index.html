@@ -3,6 +3,9 @@
    <head>
       <meta charset="utf-8">
       <title>Техномарт</title>
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
         <header class="main-header">
@@ -10,10 +13,10 @@
                 <a class="main-header-logo"><img src="img/logo.svg" width="220" height="47" alt="Логотип"></a><!--размеры картинки--> 
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <p>
-                      <label for="search">Поиск:</label>
+                      <label for="search" class="user-button">Поиск:</label>
                       <input id="search" type="text" name="search">
                     </p>
-                    <button type="submit">Найти</button> <!--отправка формы при нажатии на иконку лупы-добавить ссылку на иконку? -->
+                   <!-- <button type="submit">Найти</button> отправка формы при нажатии на иконку лупы-добавить ссылку на иконку? -->
                 </form>  
                 <ul class="user-button">
                     <li><a href="#">Закладки</a></li>
@@ -23,8 +26,8 @@
             </div>
             <div class="shop-info">
                 <p>Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</p>
-                <a class="phone-number" href="tel:+78125550555">+7(812)555-05-55</a>
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a href="tel:+78125550555">+7(812)555-05-55</a>
+                <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <ul class="shop-info-button">
                     <li><a href="#">Войти</a></li>
                     <li><a href="#">Регистрация</a></li>
@@ -32,7 +35,7 @@
             </div>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li>Главная</li>
+                    <li><a>Главная</a></li>
                     <li><a href="#">Компания</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="#">Новости</a></li>
@@ -201,7 +204,7 @@
                 <button type="button">Закрыть</button><br> <!--кнопка закрывает окно с картой-->
                 <button class="button" type="button">Заблудились? Напишите нам!</button> 
             </section>
-            <div class="map-message">
+            <div class="map-message"> <!--окно скрыто в css-->
                 <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
                     <p class="message-user-name">
                       <label for="user_name">Ваше имя</label>
@@ -240,14 +243,14 @@
                 </ul>   
             </div>
             <div class="main-footer-info">
-                <p class="footer-copyright">2010-2017 Компания "Техномарт"<br>Все права защищены</p>
+                <p>2010-2017 Компания "Техномарт"<br>Все права защищены</p>
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li><!--здесь будет иконка вк--><!--иконки будут свг вставленные в ссылку?-->
-                    <li><a class="social-button" href="#">Фейсбук</a></li><!--здесь будет иконка фб-->
-                    <li><a class="social-button" href="#">Инстаграм</a></li><!--здесь будет иконка инст-->
+                    <li><a class="social-button" href="#">иконка Вконтакте</a></li><!--здесь будет иконка вк--><!--иконки будут свг вставленные в ссылку?-->
+                    <li><a class="social-button" href="#">иконка Фейсбук</a></li><!--здесь будет иконка фб-->
+                    <li><a class="social-button" href="#">иконка Инстаграм</a></li><!--здесь будет иконка инст-->
                 </ul>
-                <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-                <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a></p>
+                <p>Обратная связь:<br> <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+                <p>Разработано — <br> <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a></p>
             </div>  
         </footer>
     </body>
