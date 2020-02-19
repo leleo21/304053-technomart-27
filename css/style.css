@@ -23,17 +23,25 @@ a {
 
 .user-button,
 .site-navigation,
-.shop-info-button,
+.user-login,
 .footer-navigation,
-.footer-link {
+.footer-link,
+.user-link,
+.catalog-navigation {
   list-style: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c; 
 }
 
 h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
-  font-style: normal;
   height: 21px;
   color: #000000;
   line-height: 1; 
@@ -68,11 +76,19 @@ h2 {
   color: #32425c; 
 }
 
-.shop-info-button a {
+.user-login a {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
   color: #000000; 
+}
+
+.user-login .user-link a {
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  color: #32425c;
+  text-decoration: underline; 
 }
 
 .main-navigation a {
@@ -80,6 +96,34 @@ h2 {
   line-height: 12px;
   color: #ffffff;
   background-color: #000000;
+}
+
+.catalog-navigation a,
+.catalog-navigation p,
+.filter .catalog-navigation {
+  font-size: 13px;
+  line-height: 18px;
+  font-style: normal;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  color: #000000; 
+}
+
+.filter p {
+  font-size: 17px;
+  line-height: 30px;
+  font-style: bold;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  color: #000000; 
+}
+
+.filter .select {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  color: #000000; 
 }
 
 .features,
