@@ -1,7 +1,55 @@
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../css/cuprum.woff') format('woff');
+  src: url('../css/cuprum.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../css/cuprumbold.woff') format('woff');
+  src: url('../css/cuprumbold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../css/cuprumbolditalic.woff') format('woff');
+  src: url('../css/cuprumbolditalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+} 
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../css/cuprumitalic.woff') format('woff');
+  src: url('../css/cuprumitalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../css/ptsans.woff') format('woff');
+  src: url('../css/ptsans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../css/ptsansbold.woff') format('woff');
+  src: url('../css/ptsansbold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -14,21 +62,23 @@ a {
   text-decoration: none;
 }
 
+.list-styles-reset {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .button {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: #000000;
-}
-
-.user-button,
-.site-navigation,
-.user-login,
-.footer-navigation,
-.footer-link,
-.user-link,
-.catalog-navigation {
-  list-style: none;
 }
 
 h1 {
@@ -48,7 +98,7 @@ h2 {
 }
 
 .user-navigation p,
-.user-button a {
+.user-link-list a {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -83,7 +133,7 @@ h2 {
   color: #000000; 
 }
 
-.user-login .user-link a {
+.user-login .user-login-list a {
   font-size: 16px;
   line-height: 18px;
   font-style: normal;
@@ -91,7 +141,7 @@ h2 {
   text-decoration: underline; 
 }
 
-.main-navigation a {
+.page-navigation a {
   font-size: 17px;
   line-height: 12px;
   color: #ffffff;
@@ -100,11 +150,11 @@ h2 {
 
 .catalog-navigation a,
 .catalog-navigation p,
-.filter .catalog-navigation {
+.filter .show-button {
   font-size: 13px;
   line-height: 18px;
   font-style: normal;
-  font-family: "PT Sans";
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   color: #000000; 
 }
@@ -113,15 +163,16 @@ h2 {
   font-size: 17px;
   line-height: 30px;
   font-style: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   color: #000000; 
 }
 
-.filter .select {
+.filter .select-company-list,
+.filter .charge-type-list {
   font-size: 15px;
   line-height: 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   color: #000000; 
 }
@@ -131,7 +182,7 @@ h2 {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   }  
 
 .partners {
@@ -144,8 +195,8 @@ h2 {
   display: none;
 }
 
-.main-footer-navigation,
-.main-footer-navigation a, 
+.page-footer-navigation,
+.page-footer-navigation a, 
 .footer-navigation a {
   font-size: 18px;
   line-height: 24px;
@@ -160,14 +211,14 @@ h2 {
   background-color: #000000;
 }
 
-.main-footer-info {
+.page-footer-info {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   background-color: #000000;
 }
 
-.main-footer-info a {
+.page-footer-info a {
   font-size: 16px;
   line-height: 18px;
   color: #ffd180;
