@@ -3,22 +3,20 @@
    <head>
       <meta charset="utf-8">
       <title>Техномарт</title>
-      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
-        <header class="main-header">
+        <header class="page-header">
             <div class="user-navigation">
-                <a class="main-header-logo"><img src="img/logo.svg" width="220" height="47" alt="Логотип"></a><!--размеры картинки--> 
+                <a class="page-header-logo"><img src="img/logo.svg" width="220" height="47" alt="Логотип"></a><!--размеры картинки--> 
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <p>
-                      <label for="search" class="user-button">Поиск:</label>
+                      <label for="search">Поиск:</label>
                       <input id="search" type="text" name="search">
                     </p>
-                   <!-- <button type="submit">Найти</button> отправка формы при нажатии на иконку лупы-добавить ссылку на иконку? -->
                 </form>  
-                <ul class="user-button">
+                <ul class="user-link-list list-styles-reset">
                     <li><a href="#">Закладки</a></li>
                     <li><a href="#">Корзина</a></li>
                     <li><a class="make-order" href="#">Оформить заказ</a></li>
@@ -28,13 +26,13 @@
                 <p>Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</p>
                 <a href="tel:+78125550555">+7(812)555-05-55</a>
                 <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <ul class="user-login">
+                <ul class="user-login list-styles-reset">
                     <li><a href="#">Войти</a></li>
                     <li><a href="#">Регистрация</a></li>
                 </ul>
             </div>
-            <nav class="main-navigation">
-                <ul class="site-navigation">
+            <nav class="page-navigation">
+                <ul class="site-navigation list-styles-reset">
                     <li><a>Главная</a></li>
                     <li><a href="#">Компания</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
@@ -48,7 +46,7 @@
         <main>
             <section>
                 <h2 class="visually-hidden">Промо</h2>
-                <ul>
+                <ul class="list-styles-reset">
                     <li><img src="materials_icon.svg" width="44" height="65" alt="материалы"></li> <!-- здесь будут иконки -->
                     <li><img src="tools_icon.svg" width="75" height="61" alt="инструмент"></li>
                     <li><img src="technic_icon.svg" width="78" height="62" alt="техника"></li>
@@ -59,7 +57,7 @@
                     <figure class="figure-content">
                         <p>Дрели</p>
                         <p>Соседям на радость!</p>
-                        <ul>
+                        <ul class="list-styles-reset">
                             <li><a href="catalog.html"><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели"><br>Открыть каталог</a></li> 
                             <li><a href="catalog.html"><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы"><br>Открыть каталог</a></li>
                         </ul>
@@ -71,8 +69,8 @@
             <section>
                 <h2>Популярные товары:</h2>
                 <a href="#">Все популярные товары</a>
-                <ul>
-                    <li>
+                <ul class="product-list list-styles-reset">
+                    <li class="product-card">
                         <img src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="bosch_bfg_9000.jpg"> 
                         <h3>Перфоратор BOSCH BFG 9000</h3>
                         <p>32500 ₽</p>
@@ -88,7 +86,7 @@
                             <button type="button"><!--здесь будет иконка--></button>         
                         </div>                       
                     </li>
-                    <li>
+                    <li class="product-card">
                         <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000"> 
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <p>22500 ₽</p>
@@ -104,7 +102,7 @@
                             <button type="button"><!--здесь будет иконка--></button>         
                         </div>                  
                     </li>
-                    <li>
+                    <li class="product-card">
                         <img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="bosch_bfg_6000.jpg"> 
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>30500 ₽</p>
@@ -120,7 +118,7 @@
                             <button type="button"><!--здесь будет иконка--></button>         
                         </div>                   
                     </li>
-                    <li>
+                    <li class="product-card">
                         <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <a href="#">12500 ₽</a>  
@@ -140,7 +138,7 @@
             <section>
                 <h2>Популярные производители:</h2>
                 <a href="#">Все популярные производители:</a>
-                <ul>
+                <ul class="list-styles-reset">
                     <li><a href="#"><img src="img/bosch_logo.png" width="126" height="37" alt="bosch_logo"></a></li> <!-- подключить изображения --> 
                     <li><a href="#"><img src="img/makita_logo.png" width="123" height="40" alt="makita_logo"></a></li> 
                     <li><a href="#"><img src="img/de-walt_logo.png" width="146" height="44" alt="dewalt_logo"></a></li> 
@@ -223,28 +221,28 @@
                 <button type="button">Закрыть</button>
             </div>
         </main>
-        <footer class="main-footer">
-            <div class="main-footer-navigation">
+        <footer class="page-footer">
+            <div class="page-footer-navigation">
                 <img src="#" width="150" height="100" alt="Лого"><!--ссылка на картинку-->
                 <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br></p>
                 <a href="tel:+78125550555">+7(812)555-05-55</a>
-                <ul class="footer-navigation">
+                <ul class="footer-navigation list-styles-reset">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-                <ul class="footer-link">
+                <ul class="footer-link list-styles-reset">
                     <li><a href="#">Материалы</a></li>
                     <li><a href="#">Техника</a></li>
                     <li><a href="#">Инструмент</a></li>
                     <li><a href="#">Спецпредложения</a></li>
                 </ul>   
             </div>
-            <div class="main-footer-info">
+            <div class="page-footer-info">
                 <p>2010-2017 Компания "Техномарт"<br>Все права защищены</p>
-                <ul>
+                <ul class="list-styles-reset">
                     <li><a class="social-button" href="#">иконка Вконтакте</a></li><!--здесь будет иконка вк--><!--иконки будут свг вставленные в ссылку?-->
                     <li><a class="social-button" href="#">иконка Фейсбук</a></li><!--здесь будет иконка фб-->
                     <li><a class="social-button" href="#">иконка Инстаграм</a></li><!--здесь будет иконка инст-->
