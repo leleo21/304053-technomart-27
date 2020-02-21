@@ -44,42 +44,48 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="promo-block">
                 <h2 class="visually-hidden">Промо</h2>
-                <ul class="list-styles-reset">
-                    <li><img src="materials_icon.svg" width="44" height="65" alt="материалы"></li> <!-- здесь будут иконки -->
-                    <li><img src="tools_icon.svg" width="75" height="61" alt="инструмент"></li>
-                    <li><img src="technic_icon.svg" width="78" height="62" alt="техника"></li>
-                    <li><img src="discounts_icon.svg" width="59" height="72" alt="скидки"></li>
-                    <li><img src="delivery_icon.svg" width="78" height="63" alt="доставка"></li>
+                <ul class="offers-list-promo list-styles-reset">
+                    <li><img src="materials_icon.svg" width="44" height="65" alt="материалы"><br>Материалы<br><a href="#">На любой вкус</a></li> <!-- здесь будут иконки -->
+                    <li><img src="tools_icon.svg" width="75" height="61" alt="инструмент"><br>Инструмент<br><a href="#">На все случаи</a></li>
+                    <li><img src="technic_icon.svg" width="78" height="62" alt="техника"><br>Техника<br><a href="#">Для стройки</a></li>
+                    <li><img src="discounts_icon.svg" width="59" height="72" alt="скидки"><br>Скидки 50%<br><a href="#">На 350 товоров</a></li>
+                    <li><img src="delivery_icon.svg" width="78" height="63" alt="доставка"><br>Доставка<br><a href="#">Бесплатно</a></li>
                 </ul>
                 <div>
                     <figure class="figure-content">
-                        <p>Дрели</p>
-                        <p>Соседям на радость!</p>
-                        <ul class="list-styles-reset">
-                            <li><a href="catalog.html"><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели"><br>Открыть каталог</a></li> 
-                            <li><a href="catalog.html"><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы"><br>Открыть каталог</a></li>
+                        <ul class="slider-content list-styles-reset">
+                            <li><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели"> 
+                                <p class="slider-title">Дрели</p>
+                                <p class="slider-description">Соседям на радость!</p>
+                                <a href="catalog.html">Открыть каталог</a>
+                            </li> 
+                            <li><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы">
+                                <p class="slider-title">Перфораторы</p>
+                                <p class="slider-description">Настоящие мужские игрушки</p>
+                                <a href="catalog.html">Открыть каталог</a>
+                            </li>
                         </ul>
                     </figure>
                     <button type="button"><!-- здесь будет иконка --></button> <!-- листает слайды влево -->
                     <button type="button"><!-- здесь будет иконка --></button> <!-- листает слайды вправо -->
                 </div>
             </section>
-            <section>
-                <h2>Популярные товары:</h2>
+            <section class="popular-products">
+                <h2 class="popular-h2-style">Популярные товары:</h2>
                 <a href="#">Все популярные товары</a>
                 <ul class="product-list list-styles-reset">
                     <li class="product-card">
                         <img src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="bosch_bfg_9000.jpg"> 
-                        <h3>Перфоратор BOSCH BFG 9000</h3>
+                        <h2 class="h2-style">Перфоратор BOSCH<br> BFG 9000</h2>
                         <p>32500 ₽</p>
                         <a href="#">25500 ₽</a>
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
@@ -88,14 +94,14 @@
                     </li>
                     <li class="product-card">
                         <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000"> 
-                        <h3>Перфоратор BOSCH BFG 3000</h3>
+                        <h2 class="h2-style">Перфоратор BOSCH <br>BFG 3000</h2>
                         <p>22500 ₽</p>
                         <a href="#">15500 ₽</a> 
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
@@ -104,14 +110,14 @@
                     </li>
                     <li class="product-card">
                         <img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="bosch_bfg_6000.jpg"> 
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
+                        <h2 class="h2-style">Перфоратор BOSCH <br>BFG 6000</h2>
                         <p>30500 ₽</p>
                         <a href="#">22500 ₽</a>
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
@@ -120,13 +126,13 @@
                     </li>
                     <li class="product-card">
                         <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
-                        <h3>Перфоратор BOSCH BFG 2000</h3>
+                        <h2 class="h2-style">Перфоратор BOSCH <br>BFG 2000</h2>
                         <a href="#">12500 ₽</a>  
-                        <div>     <!--кнопки, которые появятся при наведении на картинку-->      
+                        <div  class="shop-button">     <!--кнопки, которые появятся при наведении на картинку-->      
                             <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
                             <button type="button">В закладки</button> 
                         </div>
-                        <div>
+                        <div class="pop-up-cart">
                             <p>Товар добавлен в корзину!</p>
                             <button type="button">Оформить заказ</button> <br>
                             <button type="button">Продолжить покупки</button> <br>
@@ -136,7 +142,7 @@
                 </ul>    
             </section>
             <section>
-                <h2>Популярные производители:</h2>
+                <h2 class="popular-h2-style">Популярные производители:</h2>
                 <a href="#">Все популярные производители:</a>
                 <ul class="list-styles-reset">
                     <li><a href="#"><img src="img/bosch_logo.png" width="126" height="37" alt="bosch_logo"></a></li> <!-- подключить изображения --> 
@@ -188,7 +194,7 @@
                 строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
                 Техномарт работает со многими транспортными компаниями: </p>
-                <ul class="partners">
+                <ul class="partners-list list-styles-reset">
                     <li>Деловые линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
@@ -226,14 +232,14 @@
                 <img src="#" width="150" height="100" alt="Лого"><!--ссылка на картинку-->
                 <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br></p>
                 <a href="tel:+78125550555">+7(812)555-05-55</a>
-                <ul class="footer-navigation list-styles-reset">
+                <ul class="footer-navigation-list list-styles-reset">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-                <ul class="footer-link list-styles-reset">
+                <ul class="footer-offers-list list-styles-reset">
                     <li><a href="#">Материалы</a></li>
                     <li><a href="#">Техника</a></li>
                     <li><a href="#">Инструмент</a></li>
@@ -248,8 +254,8 @@
                     <li><a class="social-button" href="#">иконка Инстаграм</a></li><!--здесь будет иконка инст-->
                 </ul>
                 <p>Обратная связь:<br> <a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-                <p>Разработано — <br> <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a></p>
-            </div>  
+                <p>Разработано — <br> <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a></p>     
+            </div> 
         </footer>
     </body>
 </html>
