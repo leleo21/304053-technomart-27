@@ -1,47 +1,47 @@
 @font-face {
   font-family: 'Cuprum';
-  src: url('../css/cuprum.woff') format('woff');
-  src: url('../css/cuprum.woff2') format('woff2');
+  src: url('../fonts/cuprum.woff') format('woff');
+  src: url('../fonts/cuprum.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('../css/cuprumbold.woff') format('woff');
-  src: url('../css/cuprumbold.woff2') format('woff2');
+  src: url('../fonts/cuprumbold.woff') format('woff');
+  src: url('../fonts/cuprumbold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('../css/cuprumbolditalic.woff') format('woff');
-  src: url('../css/cuprumbolditalic.woff2') format('woff2');
+  src: url('../fonts/cuprumbolditalic.woff') format('woff');
+  src: url('../fonts/cuprumbolditalic.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
 } 
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('../css/cuprumitalic.woff') format('woff');
-  src: url('../css/cuprumitalic.woff2') format('woff2');
+  src: url('../fonts/cuprumitalic.woff') format('woff');
+  src: url('../fonts/cuprumitalic.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('../css/ptsans.woff') format('woff');
-  src: url('../css/ptsans.woff2') format('woff2');
+  src: url('../fonts/ptsans.woff') format('woff');
+  src: url('../fonts/ptsans.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('../css/ptsansbold.woff') format('woff');
-  src: url('../css/ptsansbold.woff2') format('woff2');
+  src: url('../fonts/ptsansbold.woff') format('woff');
+  src: url('../fonts/ptsansbold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
@@ -74,6 +74,10 @@ a {
   margin: -1px;
 }
 
+.page-header {
+  background-color: #f4f7f9;  
+}
+
 .button {
   font-size: 14px;
   line-height: 18px;
@@ -81,18 +85,31 @@ a {
   background-color: #000000;
 }
 
-.h1-style {
+.h1-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c; 
+  width: 940px;
+  height: 89px;
+  background-color: #f2f6f8;
 }
 
-.hammer-drill-title {
+.hammer-drill-title,
+.services .h2-title,
+.company-about .h2-title,
+.contacts .h2-title,
+.hammer-drill-about .h2-title-style {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000; 
+}
+
+.hammer-drill-about  {
+  width: 1200px;
+  height: 261px;
+  background-color: #f4f7f9;
 }
 
 .user-navigation p,
@@ -100,7 +117,6 @@ a {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #000000; 
 }
 
 .shop-info p {
@@ -131,6 +147,14 @@ a {
   color: #000000; 
 }
 
+.user-login a:hover {
+  color:#ee3643; 
+}
+
+.user-login a:active {
+  color:rgba(0, 0, 0, 0.3); 
+}
+
 .user-login .user-login-list a {
   font-size: 16px;
   line-height: 18px;
@@ -139,16 +163,58 @@ a {
   text-decoration: underline; 
 }
 
+.user-login-list a:hover {
+  color:#ee3643;
+  text-decoration: underline; 
+}
+
+.user-login-list a:active {
+  color:rgba(0, 0, 0, 0.3);
+  text-decoration: underline; 
+}
+
+.user-navigation,
+.user-navigation input {
+  background-color: #293449;
+}
+
+.user-navigation a:hover,
+.user-navigation input {
+  background-color: #212a3a;
+}
+
+.user-navigation a:active {
+  color:rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.user-navigation input:focus {
+  color: #000000;
+  background-color:#ffffff;
+}
+
+.page-navigation {
+  background-color: #32425c;  
+}
+
 .page-navigation a {
   font-size: 17px;
   line-height: 12px;
   color: #ffffff;
-  background-color: #000000;
+}
+
+.page-navigation a:hover {
+  background-color: #293449;
+}
+
+.page-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
 }
 
 .catalog-navigation a,
 .filter .show-button,
-.h2-style,
+.filter-form .h2-title,
 .catalog-page-number a {
   font-size: 13px;
   line-height: 18px;
@@ -158,7 +224,7 @@ a {
   color: #000000; 
 }
 
-.h3-style {
+.h3-title {
   font-size: 17px;
   line-height: 30px;
   font-style: bold;
@@ -176,7 +242,7 @@ a {
   color: #000000; 
 }
 
-.product-card .h2-style {
+.product-card .h2-title {
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -202,9 +268,10 @@ a {
   font-family: 'PT Sans', 'Arial', sans-serif;
   } 
 
-
 .shop-button button,
-.offers-list-promo a {
+.offers-list-promo a,
+.popular-products .all-popular-products,
+.popular-companies .all-popular-companies {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -217,6 +284,17 @@ a {
   line-height: 30px;
   font-weight: bold;
   color: #ffffff;
+  opacity: 0.1;
+  background-color: #000000;
+  } 
+
+.offers-list-promo a:hover {
+  opacity: 0.2;
+  background-color: #000000;
+  } 
+
+.offers-list-promo a:active {
+  opacity: 0.3;
   background-color: #000000;
   } 
 
@@ -236,7 +314,10 @@ a {
   } 
 
 .slider-content a,
-.popular-products a {
+.popular-products a,
+.credit a,
+.company-about a,
+.contacts button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -244,21 +325,42 @@ a {
   background-color: #000000;
   } 
 
-.popular-h2-style {
+.popular-h2-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  background-color: #f9f5f0;
   } 
+
+.services {
+  background-color: #f4f7f9; 
+}
 
 .features,
 .contacts p,
-.hammer-drill-description {
+.hammer-drill-description,
+.services p,
+.services-slide p,
+.company-about p {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  }  
+  } 
+  
+.services-slide .services-title-style {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+  } 
+
+.services-slide button {
+  font-size: 21px;
+  line-height: 30px;
+  color: #32425c;
+  } 
 
 .partners-list {
   font-size: 18px;
@@ -271,34 +373,51 @@ a {
   display: none;
 }
 
+.page-footer {
+  background-color: #32425c;
+}
+
 .page-footer-navigation,
 .page-footer-navigation a, 
 .footer-navigation-list a {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #000000;
+}
+
+.page-footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.page-footer-navigation a:active {
+  color:rgba(241, 245, 247, 0.5);
 }
 
 .footer-offers-list a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
-  background-color: #000000;
 }
 
 .page-footer-info {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #000000;
 }
 
 .page-footer-info a {
   font-size: 16px;
   line-height: 18px;
   color: #ffd180;
-  background-color: #000000;
+}
+
+.page-footer-info a:hover {
+  text-decoration: underline;
+}
+
+.page-footer-info a:active {
+  color:#ee3643;
+  text-decoration: none;
 }
 
  
