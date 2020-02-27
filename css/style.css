@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-body {
+/* -----body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -418,6 +418,28 @@ a {
 .page-footer-info a:active {
   color:#ee3643;
   text-decoration: none;
+}----- */
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url("../css/technomart_index.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-header {
+  /* Временно для сетки */
+  min-height: 320px;
+  background-color: green;
+  opacity: 0.2;
 }
 
  
