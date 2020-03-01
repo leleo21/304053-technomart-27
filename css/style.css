@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-/* -----body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -126,14 +126,14 @@ a {
   color: #ee3643;
 }
 
-.shop-info a {
+.shop-contacts a {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
   color: #ee3643;
 }
 
-.shop-info .address {
+.shop-contacts p {
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -418,7 +418,7 @@ a {
 .page-footer-info a:active {
   color:#ee3643;
   text-decoration: none;
-}----- */
+}
 
 /* ----- Сеточные стили ----- */
 
@@ -430,16 +430,174 @@ body {
 }
 
 body {
-  /* Временно для сетки */
-  background-image: url("../css/technomart_index.jpg");
+  /* Временно для сетки*/ 
+  /*background-image: url("../css/technomart_index.jpg");
   background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+   /* Временно для сетки*/
+  outline: 2px solid blue;
 }
 
 .page-header {
-  /* Временно для сетки */
+  margin-bottom: 59px;
+  /* Временно для сетки*/
   min-height: 320px;
-  background-color: green;
-  opacity: 0.2;
+  /*background-color: rgba(0, 128, 0, 0.24) ;*/
 }
+
+.page-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+   /* Временно для сетки*/ 
+   min-height: 320px;
+   /*background-color: rgba(57, 18, 231, 0.253);*/
+   outline: 2px solid rgb(4, 4, 71);
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  /*Временно для сетки*/
+ min-height: 42px;
+ outline: 2px solid red;
+}
+
+.page-header-logo {
+  width: 220px;
+  /*height: 47px;*/
+ 
+  /* Временно для сетки*/ 
+  background-color: rgba(207, 12, 12, 0.185);
+  outline: 3px solid black;
+  display: none;
+  display: block;
+}
+
+.user-navigation-wrapper {
+  display: flex;
+  width: 720px;
+  margin-right: auto;
+  /*padding: 0;
+  margin: 0;*/
+  /*Временно для сетки*/
+ min-height: 42px;
+ outline: 4px solid rgb(247, 239, 239);
+}
+
+.page-search {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+
+ /* Временно для сетки*/ 
+  min-height: 42px;
+  background-color: rgba(18, 194, 44, 0.233);
+  outline: 2px solid green;
+}
+
+ .user-link-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 470px;
+  
+
+ /* Временно для сетки*/
+  list-style: none; 
+  min-height: 42px;
+  background-color: rgba(236, 10, 10, 0.479);
+}
+
+
+.main-user-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 46px;
+   /*Временно для сетки*/
+   /*min-height: 158px;*/
+   min-height: 70px; 
+   
+   background-color: rgba(214, 133, 12, 0.295);
+   outline: 3px solid red; 
+}
+
+.shop-info {
+  width: 196px;
+  margin: 0;
+  padding: 0;
+  margin-left: 53px;
+  margin-bottom: 41px;
+  
+   /* Временно для сетки*/ 
+   min-height: 70px;
+   background-color: rgba(68, 216, 236, 0.37);
+   outline: 3px solid red; 
+}
+
+.shop-contacts {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  margin-left: 71px;
+  margin-bottom: 41px;
+  
+
+   /* Временно для сетки */
+   min-height: 70px;
+   background-color: rgba(68, 216, 236, 0.377);
+   outline: 3px solid red; 
+}
+
+.user-login {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  margin-left: 69px;
+  margin-bottom: 41px;
+  
+
+   /* Временно для сетки */
+   min-height: 70px;
+   background-color: rgba(68, 216, 236, 0.37);
+   outline: 3px solid red; 
+   list-style: none;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 940px;
+
+  /* Временно для сетки*/
+  list-style: none;
+  min-height: 60px;
+  background-color: rgba(81, 12, 241, 0.363);
+  outline: 3px solid rgb(245, 13, 187);
+}
+
+
+
+
+
+
 
  
