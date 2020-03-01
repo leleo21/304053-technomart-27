@@ -8,40 +8,52 @@
    </head>
    <body>
         <header class="page-header">
-            <div class="user-navigation">
-                <a class="page-header-logo"><img src="img/logo.svg" width="220" height="47" alt="Логотип"></a><!--размеры картинки--> 
-                <form action="https://echo.htmlacademy.ru" method="post">
-                    <p>
-                      <label for="search">Поиск:</label>
-                      <input id="search" type="text" name="search">
-                    </p>
-                </form>  
-                <ul class="user-link-list list-styles-reset">
-                    <li><a href="#">Закладки</a></li>
-                    <li><a href="#">Корзина</a></li>
-                    <li><a class="make-order" href="#">Оформить заказ</a></li>
-                </ul>
+            <div class="container">
+                <div class="page-header-container">
+                    <div class="user-navigation">
+                        <a class="page-header-logo"><img src="img/logo.svg" width="220" height="47" alt="Логотип"></a><!--размеры картинки--> 
+                        <div class="user-navigation-wrapper"> 
+                            <form action="https://echo.htmlacademy.ru" method="post">
+                                <div class="page-search">
+                                    <label for="search">Поиск:</label>
+                                    <input id="search" type="text" name="search">
+                                </div>
+                            </form>
+                            <div class="user-link-container">
+                                <ul class="user-link-list list-styles-reset">
+                                    <li><a href="#">Закладки</a></li>
+                                    <li><a href="#">Корзина</a></li>
+                                    <li><a class="make-order" href="#">Оформить заказ</a></li>
+                                </ul>
+                            </div> 
+                        </div>  
+                    </div>
+                    <div class="main-user-info">
+                        <div class="shop-info">
+                            <p>Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</p>
+                        </div>
+                        <div class="shop-contacts"> 
+                            <a href="tel:+78125550555">+7(812)555-05-55</a>
+                            <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        </div>      
+                        <ul class="user-login list-styles-reset">
+                            <li><a href="#">Войти</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>   
+                    </div>
+                    <nav class="page-navigation">
+                        <ul class="site-navigation list-styles-reset">
+                            <li><a>Главная</a></li>
+                            <li><a href="#">Компания</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Спецпредложения</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="shop-info">
-                <p>Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</p>
-                <a href="tel:+78125550555">+7(812)555-05-55</a>
-                <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <ul class="user-login list-styles-reset">
-                    <li><a href="#">Войти</a></li>
-                    <li><a href="#">Регистрация</a></li>
-                </ul>
-            </div>
-            <nav class="page-navigation">
-                <ul class="site-navigation list-styles-reset">
-                    <li><a>Главная</a></li>
-                    <li><a href="#">Компания</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Спецпредложения</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
             <section class="promo-block">
