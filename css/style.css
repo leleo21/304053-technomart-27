@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-body {
+/*body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -418,7 +418,7 @@ a {
 .page-footer-info a:active {
   color:#ee3643;
   text-decoration: none;
-}
+}------*/
 
 /* ----- Сеточные стили ----- */
 
@@ -431,9 +431,9 @@ body {
 
 body {
   /* Временно для сетки*/ 
-  /*background-image: url("../css/technomart_index.jpg");
+  background-image: url("../css/technomart_index.jpg");
   background-repeat: no-repeat;
-  background-position: center;*/
+  background-position: center;
 }
 
 .container{
@@ -594,6 +594,102 @@ body {
   outline: 3px solid rgb(245, 13, 187);
 }
 
+.promo-block {
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+  padding: 0;
+  
+
+   /* Временно для сетки */
+   min-height: 409px;
+   background-color: rgba(68, 216, 236, 0.377);
+   outline: 3px solid red; 
+}
+
+.popular-title-container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 21px;
+  
+
+   /* Временно для сетки */
+   min-height: 89px;
+   background-color: rgba(68, 216, 236, 0.377);
+   outline: 3px solid red; 
+}
+
+.product-list {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 21px;
+
+
+   /* Временно для сетки */
+   min-height: 318px;
+   background-color: rgba(68, 216, 236, 0.377);
+   outline: 3px solid red; 
+}
+
+.popular-conpanies-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 85px;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   min-height: 310px;
+   background-color: rgba(68, 216, 236, 0.377);
+   outline: 3px solid red; 
+}
+
+.popular-conpanies-list li {
+  width: 220px;
+  height: 145px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.services {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 60px;
+
+   /* Временно для сетки */
+   list-style: none;
+   min-height: 522px;
+   background-color: rgba(68, 216, 236, 0.377);
+   outline: 3px solid red; 
+}
+
+.main-company-info {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+
+   /* Временно для сетки */
+   list-style: none;
+   min-height: 390px;
+   background-color: rgba(68, 216, 236, 0.377);
+   outline: 3px solid red; 
+}
 
 
 
