@@ -85,8 +85,10 @@
                 </div>
             </section>
             <section class="popular-products">
-                <h2 class="popular-h2-title">Популярные товары:</h2>
-                <a class="all-popular-products" href="#">Все популярные товары</a>
+                <div class="popular-title-container">
+                    <h2 class="popular-h2-title">Популярные товары:</h2>
+                    <a class="all-popular-products" href="#">Все популярные товары</a>
+                </div>
                 <ul class="product-list list-styles-reset">
                     <li class="product-card">
                         <img src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="bosch_bfg_9000.jpg"> 
@@ -154,9 +156,11 @@
                 </ul>    
             </section>
             <section class="popular-companies">
-                <h2 class="popular-h2-title">Популярные производители:</h2>
-                <a class="all-popular-companies" href="#">Все популярные производители:</a>
-                <ul class="list-styles-reset">
+                <div class="popular-title-container">
+                    <h2 class="popular-h2-title">Популярные производители:</h2>
+                    <a class="all-popular-companies" href="#">Все популярные производители:</a>
+                </div>
+                <ul class="popular-conpanies-list list-styles-reset">
                     <li><a href="#"><img src="img/bosch_logo.png" width="126" height="37" alt="bosch_logo"></a></li>
                     <li><a href="#"><img src="img/makita_logo.png" width="123" height="40" alt="makita_logo"></a></li> 
                     <li><a href="#"><img src="img/de-walt_logo.png" width="146" height="44" alt="dewalt_logo"></a></li> 
@@ -200,26 +204,27 @@
                 </div>
                 <img src="img/delivery.jpg" width="468" height="261" alt="Доставка">
             </section>
-            <section class="company-about">
-                <h2 class="h2-title">Компания "Техномарт"</h2>
-                <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-                строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-                <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-                Техномарт работает со многими транспортными компаниями: </p>
-                <ul class="partners-list list-styles-reset">
-                    <li>Деловые линии</li>
-                    <li>Автотрейдинг</li>
-                    <li>ЖелДорЭкспедиция</li>
-                </ul>
-                <a class="button" href="#">Подробнее о компании</a>
-            </section>
-            <section class="contacts">
-                <h2 class="h2-title">Контакты</h2>
-                <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p><!--при нажатии на картинку с картой открывается сервис карт-->
-                <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208534,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474"><img src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a><br>
-                <button type="button">Закрыть</button><br> <!--кнопка закрывает окно с картой-->
-                <button type="button">Заблудились? Напишите нам!</button> 
-            </section>
+            <div class="main-company-info">
+                <section class="company-about">
+                    <h2 class="h2-title">Компания "Техномарт"</h2>
+                    <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+                    строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+                    Техномарт работает со многими транспортными компаниями: </p>
+                    <ul class="partners-list list-styles-reset">
+                        <li>Деловые линии</li>
+                        <li>Автотрейдинг</li>
+                        <li>ЖелДорЭкспедиция</li>
+                    </ul>
+                    <a class="button" href="#">Подробнее о компании</a>
+                </section>
+                <section class="contacts">
+                    <h2 class="h2-title">Контакты</h2>
+                    <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p><!--при нажатии на картинку с картой открывается сервис карт-->
+                    <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208534,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474"><img src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a><br>
+                    <button type="button">Заблудились? Напишите нам!</button> 
+                </section>
+            </div>
             <div class="map-message"> <!--окно скрыто в css-->
                 <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
                     <p class="message-user-name">
