@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-/*body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -418,7 +418,7 @@ a {
 .page-footer-info a:active {
   color:#ee3643;
   text-decoration: none;
-}------*/
+}
 
 /* ----- Сеточные стили ----- */
 
@@ -429,12 +429,12 @@ body {
   min-height: 3151px;
 }
 
-body {
-  /* Временно для сетки*/ 
+/*body {
+  /* Временно для сетки
   background-image: url("../css/technomart_index.jpg");
   background-repeat: no-repeat;
   background-position: center;
-}
+}*/
 
 .container{
   width: 940px;
@@ -445,10 +445,12 @@ body {
 }
 
 .page-header {
+  width: 1200px;
+  margin: 0 auto;
   margin-bottom: 59px;
   /* Временно для сетки*/
   min-height: 320px;
-  /*background-color: rgba(0, 128, 0, 0.24) ;*/
+  outline: 2px solid green;
 }
 
 .page-header-container {
@@ -595,6 +597,8 @@ body {
 }
 
 .promo-block {
+  display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   margin-bottom: 53px;
@@ -602,10 +606,25 @@ body {
   
 
    /* Временно для сетки */
+   list-style: none;
    min-height: 409px;
    background-color: rgba(68, 216, 236, 0.377);
    outline: 3px solid red; 
 }
+
+/*.offers-list-promo {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  
+
+   /* Временно для сетки 
+   list-style: none;
+   background-color: rgba(219, 236, 68, 0.377);
+   outline: 3px solid red; 
+}*/
 
 .popular-title-container {
   width: 940px;
@@ -621,6 +640,8 @@ body {
 }
 
 .product-list {
+  display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -628,6 +649,7 @@ body {
 
 
    /* Временно для сетки */
+   list-style: none;
    min-height: 318px;
    background-color: rgba(68, 216, 236, 0.377);
    outline: 3px solid red; 
@@ -665,7 +687,7 @@ body {
 }
 
 .services {
-  width: 940px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 60px;
@@ -682,6 +704,7 @@ body {
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 86px;
   padding: 0;
 
    /* Временно для сетки */
@@ -690,6 +713,136 @@ body {
    background-color: rgba(68, 216, 236, 0.377);
    outline: 3px solid red; 
 }
+
+.page-footer {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.page-footer-navigation {
+  /*display: flex;
+  justify-content: space-between;*/
+  width: 940px;
+  height: 193px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.page-footer-info {
+  /*display: flex;
+  justify-content: space-between;*/
+  width: 940px;
+  height: 107px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid yellow; 
+}
+
+.footer-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 68px;
+   list-style: none;
+   outline: 3px solid green; 
+}
+
+.footer-info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 125px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+.footer-contacts-container {
+  width: 330px;
+  height: 125px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.footer-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 720px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 68px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.footer-offers-list {
+  display: flex;
+  justify-content: space-between;
+  width: 610px;
+  height: 125px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid white; 
+}
+
+.page-footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 68px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+
+
+
+
+
+
+
 
 
 
