@@ -431,9 +431,9 @@ body {
 
 /*body {
   /* Временно для сетки
-  background-image: url("../css/technomart_index.jpg");
+  background-image: url("../css/technomart-catalog.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }*/
 
 .container{
@@ -447,7 +447,6 @@ body {
 .page-header {
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 59px;
   /* Временно для сетки*/
   min-height: 320px;
   outline: 2px solid green;
@@ -460,7 +459,6 @@ body {
 
    /* Временно для сетки*/ 
    min-height: 320px;
-   /*background-color: rgba(57, 18, 231, 0.253);*/
    outline: 2px solid rgb(4, 4, 71);
 }
 
@@ -480,7 +478,6 @@ body {
   /*height: 47px;*/
  
   /* Временно для сетки*/ 
-  background-color: rgba(207, 12, 12, 0.185);
   outline: 3px solid black;
   display: none;
   display: block;
@@ -504,7 +501,6 @@ body {
 
  /* Временно для сетки*/ 
   min-height: 42px;
-  background-color: rgba(18, 194, 44, 0.233);
   outline: 2px solid green;
 }
 
@@ -519,7 +515,7 @@ body {
  /* Временно для сетки*/
   list-style: none; 
   min-height: 42px;
-  background-color: rgba(236, 10, 10, 0.479);
+  outline: 2px solid green;
 }
 
 
@@ -532,8 +528,6 @@ body {
    /*Временно для сетки*/
    /*min-height: 158px;*/
    min-height: 70px; 
-   
-   background-color: rgba(214, 133, 12, 0.295);
    outline: 3px solid red; 
 }
 
@@ -546,7 +540,6 @@ body {
   
    /* Временно для сетки*/ 
    min-height: 70px;
-   background-color: rgba(68, 216, 236, 0.37);
    outline: 3px solid red; 
 }
 
@@ -560,7 +553,6 @@ body {
 
    /* Временно для сетки */
    min-height: 70px;
-   background-color: rgba(68, 216, 236, 0.377);
    outline: 3px solid red; 
 }
 
@@ -577,10 +569,10 @@ body {
 
    /* Временно для сетки */
    min-height: 70px;
-   background-color: rgba(68, 216, 236, 0.37);
    outline: 3px solid red; 
    list-style: none;
 }
+
 
 .site-navigation {
   display: flex;
@@ -592,7 +584,6 @@ body {
   /* Временно для сетки*/
   list-style: none;
   min-height: 60px;
-  background-color: rgba(81, 12, 241, 0.363);
   outline: 3px solid rgb(245, 13, 187);
 }
 
@@ -608,7 +599,6 @@ body {
    /* Временно для сетки */
    list-style: none;
    min-height: 409px;
-   background-color: rgba(68, 216, 236, 0.377);
    outline: 3px solid red; 
 }
 
@@ -835,6 +825,219 @@ body {
    list-style: none;
    outline: 3px solid blue; 
 }
+
+.catalog-navigation {
+  display: flex;
+  justify-content: flex-start;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 59px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.h1-title {
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 89px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.catalog-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 1052px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.filer-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 220px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 1052px;
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 1052px;
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+.filter-title-container {
+  width:220px; 
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 38px;
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+.filter-container {
+  width:220px; 
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+
+.catalog-product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 1052px;
+   list-style: none;
+   outline: 3px solid green; 
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 38px;
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+.sorting-container ul {
+  display: flex;
+  justify-content: space-between;
+  width: 481px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 38px;
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+.sorting-container .h2-title {
+  margin: 0;
+  padding: 0;
+  width: 218px;
+
+   /* Временно для сетки */
+   min-height: 38px;
+   outline: 3px solid red; 
+}
+
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 993px;
+   list-style: none;
+   outline: 3px solid red; 
+}
+
+.product-card {
+  width: 220px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 318px;
+   list-style: none;
+   outline: 3px solid yellow; 
+}
+
+.pop-up-cart {
+  /* скрыто временно для сетки */
+  display: none;
+}
+
+.page-numder-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 700px;
+  margin: 0;
+  margin-left: auto;
+  margin-top: 52px;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 38px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.gray-wide-background {
+  width: 1200px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-top: 60px;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 261px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
 
 
 
