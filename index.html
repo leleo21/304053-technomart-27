@@ -8,10 +8,10 @@
    </head>
    <body>
         <header class="page-header">
-            <div class="container">
-                <div class="page-header-container">
+            <div class="user-navigation-container">
+                <div class="container">
                     <div class="user-navigation">
-                        <a class="page-header-logo"><img src="img/logo.svg" width="220" height="47" alt="Логотип"></a><!--размеры картинки--> 
+                        <a class="page-header-logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип"></a>
                         <div class="user-navigation-wrapper"> 
                             <form action="https://echo.htmlacademy.ru" method="post">
                                 <div class="page-search">
@@ -21,13 +21,17 @@
                             </form>
                             <div class="user-link-container">
                                 <ul class="user-link-list list-styles-reset">
-                                    <li><a href="#">Закладки</a></li>
-                                    <li><a href="#">Корзина</a></li>
-                                    <li><a class="make-order" href="#">Оформить заказ</a></li>
+                                    <li class="user-link"><a  href="#">Закладки: 0</a></li>
+                                    <li class="user-link"><a  href="#">Корзина: 0</a></li>
+                                    <li class="make-order"><a href="#">Оформить заказ</a></li>
                                 </ul>
                             </div> 
                         </div>  
                     </div>
+                </div>
+            </div>  
+            <div class="container">
+                <div class="page-header-container">
                     <div class="main-user-info">
                         <div class="shop-info">
                             <p>Интернет-магазин<br> строительных материалов<br>и инструментов для ремонта</p>
@@ -51,39 +55,45 @@
                             <li><a href="#">Доставка</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
-                    </nav>
+                    </nav>   
                 </div>
             </div>
         </header>
         <main>
-            <section class="promo-block">
-                <h2 class="visually-hidden">Промо</h2>
-                <ul class="offers-list-promo list-styles-reset">
-                    <li><img src="materials_icon.svg" width="44" height="65" alt="материалы"><br>Материалы<br><a href="#">На любой вкус</a></li> <!-- здесь будут иконки -->
-                    <li><img src="tools_icon.svg" width="75" height="61" alt="инструмент"><br>Инструмент<br><a href="#">На все случаи</a></li>
-                    <li><img src="technic_icon.svg" width="78" height="62" alt="техника"><br>Техника<br><a href="#">Для стройки</a></li>
-                    <li><img src="discounts_icon.svg" width="59" height="72" alt="скидки"><br>Скидки 50%<br><a href="#">На 350 товоров</a></li>
-                    <li><img src="delivery_icon.svg" width="78" height="63" alt="доставка"><br>Доставка<br><a href="#">Бесплатно</a></li>
-                </ul>
-                <div>
-                    <figure class="figure-content">
-                        <ul class="slider-content list-styles-reset">
-                            <li><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели"> 
-                                <p class="slider-title">Дрели</p>
-                                <p class="slider-description">Соседям на радость!</p>
-                                <a href="catalog.html">Открыть каталог</a>
-                            </li> 
-                            <!--<li><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы">
-                                <p class="slider-title">Перфораторы</p>
-                                <p class="slider-description">Настоящие мужские игрушки</p>
-                                <a href="catalog.html">Открыть каталог</a>
-                            </li>-->
-                        </ul>
-                    </figure>
-                    <button type="button"><!-- здесь будет иконка --></button> <!-- листает слайды влево -->
-                    <button type="button"><!-- здесь будет иконка --></button> <!-- листает слайды вправо -->
-                </div>
-            </section>
+            <div class="container">
+                <section class="promo-block">
+                    <h2 class="visually-hidden">Промо</h2>
+                    <ul class="offers-list-promo list-styles-reset">
+                        <div class="promo-row">
+                            <li class="promo-materials"><img src="materials_icon.svg" width="44" height="65" alt="материалы"><br>Материалы<br><a href="#">На любой вкус</a></li> 
+                            <li class="promo-tools"><img src="tools_icon.svg" width="75" height="61" alt="инструмент"><br>Инструмент<br><a href="#">На все случаи</a></li>
+                            <li class="promo-technic"><img src="technic_icon.svg" width="78" height="62" alt="техника"><br>Техника<br><a href="#">Для стройки</a></li>
+                        </div>
+                        <div class="promo-column">
+                            <li class="promo-discounts"><img src="discounts_icon.svg" width="59" height="72" alt="скидки"><br>Скидки 50%<br><a href="#">На 350 товоров</a></li>
+                            <li class="promo-delivery"><img src="delivery_icon.svg" width="78" height="63" alt="доставка"><br>Доставка<br><a href="#">Бесплатно</a></li>
+                        </div>
+                    </ul>
+                    <div>
+                        <figure class="figure-content">
+                            <ul class="slider-content list-styles-reset">
+                            <li><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели">
+                                    <!--<p class="slider-title">Дрели</p>
+                                    <p class="slider-description">Соседям на радость!</p>
+                                    <a href="catalog.html">Открыть каталог</a>-->
+                                </li> 
+                                <!--<li><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы">
+                                    <p class="slider-title">Перфораторы</p>
+                                    <p class="slider-description">Настоящие мужские игрушки</p>
+                                    <a href="catalog.html">Открыть каталог</a>
+                                </li>-->
+                            </ul>
+                        </figure>
+                        <!--<button type="button"></button>  листает слайды влево 
+                        <button type="button"></button>  листает слайды вправо -->
+                    </div>
+                </section>
+            </div>
             <section class="popular-products">
                 <div class="popular-container">
                     <h2 class="popular-h2-title">Популярные товары:</h2>
