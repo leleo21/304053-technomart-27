@@ -112,17 +112,65 @@ a {
   background-color: #f4f7f9;
 }
 
-.user-navigation p,
-.user-link-list a {
+.user-link-list a,
+.page-search label {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
 
+ .user-link {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 42px;
+  background-color:#293449;
+}
+
+.user-link:hover,
+.page-search:hover {
+  background-color: #212a3a;
+}
+
+.make-order {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+
+.make-order:hover {
+  background-color: #5fbb2d;
+}
+
+.user-link-list a {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.user-link a {
+  margin-left: 44px;
+}
+
+
+.make-order a {
+  margin-left: 20px;
+}
+
+
 .shop-info p {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
+  text-align: left;
+  white-space: nowrap;
+  margin: 0;
   color: #ee3643;
 }
 
@@ -130,13 +178,20 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
+  text-align: middle;
   color: #ee3643;
+  border: 3px solid #ffffff;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 70px;
+  padding-right: 40px;
 }
 
 .shop-contacts p {
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
+  margin: 10px;
   color: #32425c; 
 }
 
@@ -176,11 +231,6 @@ a {
 .user-navigation,
 .user-navigation input {
   background-color: #293449;
-}
-
-.user-navigation a:hover,
-.user-navigation input {
-  background-color: #212a3a;
 }
 
 .user-navigation a:active {
@@ -279,11 +329,14 @@ a {
   background-color: #000000;
   } 
 
-.offers-list-promo {
+.offers-list-promo li {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   color: #ffffff;
+  } 
+
+.offers-list-promo a {
   opacity: 0.1;
   background-color: #000000;
   } 
@@ -425,8 +478,7 @@ a {
 
 html,
 body {
-  min-width: 1200px;
-  min-height: 3151px;
+  min-width: 100px;
 }
 
 /*body {
@@ -445,11 +497,21 @@ body {
 }
 
 .page-header {
-  width: 1200px;
+  width: auto;
   margin: 0 auto;
+  background-color: #f4f7f9;
   /* Временно для сетки*/
   min-height: 320px;
   outline: 2px solid green;
+}
+
+.user-navigation-container {
+  width: auto;
+  margin: 0 auto;
+  background-color: #293449;
+  /* Временно для сетки*/
+  min-height: 42px;
+  outline: 2px solid yellow;
 }
 
 .page-header-container {
@@ -458,7 +520,6 @@ body {
   align-items: center;
 
    /* Временно для сетки*/ 
-   min-height: 320px;
    outline: 2px solid rgb(4, 4, 71);
 }
 
@@ -475,20 +536,33 @@ body {
 
 .page-header-logo {
   width: 220px;
-  /*height: 47px;*/
+  height: 47px;
+  padding: 0;
+  margin: 0;
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  display: inline-block;
  
   /* Временно для сетки*/ 
   outline: 3px solid black;
-  display: none;
+}
+
+.page-header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.page-header-logo img {
   display: block;
+  margin: 0 auto;
+  margin-top: 13px;
 }
 
 .user-navigation-wrapper {
   display: flex;
   width: 720px;
+  padding: 0;
+  margin: 0;
   margin-right: auto;
-  /*padding: 0;
-  margin: 0;*/
   /*Временно для сетки*/
  min-height: 42px;
  outline: 4px solid rgb(247, 239, 239);
@@ -497,11 +571,21 @@ body {
 .page-search {
   margin: 0;
   padding: 0;
-  width: 250px;
+  width: 270px;
 
  /* Временно для сетки*/ 
   min-height: 42px;
   outline: 2px solid green;
+}
+
+.page-search label {
+  display: inline-block;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 16px;
+  margin-left: 48px;
+  padding: 0;
+
 }
 
  .user-link-list {
@@ -509,7 +593,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 470px;
+  width: 450px;
   
 
  /* Временно для сетки*/
@@ -544,11 +628,12 @@ body {
 }
 
 .shop-contacts {
+  display: flex;
+  flex-direction: column;
   width: 270px;
   margin: 0;
   padding: 0;
   margin-left: 71px;
-  margin-bottom: 41px;
   
 
    /* Временно для сетки */
@@ -588,10 +673,11 @@ body {
 }
 
 .promo-block {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
   width: 940px;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 59px;
   margin-bottom: 53px;
   padding: 0;
   
@@ -602,19 +688,99 @@ body {
    outline: 3px solid red; 
 }
 
-/*.offers-list-promo {
-  display: flex;
-  justify-content: space-between;
-  width: 940px;
-  margin: 0 auto;
+.offers-list-promo li {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+  width: 300px;
+  height: 123px;
+  margin: 0;
   padding: 0;
   
 
-   /* Временно для сетки 
+   /*Временно для сетки */
    list-style: none;
-   background-color: rgba(219, 236, 68, 0.377);
-   outline: 3px solid red; 
-}*/
+   outline: 3px solid red;  
+}
+
+.offers-list-promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  height: 409px;
+  
+
+   /*Временно для сетки*/
+
+   list-style: none;
+   outline: 3px solid rgb(51, 255, 0); 
+}
+
+.promo-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  
+
+   /* Временно для сетки */
+   list-style: none;
+   min-height: 123px;
+   outline: 3px solid green; 
+}
+
+.promo-row :nth-child(2) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.promo-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  
+
+   /* Временно для сетки*/ 
+   min-height: 266px;
+   list-style: none;
+   outline: 3px solid violet; 
+}
+
+.promo-block img {
+  position: absolute;
+  bottom: -65px;
+  right: 610px;
+}
+
+
+.promo-materials {
+  background-color: #ffbf47;
+}
+
+.promo-tools {
+  background-color: #3bbce3;
+}
+
+.promo-technic {
+  background-color: #dc91d8;
+}
+
+.promo-discounts {
+  align-self: flex-end;
+  background-color: #8ed78f;
+}
+
+.promo-delivery {
+  align-self: flex-end;
+  background-color: #ffc047;
+}
 
 .popular-container {
   width: 940px;
@@ -677,7 +843,7 @@ body {
 }
 
 .services {
-  width: 1200px;
+  width: auto;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 60px;
@@ -705,7 +871,7 @@ body {
 }
 
 .page-footer {
-  width: 1200px;
+  width: auto;
   height: 300px;
   margin: 0 auto;
   padding: 0;
@@ -1025,7 +1191,7 @@ body {
 }
 
 .gray-wide-background {
-  width: 1200px;
+  width: auto;
   margin: 0 auto;
   margin-left: auto;
   margin-top: 60px;
