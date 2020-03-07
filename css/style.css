@@ -673,8 +673,8 @@ body {
 }
 
 .promo-block {
-  /*display: flex;
-  justify-content: space-between;*/
+  display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0;
   margin-top: 59px;
@@ -688,7 +688,8 @@ body {
    outline: 3px solid red; 
 }
 
-.offers-list-promo li {
+.promo-row li,
+.promo-column li {
   /*display: flex;
   flex-direction: column;
   justify-content: space-between;*/
@@ -701,22 +702,6 @@ body {
    /*Временно для сетки */
    list-style: none;
    outline: 3px solid red;  
-}
-
-.offers-list-promo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  margin: 0;
-  padding: 0;
-  height: 409px;
-  
-
-   /*Временно для сетки*/
-
-   list-style: none;
-   outline: 3px solid rgb(51, 255, 0); 
 }
 
 .promo-row {
@@ -738,9 +723,8 @@ body {
   margin-right: 20px;
 }
 
-.promo-column {
+.promo-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -748,17 +732,36 @@ body {
   
 
    /* Временно для сетки*/ 
-   min-height: 266px;
+   /*min-height: 266px;*/
    list-style: none;
    outline: 3px solid violet; 
 }
 
-.promo-block img {
-  position: absolute;
-  bottom: -65px;
-  right: 610px;
+.slider-content {
+  width: 620px;
+  height: 266px;
+  margin: 0;
+  padding: 0;
+  
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid green; 
 }
 
+.promo-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  
+
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
 
 .promo-materials {
   background-color: #ffbf47;
@@ -773,12 +776,10 @@ body {
 }
 
 .promo-discounts {
-  align-self: flex-end;
   background-color: #8ed78f;
 }
 
 .promo-delivery {
-  align-self: flex-end;
   background-color: #ffc047;
 }
 
