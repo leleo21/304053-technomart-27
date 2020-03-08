@@ -163,6 +163,20 @@ a {
   margin-left: 20px;
 }
 
+.user-navigation,
+.user-navigation input {
+  background-color: #293449;
+}
+
+.user-navigation a:active {
+  color:rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.user-navigation input:focus {
+  color: #000000;
+  background-color:#ffffff;
+}
 
 .shop-info p {
   font-size: 16px;
@@ -183,6 +197,7 @@ a {
   border: 3px solid #ffffff;
   margin: 0;
   padding-top: 5px;
+  padding-bottom: 11px;
   padding-left: 70px;
   padding-right: 40px;
 }
@@ -191,7 +206,9 @@ a {
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
-  margin: 10px;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #32425c; 
 }
 
@@ -199,8 +216,30 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
+  display: block;
+  padding: 0;
+  margin:0;
+  margin-top: 8px;
+  text-align: center;
   color: #000000; 
 }
+
+.log-in {
+ width: 121px;
+ height: 45px;
+ background-color: #ffffff;
+}
+
+.log-in a {
+  padding-left: 24px;
+  
+ }
+
+.registration {
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+ }
 
 .user-login a:hover {
   color:#ee3643; 
@@ -228,38 +267,39 @@ a {
   text-decoration: underline; 
 }
 
-.user-navigation,
-.user-navigation input {
+
+.site-navigation {
+  background-color: #32425c; 
+  box-shadow: inset 0px -5px 0 0 #293449;
+  min-height: 60px;
+}
+
+.site-navigation a {
+  display: block;
+  text-align: center;
+  width: 127px;
+  min-height: 60px;
+  padding: 0;
+  margin: 0;
+  /*padding-top: 22px;*/
+  background-color: #32425c; 
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.site-navigation a:hover {
   background-color: #293449;
 }
 
-.user-navigation a:active {
-  color:rgba(255, 255, 255, 0.6);
-  background-color: #161d29;
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
 }
 
-.user-navigation input:focus {
-  color: #000000;
-  background-color:#ffffff;
-}
-
-.page-navigation {
-  background-color: #32425c;  
-}
 
 .page-navigation a {
   font-size: 17px;
   line-height: 12px;
   color: #ffffff;
-}
-
-.page-navigation a:hover {
-  background-color: #293449;
-}
-
-.page-navigation a:active {
-  color: rgba(255, 255, 255, 0.5);
-  background-color: #1d2739;
 }
 
 .catalog-navigation a,
@@ -520,6 +560,7 @@ body {
   align-items: center;
 
    /* Временно для сетки*/ 
+   /*min-height: 260px;*/
    outline: 2px solid rgb(4, 4, 71);
 }
 
@@ -608,16 +649,17 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 46px;
+  width: 940px;
+  /*padding-top: 46px;*/
    /*Временно для сетки*/
-   /*min-height: 158px;*/
-   min-height: 70px; 
-   outline: 3px solid red; 
+   min-height: 158px;
+   outline: 3px solid rgb(0, 255, 76); 
 }
 
 .shop-info {
   width: 196px;
   margin: 0;
+  margin-top: 46px;
   padding: 0;
   margin-left: 53px;
   margin-bottom: 41px;
@@ -631,9 +673,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 270px;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  margin-top: 46px;
   margin-left: 71px;
+  margin-bottom: 41px;
   
 
    /* Временно для сетки */
@@ -647,13 +691,14 @@ body {
   width: 281px;
   margin: 0;
   padding: 0;
+  margin-top: 46px;
   margin-right: auto;
   margin-left: 69px;
-  margin-bottom: 41px;
+  margin-bottom: 67px;
   
 
    /* Временно для сетки */
-   min-height: 70px;
+   min-height: 45px;
    outline: 3px solid red; 
    list-style: none;
 }
