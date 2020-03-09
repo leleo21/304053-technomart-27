@@ -121,11 +121,16 @@ a {
 
  .user-link {
   display: inline-block;
+  color: #ffffff;
   padding: 0;
   margin: 0;
   width: 150px;
   height: 42px;
   background-color:#293449;
+}
+
+.user-link:active {
+  opacity: 0.6;
 }
 
 .user-link:hover,
@@ -135,6 +140,7 @@ a {
 
 .make-order {
   display: inline-block;
+  color: #ffffff;
   padding: 0;
   margin: 0;
   width: 150px;
@@ -144,6 +150,11 @@ a {
 
 .make-order:hover {
   background-color: #5fbb2d;
+}
+
+.make-order:active {
+  opacity: 0.5;
+  background-color: #518534;
 }
 
 .user-link-list a {
@@ -168,7 +179,7 @@ a {
   background-color: #293449;
 }
 
-.user-navigation a:active {
+.user-link:active {
   color:rgba(255, 255, 255, 0.6);
   background-color: #161d29;
 }
@@ -246,7 +257,8 @@ a {
 }
 
 .user-login a:active {
-  color:rgba(0, 0, 0, 0.3); 
+  color: #000000;
+  opacity: 0.3;
 }
 
 .user-login .user-login-list a {
@@ -269,29 +281,47 @@ a {
 
 
 .site-navigation {
-  background-color: #32425c; 
+  background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
-  min-height: 60px;
+  /*min-height: 60px;*/
 }
 
 .site-navigation a {
-  display: block;
-  text-align: center;
   width: 127px;
-  min-height: 60px;
+  height: 60px; 
   padding: 0;
+  padding-top: 14px;
+  padding-bottom: 18px;
   margin: 0;
-  /*padding-top: 22px;*/
-  background-color: #32425c; 
-  box-shadow: inset 0px -5px 0 0 #293449;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #32425c;
+
+  /*временно для сетки*/
+  outline: 2px solid pink;
+
+  
 }
+
+/*.site-navigation a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки
+  min-height: 60px;
+  outline: 3px solid rgb(245, 13, 187);
+}*/
 
 .site-navigation a:hover {
   background-color: #293449;
 }
 
 .site-navigation a:active {
-  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
   background-color: #1d2739;
 }
 
@@ -360,13 +390,12 @@ a {
 
 .shop-button button,
 .offers-list-promo a,
-.popular-products .all-popular-products,
-.popular-companies .all-popular-companies {
+.all-popular-products,
+.all-popular-companies {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #000000;
   } 
 
 .offers-list-promo li {
@@ -407,7 +436,6 @@ a {
   } 
 
 .slider-content a,
-.popular-products a,
 .credit a,
 .company-about a,
 .contacts button {
@@ -415,15 +443,17 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #000000;
   } 
 
 .popular-h2-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
+  margin: 0;
+  margin-left: 28px;
+  padding: 0;
   color: #32425c;
-  background-color: #f9f5f0;
   } 
 
 .services {
@@ -592,6 +622,10 @@ body {
   background-color: #ca2c37;
 }
 
+.page-header-logo:active {
+  background-color: #ba2732;
+}
+
 .page-header-logo img {
   display: block;
   margin: 0 auto;
@@ -706,7 +740,8 @@ body {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 940px;
@@ -829,16 +864,33 @@ body {
 }
 
 .popular-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 940px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 21px;
+  background-color: #f9f5f0;
   
 
    /* Временно для сетки */
    min-height: 89px;
-   background-color: rgba(68, 216, 236, 0.377);
    outline: 3px solid red; 
+}
+
+.all-popular-products,
+.all-popular-companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 253px;
+  height: 38px;
+  border-radius: 3px;
+  margin: 0;
+  margin-right: 24px;
+  padding: 0;
+  background-color: #ee3643;
 }
 
 .product-list {
