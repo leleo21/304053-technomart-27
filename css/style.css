@@ -107,6 +107,10 @@ a {
 }
 
 .hammer-drill-about  {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
   width: 1200px;
   height: 261px;
   background-color: #f4f7f9;
@@ -204,7 +208,7 @@ a {
   line-height: 21px;
   font-style: normal;
   text-align: middle;
-  color: #ee3643;
+  color: #e9292a;
   border: 3px solid #ffffff;
   margin: 0;
   padding-top: 5px;
@@ -261,7 +265,7 @@ a {
   opacity: 0.3;
 }
 
-.user-login .user-login-list a {
+.user-login-list a {
   font-size: 16px;
   line-height: 18px;
   font-style: normal;
@@ -274,47 +278,35 @@ a {
   text-decoration: underline; 
 }
 
-.user-login-list a:active {
-  color:rgba(0, 0, 0, 0.3);
+.user-login-list a:focus {
+  color:#32425c;
+  opacity: 0.3;
   text-decoration: underline; 
 }
 
 
 .site-navigation {
-  background-color: #32425c;
-  box-shadow: inset 0px -5px 0 0 #293449;
-  /*min-height: 60px;*/
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation a {
   width: 127px;
   height: 60px; 
+  margin: 0;
   padding: 0;
   padding-top: 14px;
   padding-bottom: 18px;
-  margin: 0;
   padding-left: 30px;
   padding-right: 30px;
   background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
 
   /*временно для сетки*/
   outline: 2px solid pink;
 
   
 }
-
-/*.site-navigation a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 127px;
-  margin: 0;
-  padding: 0;
-
-  /* Временно для сетки
-  min-height: 60px;
-  outline: 3px solid rgb(245, 13, 187);
-}*/
 
 .site-navigation a:hover {
   background-color: #293449;
@@ -326,9 +318,10 @@ a {
 }
 
 
-.page-navigation a {
+.site-navigation a {
   font-size: 17px;
-  line-height: 12px;
+  line-height: 17px;
+  font-style: normal;
   color: #ffffff;
 }
 
@@ -398,24 +391,45 @@ a {
   color: #ffffff;
   } 
 
-.offers-list-promo li {
+.promo-row p,
+.promo-column p {
+  margin: 0;
+  margin-left: 23px;
+  margin-top: 23px;
+  margin-bottom: 12px;
+  padding: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   color: #ffffff;
   } 
 
-.offers-list-promo a {
+.promo-row a,
+.promo-column a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 135px;
+  height: 38px;
+  border-radius: 2px;
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
   opacity: 0.1;
   background-color: #000000;
-  } 
+  }
+  
 
-.offers-list-promo a:hover {
+.promo-card a:hover {
   opacity: 0.2;
   background-color: #000000;
   } 
 
-.offers-list-promo a:active {
+.promo-card a:active {
   opacity: 0.3;
   background-color: #000000;
   } 
@@ -562,26 +576,27 @@ body {
   width: 940px;
   margin: 0 auto;
   padding: 0;
-   /* Временно для сетки*/
-  outline: 2px solid blue;
+   /* Временно для сетки
+  outline: 2px solid blue;*/
 }
 
 .page-header {
   width: auto;
+  height: 320px;
   margin: 0 auto;
   background-color: #f4f7f9;
-  /* Временно для сетки*/
-  min-height: 320px;
-  outline: 2px solid green;
+  /* Временно для сетки
+  outline: 2px solid green;*/
 }
 
 .user-navigation-container {
   width: auto;
+  height: 42px;
   margin: 0 auto;
   background-color: #293449;
-  /* Временно для сетки*/
+  /* Временно для сетки
   min-height: 42px;
-  outline: 2px solid yellow;
+  outline: 2px solid yellow;*/
 }
 
 .page-header-container {
@@ -589,9 +604,8 @@ body {
   flex-direction: column;
   align-items: center;
 
-   /* Временно для сетки*/ 
-   /*min-height: 260px;*/
-   outline: 2px solid rgb(4, 4, 71);
+   /* Временно для сетки
+   outline: 2px solid rgb(4, 4, 71);*/ 
 }
 
 .user-navigation {
@@ -599,10 +613,11 @@ body {
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  height: 42px;
 
-  /*Временно для сетки*/
+  /*Временно для сетки
  min-height: 42px;
- outline: 2px solid red;
+ outline: 2px solid red;*/
 }
 
 .page-header-logo {
@@ -614,8 +629,8 @@ body {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   display: inline-block;
  
-  /* Временно для сетки*/ 
-  outline: 3px solid black;
+  /* Временно для сетки
+  outline: 3px solid black;*/ 
 }
 
 .page-header-logo:hover {
@@ -635,29 +650,48 @@ body {
 .user-navigation-wrapper {
   display: flex;
   width: 720px;
+  height: 42px;
   padding: 0;
   margin: 0;
   margin-right: auto;
-  /*Временно для сетки*/
- min-height: 42px;
- outline: 4px solid rgb(247, 239, 239);
+  /*Временно для сетки
+
+ outline: 4px solid rgb(247, 239, 239);*/
 }
 
 .page-search {
+  position: relative;
   margin: 0;
   padding: 0;
   width: 270px;
+  height: 42px;
+  background-color: #293449;
 
- /* Временно для сетки*/ 
+ /* Временно для сетки
   min-height: 42px;
-  outline: 2px solid green;
+  outline: 2px solid green;*/ 
+}
+
+.page-search::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.6;
+  /*временно
+  outline: 2px solid red;*/
 }
 
 .page-search label {
   display: inline-block;
   margin: 0;
   margin-top: 13px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   margin-left: 48px;
   padding: 0;
 
@@ -671,10 +705,10 @@ body {
   width: 450px;
   
 
- /* Временно для сетки*/
+ /* Временно для сетки
   list-style: none; 
   min-height: 42px;
-  outline: 2px solid green;
+  outline: 2px solid green;*/
 }
 
 
@@ -684,10 +718,10 @@ body {
   margin: 0;
   padding: 0;
   width: 940px;
-  /*padding-top: 46px;*/
-   /*Временно для сетки*/
+  height: 175px;
+   /*Временно для сетки
    min-height: 158px;
-   outline: 3px solid rgb(0, 255, 76); 
+   outline: 3px solid rgb(0, 255, 76); */
 }
 
 .shop-info {
@@ -698,9 +732,9 @@ body {
   margin-left: 53px;
   margin-bottom: 41px;
   
-   /* Временно для сетки*/ 
+   /* Временно для сетки
    min-height: 70px;
-   outline: 3px solid red; 
+   outline: 3px solid red; */ 
 }
 
 .shop-contacts {
@@ -714,9 +748,9 @@ body {
   margin-bottom: 41px;
   
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 70px;
-   outline: 3px solid red; 
+   outline: 3px solid red; */
 }
 
 .user-login {
@@ -731,10 +765,10 @@ body {
   margin-bottom: 67px;
   
 
-   /* Временно для сетки */
+   /* Временно для сетки
    min-height: 45px;
    outline: 3px solid red; 
-   list-style: none;
+   list-style: none; */
 }
 
 
@@ -746,10 +780,10 @@ body {
   padding: 0;
   width: 940px;
 
-  /* Временно для сетки*/
+  /* Временно для сетки
   list-style: none;
   min-height: 60px;
-  outline: 3px solid rgb(245, 13, 187);
+  outline: 3px solid rgb(245, 13, 187);*/
 }
 
 .promo-block {
@@ -762,26 +796,23 @@ body {
   padding: 0;
   
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
    min-height: 409px;
-   outline: 3px solid red; 
+   outline: 3px solid red;*/
 }
 
 .promo-row li,
 .promo-column li {
-  /*display: flex;
-  flex-direction: column;
-  justify-content: space-between;*/
   width: 300px;
   height: 123px;
   margin: 0;
   padding: 0;
   
 
-   /*Временно для сетки */
+   /*Временно для сетки 
    list-style: none;
-   outline: 3px solid red;  
+   outline: 3px solid red;*/  
 }
 
 .promo-row {
@@ -792,10 +823,10 @@ body {
   padding: 0;
   
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
    min-height: 123px;
-   outline: 3px solid green; 
+   outline: 3px solid green; */
 }
 
 .promo-row :nth-child(2) {
@@ -811,10 +842,9 @@ body {
   width: 940px;
   
 
-   /* Временно для сетки*/ 
-   /*min-height: 266px;*/
+   /* Временно для сетки
    list-style: none;
-   outline: 3px solid violet; 
+   outline: 3px solid violet; */ 
 }
 
 .slider-content {
@@ -824,9 +854,9 @@ body {
   padding: 0;
   
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid green; 
+   outline: 3px solid green; */
 }
 
 .promo-column {
@@ -838,29 +868,101 @@ body {
   padding: 0;
   
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
 .promo-materials {
+  position: relative;
+  margin: 0;
+  padding: 0;
   background-color: #ffbf47;
 }
 
+.promo-materials::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 213px;
+  width: 44px;
+  height: 65px;
+  background-image: url("../img/materials_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
 .promo-tools {
+  position: relative;
+  margin: 0;
+  padding: 0;
   background-color: #3bbce3;
 }
 
+.promo-tools::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 197px;
+  width: 75px;
+  height: 61px;
+  background-image: url("../img/tools_icon.svg");
+  background-repeat: no-repeat;
+}
+
 .promo-technic {
+  position: relative;
+  margin: 0;
+  padding: 0;
   background-color: #dc91d8;
 }
 
+.promo-technic::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 191px;
+  width: 78px;
+  height: 62px;
+  background-image: url("../img/technic_icon.svg");
+  background-repeat: no-repeat;
+}
+
 .promo-discounts {
+  position: relative;
+  margin: 0;
+  padding: 0;
   background-color: #8ed78f;
 }
 
+.promo-discounts::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 196px;
+  width: 59px;
+  height: 72px;
+  background-image: url("../img/discounts_icon.svg");
+  background-repeat: no-repeat;
+}
+
 .promo-delivery {
+  position: relative;
+  margin: 0;
+  padding: 0;
   background-color: #ffc047;
+}
+
+.promo-delivery::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 191px;
+  width: 78px;
+  height: 63px;
+  background-image: url("../img/delivery_icon.svg");
+  background-repeat: no-repeat;
 }
 
 .popular-container {
@@ -868,15 +970,16 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 940px;
+  height: 89px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 21px;
   background-color: #f9f5f0;
   
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 89px;
-   outline: 3px solid red; 
+   outline: 3px solid red; */
 }
 
 .all-popular-products,
@@ -902,11 +1005,11 @@ body {
   margin-bottom: 21px;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
    min-height: 318px;
    background-color: rgba(68, 216, 236, 0.377);
-   outline: 3px solid red; 
+   outline: 3px solid red;*/ 
 }
 
 .popular-conpanies-list {
@@ -915,19 +1018,23 @@ body {
   align-content: space-between;
   flex-wrap: wrap;
   width: 940px;
+  height: 310px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 85px;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки
    list-style: none;
    min-height: 310px;
    background-color: rgba(68, 216, 236, 0.377);
-   outline: 3px solid red; 
+   outline: 3px solid red;  */
 }
 
 .popular-conpanies-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 145px;
   margin: 0;
@@ -935,9 +1042,9 @@ body {
   background-color: #ffffff;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue;*/ 
 }
 
 .services {
@@ -946,11 +1053,10 @@ body {
   padding: 0;
   margin-bottom: 60px;
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
    min-height: 522px;
-   background-color: rgba(68, 216, 236, 0.377);
-   outline: 3px solid red; 
+   outline: 3px solid yellow;*/ 
 }
 
 .main-company-info {
@@ -1270,6 +1376,78 @@ body {
 .pop-up-cart {
   /* скрыто временно для сетки */
   display: none;
+}
+
+.services-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 940px;
+  height: 522px;
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки*/ 
+  
+   list-style: none;
+   outline: 3px solid pink; 
+
+}
+
+.services-description {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки*/ 
+  
+   list-style: none;
+   outline: 3px solid green; 
+
+}
+
+
+.services-slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 470px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки*/ 
+  
+   list-style: none;
+   outline: 3px solid black; 
+
+}
+
+.services-slide {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 470px;
+  height: 61px;
+
+
+   /* Временно для сетки*/ 
+   list-style: none;
+   outline: 3px solid blue; 
+
 }
 
 .page-numder-container {
