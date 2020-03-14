@@ -82,7 +82,6 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #000000;
 }
 
 .h1-title {
@@ -98,7 +97,7 @@ a {
 .hammer-drill-title,
 .services .h2-title,
 .company-about-container .h2-title,
-.contacts .h2-title,
+.main-contacts .h2-title,
 .hammer-drill-about .h2-title-style {
   font-size: 30px;
   line-height: 30px;
@@ -107,9 +106,17 @@ a {
   color: #000000; 
 }
 
+.main-contacts .h2-title {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
 .company-about-container .h2-title {
   display: block;
+  margin: 0;
   margin-top: 15px;
+  padding: 0;
 }
 
 .hammer-drill-about  {
@@ -209,7 +216,7 @@ a {
   color: #ee3643;
 }
 
-.shop-contacts a {
+.header-contacts a {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
@@ -223,7 +230,8 @@ a {
   padding-right: 40px;
 }
 
-.shop-contacts p {
+.header-contacts p {
+  display: block;
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -538,7 +546,7 @@ a {
 .slider-content a,
 .credit a,
 .company-about-container a,
-.contacts button {
+.write-us {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -561,11 +569,11 @@ a {
 }
 
 .features,
-.contacts p,
+.main-contacts p,
 .hammer-drill-description,
 .services p,
 .services-slide p,
-.company-about-container p {
+.company-about p {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -589,7 +597,45 @@ a {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  }  
+  }
+  
+  
+.company-about a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  width: 220px;
+  height: 38px;
+  margin: 0;
+  margin-top: 32px;
+  background-color: #ee3643;
+}
+
+.company-about p {
+  margin-top: 25px;
+}
+
+.partners-list li {
+  margin-top: 22px;
+}
+
+.main-contacts img {
+  margin-top: 20px;
+}
+
+.write-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 38px;
+  margin-top: 30px;
+  border-radius: 2px;
+  border: none;
+  background-color: #ee3643;
+
+}
 
 .map-message,
 .pop-up-cart {
@@ -822,7 +868,7 @@ body {
    outline: 3px solid red; */ 
 }
 
-.shop-contacts {
+.header-contacts {
   display: flex;
   flex-direction: column;
   width: 270px;
@@ -1152,11 +1198,11 @@ body {
   margin-bottom: 86px;
   padding: 0;
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
    min-height: 390px;
    background-color: rgba(68, 216, 236, 0.377);
-   outline: 3px solid red; 
+   outline: 3px solid red;*/ 
 }
 
 .page-footer {
@@ -1211,6 +1257,33 @@ body {
    min-height: 68px;
    list-style: none;
    outline: 3px solid green; 
+}
+
+.page-footer-logo {
+  width: 220px;
+  height: 47px;
+  padding: 0;
+  margin: 0;
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  display: inline-block;
+ 
+  /* Временно для сетки
+  outline: 3px solid black;*/ 
+}
+
+.page-footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.page-footer-logo:active {
+  background-color: #ba2732;
+}
+
+.page-footer-logo img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 13px;
 }
 
 .footer-info-container {
