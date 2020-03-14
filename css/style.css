@@ -1435,6 +1435,89 @@ body {
    outline: 3px solid blue; 
 }
 
+.social-buttons-list {  
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+
+   /* Временно для сетки */
+   min-height: 42px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.vk-button a {
+  position: relative;
+}
+
+.vk-button a::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  
+  width: 26px;
+  height: 15px;
+  
+  /*text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;*/
+  background: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+ 
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.fb-button a {
+  position: relative;
+}
+
+.fb-button a::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 31px;
+  
+  width: 12px;
+  height: 22px;
+  
+  /*text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;*/
+  background: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+ 
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.inst-button a {
+  position: relative;
+}
+
+.inst-button a::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 61px;
+  
+  width: 21px;
+  height: 21px;
+  
+  /*text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;*/
+  background: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+ 
+   /* Временно для сетки */
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
 .catalog-navigation {
   display: flex;
   justify-content: flex-start;
