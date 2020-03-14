@@ -676,8 +676,20 @@ a {
 }
 
 .partners-list li {
+  position: relative;
   margin-top: 22px;
 }
+
+.partners-list li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 485px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
 
 .main-contacts img {
   margin-top: 20px;
@@ -699,10 +711,6 @@ a {
 .map-message,
 .pop-up-cart {
   display: none;
-}
-
-.page-footer {
-  background-color: #32425c;
 }
 
 .page-footer-navigation,
@@ -884,6 +892,10 @@ body {
   margin-left: 48px;
   padding: 0;
 
+}
+
+.input-search {
+  border: none;
 }
 
  .user-link-list {
@@ -1236,6 +1248,7 @@ body {
    outline: 3px solid blue;*/ 
 }
 
+
 .services {
   width: auto;
   margin: 0 auto;
@@ -1278,11 +1291,11 @@ body {
 .page-footer-navigation {
   /*display: flex;
   justify-content: space-between;*/
-  width: 940px;
+  width: auto;
   height: 193px;
   margin: 0 auto;
   padding: 0;
-
+  background-color: #32425c;
 
    /* Временно для сетки */
    list-style: none;
@@ -1292,10 +1305,12 @@ body {
 .page-footer-info {
   /*display: flex;
   justify-content: space-between;*/
-  width: 940px;
+  width: auto;
   height: 107px;
   margin: 0 auto;
   padding: 0;
+  background-color: #293449;
+  
 
 
    /* Временно для сетки */
@@ -1319,7 +1334,7 @@ body {
 
 .page-footer-logo {
   width: 220px;
-  height: 47px;
+  height: 68px;
   padding: 0;
   margin: 0;
   background-color: #ee3643;
@@ -1330,19 +1345,16 @@ body {
   outline: 3px solid black;*/ 
 }
 
-.page-footer-logo:hover {
-  background-color: #ca2c37;
-}
-
-.page-footer-logo:active {
-  background-color: #ba2732;
+.page-footer-logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .page-footer-logo img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 13px;
+  padding-top: 20px;
 }
+
 
 .footer-info-container {
   display: flex;
@@ -1399,9 +1411,20 @@ body {
 }
 
 .page-footer-info {
+  margin: 0 auto;
+  padding: 0;
+
+
+   /* Временно для сетки */
+   min-height: 68px;
+   list-style: none;
+   outline: 3px solid blue; 
+}
+
+.page-footer-info .container {
   display: flex;
   justify-content: space-between;
-  width: 940px;
+  height: 107px;
   margin: 0 auto;
   padding: 0;
 
