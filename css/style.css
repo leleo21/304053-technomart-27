@@ -97,13 +97,19 @@ a {
 
 .hammer-drill-title,
 .services .h2-title,
-.company-about .h2-title,
+.company-about-container .h2-title,
 .contacts .h2-title,
 .hammer-drill-about .h2-title-style {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: normal;
   color: #000000; 
+}
+
+.company-about-container .h2-title {
+  display: block;
+  margin-top: 15px;
 }
 
 .hammer-drill-about  {
@@ -284,21 +290,30 @@ a {
   text-decoration: underline; 
 }
 
+.page-navigation {
+  margin: 0;
+  padding: 0;
+}
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  
 }
 
 .site-navigation a {
-  width: 127px;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
   height: 60px; 
   margin: 0;
   padding: 0;
-  padding-top: 14px;
-  padding-bottom: 18px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 16px;
+  padding-bottom: 22px;
+  padding-left: 32px;
+  padding-right: 35px;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 
@@ -355,10 +370,50 @@ a {
   color: #000000; 
 }
 
+.product-card {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  min-height: 318px;
+
+
+   /* Временно для сетки 
+   min-height: 318px;
+   list-style: none;
+   outline: 3px solid yellow; */
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;
+  height: 60px;
+  
+  /*text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;*/
+  background: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
 .product-card .h2-title {
+  display: block;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
+  min-height: 40px;
+  margin: 0;
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
   } 
@@ -368,18 +423,49 @@ a {
   line-height: 18px;
   font-weight: bold;
   text-decoration: line-through;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 8px;
   color: #999999;
   font-family: 'PT Sans', 'Arial', sans-serif;
   } 
 
 .product-card a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #000000;
+  width: 120px;
+  height: 40px;
+  margin:0;
+  margin-left: 42px;
+  padding: 0;
   font-family: 'PT Sans', 'Arial', sans-serif;
+  background-color: #ee3643;
   } 
+
+.product-card a::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -40px;
+  
+  width: 0;
+  height: 0;
+  
+  border: 20px solid white;
+  border-left-color: #ee3643;
+  } 
+
+.price-invisible {
+  opacity: 0;
+}
 
 .shop-button button,
 .offers-list-promo a,
@@ -451,7 +537,7 @@ a {
 
 .slider-content a,
 .credit a,
-.company-about a,
+.company-about-container a,
 .contacts button {
   font-size: 14px;
   line-height: 18px;
@@ -479,7 +565,7 @@ a {
 .hammer-drill-description,
 .services p,
 .services-slide p,
-.company-about p {
+.company-about-container p {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -672,17 +758,16 @@ body {
   outline: 2px solid green;*/ 
 }
 
-.page-search::before {
-  content: "";
+.page-search svg {
   position: absolute;
   top: 12px;
   left: 20px;
   width: 17px;
   height: 17px;
-  background-image: url("../img/icon-search.svg");
+  /*background-image: url("../img/icon-search.svg");*/
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.6;
+  opacity: 0.3;
   /*временно
   outline: 2px solid red;*/
 }
@@ -730,7 +815,7 @@ body {
   margin-top: 46px;
   padding: 0;
   margin-left: 53px;
-  margin-bottom: 41px;
+  /*margin-bottom: 41px;*/
   
    /* Временно для сетки
    min-height: 70px;
@@ -745,7 +830,7 @@ body {
   margin: 0;
   margin-top: 46px;
   margin-left: 71px;
-  margin-bottom: 41px;
+  /*margin-bottom: 41px;*/
   
 
    /* Временно для сетки 
@@ -762,7 +847,7 @@ body {
   margin-top: 46px;
   margin-right: auto;
   margin-left: 69px;
-  margin-bottom: 67px;
+  /*margin-bottom: 67px;*/
   
 
    /* Временно для сетки
@@ -1361,17 +1446,7 @@ body {
    outline: 3px solid red; 
 }
 
-.product-card {
-  width: 220px;
-  margin: 0;
-  padding: 0;
 
-
-   /* Временно для сетки */
-   min-height: 318px;
-   list-style: none;
-   outline: 3px solid yellow; 
-}
 
 .pop-up-cart {
   /* скрыто временно для сетки */
