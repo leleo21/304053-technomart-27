@@ -304,12 +304,6 @@ a {
   color: #000000; 
 }
 
-.user-name {
-  width: 299px;
-  height: 45px;
-  background-color: #ffffff;
- }
-
 
 .log-in {
  width: 121px;
@@ -364,6 +358,7 @@ a {
 .user-login-list {
   display: flex;
   justify-content: space-between;
+  height: 20px;
 }
 
 .user-login-list a {
@@ -379,7 +374,7 @@ a {
   text-decoration: underline; 
 }
 
-.user-login-list a:focus {
+.user-login-list a:active {
   color:#32425c;
   opacity: 0.3;
   text-decoration: underline; 
@@ -447,6 +442,8 @@ a {
   color: #000000; 
 }
 
+
+
 .h3-title {
   font-size: 17px;
   line-height: 30px;
@@ -470,6 +467,7 @@ a {
   display: inline-block;
   width: 220px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   text-align: center;
   border: 1px solid #eaeaea;
@@ -1061,6 +1059,16 @@ body {
    list-style: none; */
 }
 
+.login-link-list {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
 
 .site-navigation {
   display: flex;
@@ -1614,12 +1622,13 @@ body {
   width: 940px;
   margin: 0 auto;
   padding: 0;
+  height: 59px;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки
    min-height: 59px;
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue;  */
 }
 
 .catalog-navigation a {
@@ -1642,10 +1651,10 @@ body {
   height: 89px;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 89px;
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
 .catalog-container {
@@ -1656,10 +1665,10 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 1052px;
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue;*/ 
 }
 
 .filer-form-container form {
@@ -1672,10 +1681,10 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 1052px;
    list-style: none;
-   outline: 3px solid red; 
+   outline: 3px solid red;*/ 
 }
 
 .form-container {
@@ -1726,10 +1735,10 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 1052px;
    list-style: none;
-   outline: 3px solid green; 
+   outline: 3px solid green; */
 }
 
 .sorting-container {
@@ -1739,12 +1748,13 @@ body {
   width: 700px;
   margin: 0;
   padding: 0;
+  height: 38px;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 38px;
    list-style: none;
-   outline: 3px solid red; 
+   outline: 3px solid red; */
 }
 
 .sorting-container ul {
@@ -1755,20 +1765,20 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 38px;
    list-style: none;
-   outline: 3px solid red; 
+   outline: 3px solid red; */
 }
 
 .sorting-container .h2-title {
   margin: 0;
   padding: 0;
   width: 218px;
+  height: 38px;
 
-   /* Временно для сетки */
-   min-height: 38px;
-   outline: 3px solid red; 
+   /* Временно для сетки 
+   outline: 3px solid red; */
 }
 
 .sorting-container ul,
@@ -1789,13 +1799,14 @@ color: #000000;
   align-content: space-between;
   width: 700px;
   margin: 0;
+  margin-top: 20px;
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 993px;
    list-style: none;
-   outline: 3px solid red; 
+   outline: 3px solid red; */
 }
 
 
@@ -1891,6 +1902,33 @@ color: #000000;
    min-height: 38px;
    list-style: none;
    outline: 3px solid blue; 
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
+}
+
+.next-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 38px;
+  margin-right: 10px;
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
+}
+
+.number,
+.next-number:active {
+  background-color: #ee3643;
 }
 
 .gray-wide-background {
