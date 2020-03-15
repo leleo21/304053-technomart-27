@@ -300,6 +300,13 @@ a {
   color: #000000; 
 }
 
+.user-name {
+  width: 299px;
+  height: 45px;
+  background-color: #ffffff;
+ }
+
+
 .log-in {
  width: 121px;
  height: 45px;
@@ -323,6 +330,10 @@ a {
   
  }
 
+ .log-in svg:hover {
+   fill: #293449;
+ } 
+
 .registration {
   width: 150px;
   height: 45px;
@@ -337,6 +348,18 @@ a {
 .user-login a:active {
   color: #000000;
   opacity: 0.3;
+}
+
+.catalog-login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.user-login-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .user-login-list a {
@@ -1583,6 +1606,7 @@ body {
 .catalog-navigation {
   display: flex;
   justify-content: flex-start;
+
   width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -1592,6 +1616,13 @@ body {
    min-height: 59px;
    list-style: none;
    outline: 3px solid blue; 
+}
+
+.catalog-navigation a {
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 40px;
 }
 
 .h1-title {
