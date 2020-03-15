@@ -106,32 +106,32 @@
                         </svg>
                     </a>
                 </li> <!-- вставить иконку --> 
-                <li>
+                <li><a href="#">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
                     <path fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
                         c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
                         C7.436,6.16,7.436,5.84,7.237,5.642z"/>
-                    </svg>
-                    <a href="#">Каталог</a></li>
-                <li>
+                    </svg>Каталог</a>
+                </li>
+                <li><a href="#">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
                     <path fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
                         c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
                         C7.436,6.16,7.436,5.84,7.237,5.642z"/>
-                    </svg>
-                    <a href="#">Инструмент</a></li>
-                <li>
+                    </svg>Инструмент</a>
+                </li>
+                <li><a>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
                     <path fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
                         c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
                         C7.436,6.16,7.436,5.84,7.237,5.642z"/>
-                    </svg>
-                    <a>Перфораторы</a></li>    
+                    </svg>Перфораторы</a>
+                </li>    
             </ul>
-            <h1 class="h1-title">Перфораторы</h1>
+            <h1 class="h1-title h1-title-container">Перфораторы</h1>
             <div class="catalog-container">
                 <section class="filter-form filer-form-container">
                     <form class="catalog-navigation" method="get" action="https://echo.htmlacademy.ru">
@@ -193,9 +193,9 @@
                             <h2 class="h2-title">Перфоратор BOSCH<br> BFG 3000</h2>
                             <p>22500 ₽</p>
                             <a href="#">15500 ₽</a> <br>
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -209,9 +209,9 @@
                             <h2 class="h2-title">Перфоратор BOSCH<br> BFG 6000</h2>
                             <p>30500 ₽</p>
                             <a href="#">22500 ₽</a> 
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -223,10 +223,11 @@
                         <li class="product-card">
                             <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                             <h2 class="h2-title">Перфоратор BOSCH<br> BFG 2000</h2>
+                            <p class="price-invisible">30500 ₽</p>
                             <a href="#">12500 ₽</a>   
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -240,9 +241,9 @@
                             <h2 class="h2-title">Перфоратор BOSCH <br>BFG 3000</h2>
                             <p>22500 ₽</p>
                             <a href="#">15500 ₽</a> 
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button ">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -256,9 +257,9 @@
                             <h2 class="h2-title">Перфоратор BOSCH <br>BFG 6000</h2>
                             <p>30500 ₽</p>
                             <a href="#">22500 ₽</a> 
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -270,10 +271,11 @@
                         <li class="product-card">
                             <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                             <h2 class="h2-title">Перфоратор BOSCH <br>BFG 2000</h2>
+                            <p class="price-invisible">30500 ₽</p>
                             <a href="#">12500 ₽</a> 
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -287,9 +289,9 @@
                             <h2 class="h2-title">Перфоратор BOSCH<br> BFG 3000</h2>
                             <p>22500 ₽</p>
                             <a href="#">15500 ₽</a> 
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button ">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -303,9 +305,9 @@
                             <h2 class="h2-title">Перфоратор BOSCH <br>BFG 6000</h2>
                             <p>30500 ₽</p>
                             <a href="#">22500 ₽</a> 
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button ">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
@@ -317,10 +319,11 @@
                         <li class="product-card">
                             <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                             <h2 class="h2-title">Перфоратор BOSCH <br>BFG 2000</h2>
+                            <p class="price-invisible">30500 ₽</p>
                             <a href="#">12500 ₽</a> 
-                            <div class="shop-button pop-up-cart">     <!--кнопки, которые появятся при наведении на картинку-->      
-                                <button type="button">Купить</button><br> <!--открывает окно добавлен в корзину--> 
-                                <button type="button">В закладки</button> 
+                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                                <button class="buy" type="button">Купить</button> 
+                                <button class="bookmark" type="button">В закладки</button> 
                             </div>
                             <div class="pop-up-cart">
                                 <p>Товар добавлен в корзину!</p>
