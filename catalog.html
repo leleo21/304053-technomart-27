@@ -158,8 +158,10 @@
                     <form class="catalog-navigation" method="get" action="https://echo.htmlacademy.ru">
                         <h2 class="h2-title filter-title-container">Фильтр:</h2>  <!-- Как сделать 2 ползунка -->       
                         <div class="filter filter-container">
-                            <h3 class="h3-title">Цена:</h3>
-                            0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
+                            <div class="price-filter-container">
+                                <h3 class="h3-title">Цена:</h3>
+                                0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
+                            </div>
                             <h3 class="h3-title">Производители:</h3>       
                             <ul class="select-company-list list-styles-reset">
                                 <li>
@@ -358,10 +360,10 @@
             </div>
             <section class="container">
                 <ol class="catalog-page-number page-numder-container list-styles-reset">
-                    <li class="number"><a>1</a></li>
-                    <li class="number"><a href="#">2</a></li>
-                    <li class="number"><a href="#">3</a></li>
-                    <li class="next-number"><a href="#">Следующая</a></li>
+                    <li class="active"><a class="number">1</a></li>
+                    <li><a class="number" href="#">2</a></li>
+                    <li><a class="number" href="#">3</a></li>
+                    <li><a class="next-number" href="#">Следующая</a></li>
                 </ol>
             </section>   
             <section class="hammer-drill-about gray-wide-background">

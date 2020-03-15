@@ -102,12 +102,17 @@ a {
 .services .h2-title,
 .company-about-container .h2-title,
 .main-contacts .h2-title,
-.hammer-drill-about .h2-title-style {
+.h2-title-style {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  font-style: normal;
   color: #000000; 
+}
+
+.hammer-drill-description {
+  margin-bottom: 70px;
 }
 
 .main-contacts .h2-title {
@@ -450,6 +455,8 @@ a {
   font-style: bold;
   font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
   color: #000000; 
 }
 
@@ -1702,27 +1709,38 @@ body {
 }
 
 .filter-title-container {
+  display: flex;
+  width:220px;
+  height: 38px; 
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: #f7f3ec;
+
+
+   /* Временно для сетки 
+   min-height: 38px;
+   list-style: none;
+   outline: 3px solid red; */
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
   width:220px; 
   margin: 0;
   padding: 0;
 
 
    /* Временно для сетки */
-   min-height: 38px;
+
    list-style: none;
    outline: 3px solid red; 
 }
 
-.filter-container {
-  width:220px; 
-  margin: 0;
-  padding: 0;
+.price-filter-container {
+  display: block;
 
-
-   /* Временно для сетки */
-
-   list-style: none;
-   outline: 3px solid red; 
 }
 
 
@@ -1749,6 +1767,7 @@ body {
   margin: 0;
   padding: 0;
   height: 38px;
+  background-color: #f7f3ec;
 
 
    /* Временно для сетки 
@@ -1926,8 +1945,15 @@ color: #000000;
   border-radius: 2px;
 }
 
-.number,
-.next-number:active {
+.catalog-page-number a:hover {
+  border: solid 1px #bdc6ca;
+}
+
+.catalog-page-number a:active {
+  border: solid 1px #ee3643;
+}
+
+.active a {
   background-color: #ee3643;
 }
 
