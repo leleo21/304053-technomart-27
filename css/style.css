@@ -130,7 +130,7 @@ a {
 }
 
 .user-link-list a,
-.page-search label {
+.page-search .input-search {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -535,6 +535,32 @@ a {
   opacity: 0;
 }
 
+.product-card .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.product-card .actions .buy,
+.product-card .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+}
+
 .shop-button button,
 .offers-list-promo a,
 .all-popular-products,
@@ -885,7 +911,7 @@ body {
   outline: 2px solid red;*/
 }
 
-.page-search label {
+.page-search .input-search {
   display: inline-block;
   margin: 0;
   margin-top: 13px;
