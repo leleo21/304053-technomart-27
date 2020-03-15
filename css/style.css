@@ -537,12 +537,18 @@ a {
 
 .product-card .actions {
   position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 44px;
+  left: 45px;
   
-  width: 218px;
-  height: 88px;
-  padding: 40px 0;
+  width: 150px;
+  height: 110px;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
@@ -552,14 +558,43 @@ a {
 .product-card .actions .bookmark {
   display: block;
   width: 129px;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 7px;
   padding: 7px 0;
   
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
+
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+.product-card .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.product-card .actions {
+  display: none;
+}
+
+.product-card:hover img {
+  visibility: hidden;
+}
+
+.product-card:hover .actions {
+  display: block;
+}
+
+
 
 .shop-button button,
 .offers-list-promo a,
