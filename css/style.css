@@ -1677,32 +1677,43 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 68px;
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
 .social-buttons-list {  
   display: flex;
   justify-content: space-between;
-  width: 130px;
+  width: 140px;
+  height: 42px;
+  margin-left: 40px;
 
-   /* Временно для сетки */
+   /* Временно для сетки
    min-height: 42px;
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue;  */
 }
 
-.vk-button a {
+.social-button {
   position: relative;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-color: #212a3a;
+  border-radius: 50%;
 }
+
+/*.vk-button a {
+  position: relative;
+}*/
 
 .vk-button a::before {
   content: "";
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 12px;
+  right: 10px;
   
   width: 26px;
   height: 15px;
@@ -1713,20 +1724,17 @@ body {
   background: url("../img/vk-icon.svg");
   background-repeat: no-repeat;
  
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
-.fb-button a {
-  position: relative;
-}
 
 .fb-button a::before {
   content: "";
   position: absolute;
-  top: 1px;
-  right: 31px;
+  top: 12px;
+  right: 15px;
   
   width: 12px;
   height: 22px;
@@ -1737,33 +1745,28 @@ body {
   background: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
  
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue;*/ 
 }
 
-.inst-button a {
-  position: relative;
-}
 
 .inst-button a::before {
   content: "";
   position: absolute;
-  top: 1px;
-  right: 61px;
+  top: 12px;
+  right: 10px;
   
   width: 21px;
   height: 21px;
   
-  /*text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;*/
+
   background: url("../img/insta-icon.svg");
   background-repeat: no-repeat;
  
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
 .catalog-navigation {
