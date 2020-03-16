@@ -164,9 +164,6 @@ a {
   background-color:#293449;
 }
 
-.user-link:active {
-  opacity: 0.6;
-}
 
 .user-link:hover,
 .page-search:hover {
@@ -432,7 +429,7 @@ a {
 }
 
 .site-navigation a:active {
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
 
@@ -633,6 +630,28 @@ a {
   display: block;
 }
 
+.product-card:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.product-card .actions .buy:hover {
+  background-color: #5fbb2d;
+}
+
+.product-card .actions .buy:active {
+  background-color: #518534;
+}
+
+.product-card .actions .bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.product-card .actions .bookmark:active {
+  opacity: 0.3;
+
+}
+
+
 
 
 .shop-button button,
@@ -704,7 +723,7 @@ a {
 
 .slider-content a,
 .credit a,
-.company-about-container a,
+.company-about a,
 .write-us,
 .submit-message-container button {
   font-size: 14px;
@@ -1108,6 +1127,7 @@ body {
   outline: 2px solid green;*/ 
 }
 
+
 .page-search svg {
   position: absolute;
   top: 12px;
@@ -1344,13 +1364,18 @@ body {
   border-radius: 2px;
 }
 
-.slider-content a:hover {
+.slider-content a,
+.popular-container a,
+.company-about a:hover {
   background-color: #ca2c37;
 }
 
-.slider-content a:active {
+.slider-content a,
+.popular-container a,
+.company-about a:active {
   background-color: #ba2732;
 }
+
 
 .slider-left,
 .slider-right {
@@ -1571,7 +1596,7 @@ body {
    outline: 3px solid red;  */
 }
 
-.popular-conpanies-list li {
+.popular-conpanies-list a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1585,6 +1610,14 @@ body {
    /* Временно для сетки 
    list-style: none;
    outline: 3px solid blue;*/ 
+}
+
+.popular-conpanies-list a:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-conpanies-list a:active {
+  opacity: 0.3;
 }
 
 
