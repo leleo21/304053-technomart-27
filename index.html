@@ -284,22 +284,35 @@
                 </section>
             </div>
             <div class="map-message map-message-container"> <!--окно скрыто в css-->
-                <!--<form class="message-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p class="message-user-name">
-                      <label for="user_name">Ваше имя</label>
-                      <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
-                    </p>
-                    <p class="message-user-email">
-                        <label for="user_email">Ваш e-mail</label>
-                        <input id="user_email" type="email" name="login" placeholder="email@example.com">
-                    </p>
-                    <p class="message-user-text">
-                        <label for="mail_text">Текст письма:</label><br>
-                        <textarea name="mail" id="mail_text" rows="10" placeholder="В свободной форме"></textarea>
-                    </p>
-                    <button type="submit">Отправить</button>
-                </form>-->
-                <button class="modal-close" type="button">Закрыть</button>
+                <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="message-form-container">
+                        <div class="data-message-container">
+                            <p class="message-user-name">
+                            <label for="user_name">Ваше имя:</label>
+                            <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
+                            </p>
+                            <p class="message-user-email">
+                                <label for="user_email">Ваш e-mail:</label>
+                                <input id="user_email" type="email" name="login" placeholder="email@example.com">
+                            </p>
+                        </div>
+                        <div class="text-message-container">
+                            <p class="message-user-text">
+                                <label for="mail_text">Текст письма:</label><br>
+                                <textarea name="mail" id="mail_text" rows="10" placeholder="В свободной форме"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="submit-message-container">
+                        <button class="submit-message-button" type="submit">Отправить</button>
+                    </div>
+                </form>
+                <button class="modal-close" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                        <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
+                    </svg>
+                    <span class="visually-hidden">Закрыть</span>
+                </button>
             </div>
         </main>
         <footer class="page-footer">
