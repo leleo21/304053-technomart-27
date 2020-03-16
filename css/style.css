@@ -496,9 +496,7 @@ a {
   width: 60px;
   height: 60px;
   
-  /*text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;*/
+
   background: url("../img/new-flag.png");
   background-repeat: no-repeat;
 }
@@ -802,9 +800,60 @@ a {
 
 }
 
-.map-message,
 .pop-up-cart {
   display: none;
+}
+
+.map-message {
+  position: fixed; 
+  color: #000000;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.map-message-container {
+  top: 120px;
+  left: 50%;
+
+  width: 620px;
+  height: 430px;
+  margin-left: -400px;
+  padding: 50px 80px;
+}
+
+/*.map-message::before {
+  content:  "";
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  
+  width: 21px;
+  height: 21px;
+
+
+  cursor: pointer;
+  
+
+  background: url("../img/form-close.svg");
+  background-repeat: no-repeat;
+}*/
+
+.modal-close::before {
+  content:  "";
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  
+  width: 21px;
+  height: 21px;
+
+
+  cursor: pointer;
+  
+
+  background: url("../img/form-close.svg");
+  background-repeat: no-repeat;
 }
 
 .page-footer-navigation,
