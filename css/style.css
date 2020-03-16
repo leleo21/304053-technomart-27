@@ -693,14 +693,13 @@ a {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #000000;
   } 
 
 .slider-description {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #000000;
+
   } 
 
 .slider-content a,
@@ -1297,6 +1296,7 @@ body {
 }
 
 .slider-content {
+  position: relative;
   width: 620px;
   height: 266px;
   margin: 0;
@@ -1306,6 +1306,97 @@ body {
    /* Временно для сетки 
    list-style: none;
    outline: 3px solid green; */
+}
+
+
+
+.slider-title {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 94px;
+  height: 30px;
+
+
+  
+}
+
+.slider-description {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 161px;
+  height: 17px;
+
+
+}
+
+.slider-content a {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 200px;
+  left: 20px;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 2px;
+}
+
+.slider-content a:hover {
+  background-color: #ca2c37;
+}
+
+.slider-content a:active {
+  background-color: #ba2732;
+}
+
+.slider-left,
+.slider-right {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.slider-left {
+  position: absolute;
+  top: 110px;
+  left: 20px;
+  width: 22px;
+  height: 40px;
+
+}
+
+.slider-left svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 40px;
+
+
+
+}
+
+.slider-right {
+  position: absolute;
+  top: 110px;
+  left: 570px;
+  width: 22px;
+  height: 40px;
+
+
+}
+
+.slider-right svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 40px;
+
+
 }
 
 .promo-column {
@@ -1502,6 +1593,7 @@ body {
   margin: 0 auto;
   padding: 0;
   margin-bottom: 60px;
+  min-height: 522px;
 
    /* Временно для сетки 
    list-style: none;
@@ -1516,6 +1608,7 @@ body {
   margin: 0 auto;
   margin-bottom: 86px;
   padding: 0;
+  min-height: 390px;
 
    /* Временно для сетки 
    list-style: none;
@@ -1531,9 +1624,9 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
 .page-footer-navigation {
@@ -1545,9 +1638,9 @@ body {
   padding: 0;
   background-color: #32425c;
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
 .page-footer-info {
@@ -1561,9 +1654,9 @@ body {
   
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid yellow; 
+   outline: 3px solid yellow; */
 }
 
 .footer-navigation-container {
@@ -1572,12 +1665,13 @@ body {
   width: 940px;
   margin: 0;
   padding: 0;
+  min-height: 68px;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 68px;
    list-style: none;
-   outline: 3px solid green; 
+   outline: 3px solid green; */
 }
 
 .page-footer-logo {
@@ -1613,9 +1707,9 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid red; 
+   outline: 3px solid red;*/ 
 }
 
 .footer-contacts-container {
@@ -1625,9 +1719,9 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue;*/ 
 }
 
 .footer-navigation-list {
@@ -1638,10 +1732,10 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    min-height: 68px;
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
 }
 
 .footer-offers-list {
@@ -1653,20 +1747,21 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid white; 
+   outline: 3px solid white;*/ 
 }
 
 .page-footer-info {
   margin: 0 auto;
   padding: 0;
+  min-height: 68px;
 
 
-   /* Временно для сетки */
-   min-height: 68px;
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */
+   
 }
 
 .page-footer-info .container {
@@ -1675,10 +1770,11 @@ body {
   height: 107px;
   margin: 0 auto;
   padding: 0;
+  min-height: 68px;
 
 
    /* Временно для сетки 
-   min-height: 68px;
+   
    list-style: none;
    outline: 3px solid blue; */
 }
