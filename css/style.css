@@ -1365,14 +1365,12 @@ body {
 }
 
 .slider-content a,
-.popular-container a,
-.company-about a:hover {
+.popular-container a:hover {
   background-color: #ca2c37;
 }
 
 .slider-content a,
-.popular-container a,
-.company-about a:active {
+.popular-container a:active {
   background-color: #ba2732;
 }
 
