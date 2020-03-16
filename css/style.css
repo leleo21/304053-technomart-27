@@ -1705,9 +1705,12 @@ body {
   border-radius: 50%;
 }
 
-/*.vk-button a {
-  position: relative;
-}*/
+.social-button:hover,
+.social-button:active {
+  background-color: #ee3643;
+  
+}
+
 
 .vk-button a::before {
   content: "";
@@ -1718,9 +1721,6 @@ body {
   width: 26px;
   height: 15px;
   
-  /*text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;*/
   background: url("../img/vk-icon.svg");
   background-repeat: no-repeat;
  
@@ -1738,10 +1738,7 @@ body {
   
   width: 12px;
   height: 22px;
-  
-  /*text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;*/
+
   background: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
  
