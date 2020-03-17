@@ -863,8 +863,9 @@ a {
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 200;
 
-  display: none; 
+  display: block; 
 }
 
 .map-message-container {
@@ -875,6 +876,26 @@ a {
   height: 430px;
   margin-left: -400px;
   padding: 50px 80px;
+}
+
+.cart-message-container {
+  top: 120px;
+  left: 50%;
+
+  width: 620px;
+  height: 282px;
+  margin-left: -400px;
+  padding: 50px 80px;
+}
+
+.cart-message p {
+  display: block;
+  margin: 0;
+  margin-bottom: 68px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .modal-close {
@@ -1389,12 +1410,19 @@ body {
   border-radius: 2px;
 }
 
-.slider-content a,
+.slider-content a:hover {
+  background-color: #ca2c37;
+}
+
+.slider-content a:active {
+  background-color: #ba2732;
+}
+
+
 .popular-container a:hover {
   background-color: #ca2c37;
 }
 
-.slider-content a,
 .popular-container a:active {
   background-color: #ba2732;
 }
