@@ -469,26 +469,10 @@ a {
   color: #000000; 
 }
 
-/*.select-company-list li {
-  position: relative;
-}
-
-.select-company-list li svg  {
-  position: absolute;
-  top: -5px;
-  right: 192px;
-  margin-right: 8px;
-  
-  width: 23px;
-  height: 23px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-}
 
 .modal-close:active .added-cart-message {
   display: none;
-}*/
+}
 
 
 /*.checkbox-on {
@@ -499,6 +483,35 @@ a {
   cursor: pointer;
   display: block;
 }*/
+
+.select-company-list {
+  position: relative;
+}
+
+
+
+.checkbox-on {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+
+}
+
+.checkbox-on svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+
+
+
+}
 
 .product-card {
   position: relative;
@@ -1507,7 +1520,8 @@ body {
 }
 
 
-.slider-left,
+
+.slider-left ,
 .slider-right {
   cursor: pointer;
   background-color: transparent;
