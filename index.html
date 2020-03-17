@@ -164,12 +164,26 @@
                             </button> 
                             <button class="bookmark" type="button">В закладки</button> 
                         </div>
-                        <div class="pop-up-cart">
-                            <p>Товар добавлен в корзину!</p>
-                            <button type="button">Оформить заказ</button> <br>
-                            <button type="button">Продолжить покупки</button> <br>
-                            <button type="button"><!--здесь будет иконка--></button>         
-                        </div>                       
+                        <div class="added-cart-message cart-message-container"> <!--окно скрыто в css-->
+                            <div class="cart-message">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
+                                        <circle cx="33" cy="33" r="33" fill="#63A63E"/>
+                                        <path fill="#FFF" d="M49.641 21.066a1.003 1.003 0 0 0-1.414 0L29.788 39.504a1.003 1.003 0 0 1-1.414 0l-8.14-8.139a1.003 1.003 0 0 0-1.414 0L15.285 34.9a1.003 1.003 0 0 0 0 1.414l13.089 13.09a1.003 1.003 0 0 0 1.414 0l3.536-3.536 1.414-1.414 18.438-18.438a1.003 1.003 0 0 0 0-1.414l-3.535-3.536z"/>
+                                    </svg>Товар добавлен в корзину!
+                                </p>
+                            </div>
+                            <div class="cart-buttons-container">
+                                <button class="make-order-button" type="button">Оформить заказ</button>
+                                <button class="continue-shop-button" type="button">Продолжить покупки</button>
+                            </div>      
+                            <button class="modal-close" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                                    <path fill="#ee3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414z"/>
+                                </svg>
+                                <span class="visually-hidden">Закрыть</span>
+                            </button>
+                        </div>                           
                     </li>
                     <li class="product-card">
                         <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000"> 
@@ -264,32 +278,36 @@
                     </div>
                     <div class="services-container">
                         <div class="services-slider-container">
-                            <div class="delivery services-slide"> 
-                                <button type="button">Доставка</button>                                                   
-                                <!--<p class="delivery services-title-style">Доставка</p>
-                                <p>Мы с удовольствием доставим ваш товар прямо<br>
-                                    к вашему подъезду совершенно бесплатно!<br>
-                                    Ведь мы неплохо заработаем,<br> 
-                                    поднимая его на ваш этаж!
-                                </p>-->
+                            <div class="services-buttons-container">
+                                <button type="button"><span class="service-button">Доставка</span></button> 
+                                <button type="button"><span class="service-button">Гарантия</span></button>
+                                <button type="button"><span class="service-button">Кредит</span></button>
                             </div>
-                            <div class="warranty services-slide">
-                                <button type="button">Гарантия</button>                                                                                   
-                                <!-- <p class="warranty services-title-style">Гарантия</p>
-                                <p> Если купленный у нас товар поломается или заискрит,<br> 
-                                    а также в случае пожара, спровоцированного его возгоранием,<br>  
-                                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> 
-                                    сгоревший товар на новый.<br> 
-                                    Дом уж восстановите как-нибудь сами.
-                                </p>---->
-                            </div>
-                            <div class="credit services-slide">
-                                <button type="button">Кредит</button>                                                                                
-                                <!---<p class="credit services-title-style">Кредит</p>
-                                <p>Залезть в долговую яму стало проще!<br> 
-                                Кредитные консультанты придут вам на помощь.
-                                </p>
-                                <a href="#">Отправить заявку</a>----->
+                            <div class="services-slides-container">                                                                                                                                                                                                                
+                                <div class="delivery services-slide">     
+                                    <p class="delivery services-title-style">Доставка</p>
+                                    <p>Мы с удовольствием доставим ваш товар прямо<br>
+                                        к вашему подъезду совершенно бесплатно!<br>
+                                        Ведь мы неплохо заработаем,<br> 
+                                        поднимая его на ваш этаж!
+                                    </p>
+                                </div>
+                                <!-- <div class="warranty services-slide">    
+                                    <p class="warranty services-title-style">Гарантия</p>
+                                    <p> Если купленный у нас товар поломается или заискрит,<br> 
+                                        а также в случае пожара, спровоцированного его возгоранием,<br>  
+                                        вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> 
+                                        сгоревший товар на новый.<br> 
+                                        Дом уж восстановите как-нибудь сами.
+                                    </p>
+                                </div>
+                                <div class="credit services-slide">      
+                                   <p class="credit services-title-style">Кредит</p>
+                                    <p>Залезть в долговую яму стало проще!<br> 
+                                    Кредитные консультанты придут вам на помощь.
+                                    </p>
+                                    <a href="#">Отправить заявку</a>
+                                </div>---->
                             </div>
                         </div>
                         <img src="img/delivery.jpg" width="468" height="261" alt="Доставка">

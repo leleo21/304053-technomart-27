@@ -648,10 +648,6 @@ a {
   background-color: #518534;
 }
 
-.actions .buy:active .added-cart-message  {
-  display: block;
-  
-}
 
 .actions .buy:hover,
 .actions .buy:active {
@@ -797,11 +793,58 @@ a {
   color: #32425c;
   } 
 
-.services-slide button {
+.services-buttons-container button {
+  display: block;
   font-size: 21px;
   line-height: 30px;
-  color: #32425c;
+  width: 240px;
+  height: 61px;
+  color: #ffffff;
+  background-color: #32425c;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  border: 0;
   } 
+
+.service-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 23px;
+}
+
+.services-buttons-container button:hover {
+  background-color: #293449;
+}
+
+.services-buttons-container button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.services-slides-container {
+  display: block;
+  width: 440px;
+  height: 183px;
+
+  /*временно для сетки*/
+  border: 2px solid red;
+}
+
+.services-slide {
+  display: block;
+  width: 440px;
+  height: 183px;
+
+  /*временно для сетки*/
+  border: 2px solid blue;
+}
+
+.services-slide p {
+  margin: 0;
+  margin-left: 80px;
+
+}
+
 
 .partners-list {
   font-size: 18px;
@@ -859,11 +902,19 @@ a {
 
 }
 
-.pop-up-cart {
-  display: none;
+
+
+.map-message {   /*окно скрыто*/
+  position: fixed; 
+  color: #000000;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 200;
+
+  display: none; 
 }
 
-.map-message,
 .added-cart-message {   /*окно скрыто*/
   position: fixed; 
   color: #000000;
@@ -927,6 +978,10 @@ a {
   cursor: pointer;
   background-color: transparent;
   border: 0;
+}
+
+.modal-close:active .added-cart-message {
+  display: none;
 }
 
 .modal-close svg {
@@ -2195,13 +2250,6 @@ color: #000000;
    outline: 3px solid red; */
 }
 
-
-
-.pop-up-cart {
-  /* скрыто временно для сетки */
-  display: none;
-}
-
 .services-main-container {
   display: flex;
   flex-direction: column;
@@ -2244,11 +2292,31 @@ color: #000000;
 
 .services-slider-container {
   display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 183px;
+  margin: 0;
+  padding: 0;
+
+
+   /* Временно для сетки*/
+  
+   list-style: none;
+   outline: 3px solid black;  
+
+}
+
+
+
+.services-buttons-container {
+  position: relative;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 470px;
-  height: 300px;
+  width: 240px;
+  height: 183px;
   margin: 0;
+  margin-top: 23px;
   padding: 0;
 
 
@@ -2259,9 +2327,20 @@ color: #000000;
 
 }
 
+.services-buttons-container::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 196px;
+  width: 59px;
+  height: 72px;
+  background-image: url("../img/ser");
+  background-repeat: no-repeat;
+
+}
+
 .services-slide {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   margin: 0;
   padding: 0;
   width: 470px;
