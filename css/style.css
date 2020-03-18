@@ -1159,6 +1159,7 @@ a {
 
 .page-footer-navigation a:active {
   color:rgba(241, 245, 247, 0.5);
+  text-decoration: none;
 }
 
 .footer-offers-list a {
