@@ -2263,7 +2263,7 @@ body {
    /* Временно для сетки 
    min-height: 38px;
    list-style: none;
-   outline: 3px solid red; */
+   outline: 3px solid red;*/ 
 }
 
 .sorting-container::after {
@@ -2280,7 +2280,7 @@ body {
 
 }
 
-.sorting-container::after {
+.sorting-container::before {
   content: "";
   position: absolute;
   top: 14px;
@@ -2289,7 +2289,7 @@ body {
   width: 11px;
   height: 10px;
   
-  background: url("../img/ic");
+  background: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
 
 }
@@ -2297,8 +2297,10 @@ body {
 .sorting-container ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 481px;
   margin: 0;
+  margin-right: 106px;
   padding: 0;
 
 
@@ -2308,11 +2310,11 @@ body {
    outline: 3px solid red; */
 }
 
-.sorting-container a {
+.sorting-container a{
   display: block;
-  margin-top: 10px;
-
+  margin-left: 50px;
 }
+
 
 .sorting-container .h2-title {
   margin: 0;
