@@ -448,6 +448,7 @@ a {
 
 
 
+
 .h3-title {
   font-size: 17px;
   line-height: 30px;
@@ -533,7 +534,6 @@ a {
 }
 
 .charge-type-list input:checked + label:before {
-
   background: url("../img/radio-on.svg");
   background-repeat: no-repeat;
 }
@@ -2179,10 +2179,10 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки  */
+   /* Временно для сетки  
 
    list-style: none;
-   outline: 3px solid red;
+   outline: 3px solid red;*/
 }
 
 .filter ul {
@@ -2199,6 +2199,9 @@ body {
   width: 140px;
   height: 38px;
   margin-top: 75px;
+  border: 1px solid  #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
 }
 
 .price-filter-container {
