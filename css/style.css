@@ -2537,15 +2537,46 @@ color: #000000;
 .guarantee::after {
   content: "";
   position: absolute;
-  top: 21px;
-  left: 231px;
+  top: 18px;
+  left: 271px;
   width: 389px;
-  height: 283;
+  height: 283px;
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
 
   /*border: 2px solid green;*/
 
+}
+
+.credit::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 200px;
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+
+  /*border: 2px solid green;*/
+
+}
+
+.credit {
+  white-space: nowrap;
+}
+
+.credit-slide-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  color:#ffffff;
+  text-transform: uppercase;
+  width: 195px;
+  height: 38px;
+  background-color: #ff5357;
 }
 
 .services-buttons-container button {
