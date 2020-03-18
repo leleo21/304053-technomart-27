@@ -470,48 +470,78 @@ a {
 }
 
 
-.modal-close:active .added-cart-message {
+.select-company-list input {
   display: none;
+
 }
 
-
-/*.checkbox-on {
-  display: none;
-}
-
-.checkbox-off:active .checkbox-on {
-  cursor: pointer;
-  display: block;
-}*/
-
-.select-company-list {
+.select-company-list label {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
   position: relative;
 }
 
-
-
-.checkbox-on {
+.select-company-list label::before
+{
+  content: "";
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: -4px;
+  left: -30px;
+  
   width: 23px;
   height: 23px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
+  
+  background: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.select-company-list input:checked + label:before {
+
+  background: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+.select-company-list input:disabled + label:before {
+  background: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.charge-type-list input {
+  display: none;
 
 }
 
-.checkbox-on svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 23px;
-  height: 23px;
-
-
-
+.charge-type-list label {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  position: relative;
 }
+
+.charge-type-list label::before
+{
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -30px;
+  
+  width: 25px;
+  height: 25px;
+  
+  background: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.charge-type-list input:checked + label:before {
+
+  background: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+}
+.charge-type-list input:disabled + label:before {
+  background: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
 
 .product-card {
   position: relative;
@@ -973,9 +1003,6 @@ a {
   border: 0;
 }
 
-.modal-close:active .added-cart-message {
-  display: none;
-}
 
 .modal-close svg {
   position: absolute;
@@ -2152,10 +2179,10 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки 
+   /* Временно для сетки  */
 
    list-style: none;
-   outline: 3px solid red; */
+   outline: 3px solid red;
 }
 
 .filter ul {
