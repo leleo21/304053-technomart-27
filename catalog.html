@@ -156,11 +156,13 @@
             <div class="catalog-container">
                 <section class="filer-form-container">
                     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-                        <h2 class="filter-title-container h2-title ">Фильтр:</h2>  <!-- Как сделать 2 ползунка -->       
+                        <h2 class="filter-title-container "><span class="h2-title">Фильтр:</span></h2>  
                         <div class="filter filter-container">
                             <div class="price-filter-container">
                                 <h3 class="h3-title">Цена:</h3>
-                                0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
+                                <div class="pricecount-container">
+                                    0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
+                                </div>    
                             </div>
                             <h3 class="h3-title">Производители:</h3>       
                             <ul class="select-company-list list-styles-reset">
@@ -261,13 +263,7 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                            </div>              
+                            </div>             
                         </li>
                         <li class="product-card">
                             <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
@@ -283,13 +279,7 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                            </div>                  
+                            </div>                 
                         </li>
                         <li class="product-card">
                             <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000">
@@ -305,12 +295,6 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
                             </div>              
                         </li>
                         <li class="product-card">
@@ -327,13 +311,7 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                            </div>                 
+                            </div>                
                         </li>
                         <li class="product-card">
                             <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
@@ -349,13 +327,7 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                            </div>                      
+                            </div>                     
                         </li>
                         <li class="product-card">
                             <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="bosch_bfg_3000"> 
@@ -371,13 +343,7 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                            </div>                  
+                            </div>                 
                         </li>
                         <li class="product-card">
                             <img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="bosch_bfg_6000.jpg"> 
@@ -393,20 +359,14 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                            </div>                   
+                            </div>                 
                         </li>
                         <li class="product-card">
                             <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="bosch_bfg_2000.jpg"> 
                             <h2 class="h2-title">Перфоратор BOSCH <br>BFG 2000</h2>
                             <p class="price-invisible">30500 ₽</p>
                             <a href="#">12500 ₽</a> 
-                            <div class="shop-button actions">     <!--кнопки, которые появятся при наведении на картинку-->      
+                            <div class="shop-button actions">         
                                  <button class="buy" type="button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
@@ -415,13 +375,7 @@
                                 </svg>Купить
                             </button> 
                                 <button class="bookmark" type="button">В закладки</button> 
-                            </div>
-                            <div class="pop-up-cart">
-                                <p>Товар добавлен в корзину!</p>
-                                <button type="button">Оформить заказ</button> <br>
-                                <button type="button">Продолжить покупки</button> <br>
-                                <button type="button"><!--здесь будет иконка--></button> <!--кнопка закрыть -при нажатии на крестик в правом верхнем углу закрывается всплывающее окно-->         
-                            </div>                    
+                            </div>                   
                         </li>
                     </ul>
                 </section>

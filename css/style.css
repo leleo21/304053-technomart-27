@@ -2152,6 +2152,8 @@ body {
    outline: 3px solid red; 
 }
 
+
+
 .filter-title-container {
   display: flex;
   align-items: center;
@@ -2169,6 +2171,18 @@ body {
    list-style: none;
    outline: 3px solid red; */
 }
+
+.filter-form .h2-title {
+  margin-top: -7px;
+  margin-left: 18px;
+  width: 53px;
+  height: 9px;
+
+   /* Временно для сетки 
+   outline: 3px solid red; */
+}
+
+
 
 
 .filter-container {
@@ -2209,6 +2223,18 @@ body {
 
 }
 
+.pricecount-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:  'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  width: 220px;
+  height: 130px;
+  background-color: #f7f3ec;
+}
+
 
 .catalog-product-container {
   display: flex;
@@ -2244,7 +2270,7 @@ body {
 
 .sorting-container ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 481px;
   margin: 0;
   padding: 0;
@@ -2283,6 +2309,21 @@ font-weight: normal;
 font-family: 'PT Sans', 'Arial', sans-serif;
 color: #000000;
 
+}
+
+.sorting-container a {
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-container a:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-container a:active {
+  color: #ee3643;
+  border: 0;
 }
 
 .product-list-container {
