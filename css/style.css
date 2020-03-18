@@ -314,7 +314,8 @@ a {
   color: #32425c; 
 }
 
-.user-login a {
+.user-login a,
+.user-login p {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
@@ -347,6 +348,7 @@ a {
   width: 20px;
   height: 17px;
   background-position: 0 0;
+  fill: #c5c5c5;
   
  }
 
@@ -361,10 +363,9 @@ a {
   background-color: #ffffff;
  }
 
-.user-login a :not(.user-name):hover {
+.user-login a:hover {
   color:#ee3643; 
 }
-
 
 
 .user-login a:active {
@@ -1266,11 +1267,11 @@ body {
   outline: 3px solid black;*/ 
 }
 
-.page-header-logo:hover {
+.page-header-logo a:hover {
   background-color: #ca2c37;
 }
 
-.page-header-logo:active {
+.page-header-logo a:active {
   background-color: #ba2732;
 }
 
@@ -1539,12 +1540,14 @@ body {
   
 }
 
+
 .slider-description {
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 20px;
   width: 161px;
   height: 17px;
+  white-space: nowrap;
 
 
 }
@@ -1586,6 +1589,7 @@ body {
   cursor: pointer;
   background-color: transparent;
   border: 0;
+  z-index: 20;
 }
 
 .slider-left {
@@ -1603,6 +1607,7 @@ body {
   left: 0;
   width: 22px;
   height: 40px;
+  fill: #ffffff;
 
 
 
@@ -1624,6 +1629,7 @@ body {
   left: 0;
   width: 22px;
   height: 40px;
+  fill: #ffffff;
 
 
 }
@@ -2514,7 +2520,21 @@ color: #000000;
 
 }
 
-.services-slide::after {
+.delivery::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 231px;
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+
+  /*border: 2px solid green;*/
+
+}
+
+.guarantee::after {
   content: "";
   position: absolute;
   top: 21px;

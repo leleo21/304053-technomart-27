@@ -11,7 +11,7 @@
             <div class="user-navigation-container">
                 <div class="container">
                     <div class="user-navigation">
-                        <a class="page-header-logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип"></a> <!--в каталоге будет ссылкой-->
+                        <div class="page-header-logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип"></div> 
                         <div class="user-navigation-wrapper"> 
                             <form action="https://echo.htmlacademy.ru" method="post">
                                 <div class="page-search">
@@ -68,13 +68,13 @@
                             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                         </div>      
                         <ul class="user-login list-styles-reset">
-                            <li class="log-in">
+                            <li class="log-in log-in-main">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
                                 <g>
-                                    <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+                                    <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
                                 </g>
-                                <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+                                <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
                                     v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
                                 </svg>
                                 <a href="#">Войти</a>
@@ -109,37 +109,34 @@
                         <div class="promo-container">
                             <ul class="slider-content list-styles-reset">
                                 <li><img src="img/slide-image1.jpg" width="620" height="266" alt="Слайдер_дрели">
-                                    <p class="slider-title">Дрели</p>
-                                    <p class="slider-description">Соседям на радость!</p>
-                                    <a href="catalog.html">Открыть каталог</a>
+                                        <p class="slider-title">Дрели</p>
+                                        <p class="slider-description">Соседям на радость!</p>
+                                        <a href="catalog.html">Открыть каталог</a>
                                     <button class="slider-left" type="button">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
-                                            <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
+                                            <path d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
                                         </svg>                                        
                                         <span class="visually-hidden">Слайдер влево</span>
                                     </button>
                                     <button class="slider-right" type="button">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
-                                            <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
+                                            <path d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
                                         </svg>                                        
                                         <span class="visually-hidden">Слайдер вправо</span>
                                     </button>
                                 </li> 
-                                    <!--<li><img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы">
-                                        <p class="slider-title">Перфораторы</p>
-                                        <p class="slider-description">Настоящие мужские игрушки</p>
-                                        <a href="catalog.html">Открыть каталог</a>
-                                    </li>-->
+                                <!--<li>
+                                    <img src="img/slide-image2.jpg" width="620" height="266" alt="Слайдер_перфораторы">
+                                    <p class="slider-title">Перфораторы</p>
+                                    <p class="slider-description">Настоящие мужские игрушки</p>
+                                    <a href="catalog.html">Открыть каталог</a>
+                                </li>-->    
                             </ul>
                             <ul class="promo-column list-styles-reset">
                                 <li class="promo-discounts promo-card"><p>Скидки 50%</p><a href="#">На 350 товоров</a></li>
                                 <li class="promo-delivery promo-card"><p>Доставка</p><a href="#">Бесплатно</a></li>
                             </ul>
                         </div>    
-                    </div>
-                    <div>
-                        <!--<button type="button"></button>  листает слайды влево 
-                        <button type="button"></button>  листает слайды вправо -->
                     </div>
                 </section>
             </div>
@@ -274,8 +271,8 @@
                                         поднимая его на ваш этаж!
                                     </p>
                                 </div>
-                                <!-- <div class="warranty services-slide">    
-                                    <p class="warranty services-title-style">Гарантия</p>
+                                <!-- <div class="guarantee services-slide">    
+                                    <p class="guarantee services-title-style">Гарантия</p>
                                     <p> Если купленный у нас товар поломается или заискрит,<br> 
                                         а также в случае пожара, спровоцированного его возгоранием,<br>  
                                         вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> 
