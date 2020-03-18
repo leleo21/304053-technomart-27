@@ -2570,6 +2570,8 @@ color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 80px;
+  margin-top: 45px;
   font-size: 14px;
   line-height: 18px;
   color:#ffffff;
@@ -2577,6 +2579,8 @@ color: #000000;
   width: 195px;
   height: 38px;
   background-color: #ff5357;
+  border-radius: 2px;
+  border: 0;
 }
 
 .services-buttons-container button {
