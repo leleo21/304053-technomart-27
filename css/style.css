@@ -714,6 +714,16 @@ a {
 
 .product-card svg {
   fill: #ffffff;
+  opacity: 0.3;
+}
+
+.shop-button button {
+  display: inline-block;
+}
+
+.shop-button button:hover svg {
+  fill: #ffffff;
+  opacity: 1;
 }
 
 .pop-up-cart {
@@ -724,18 +734,9 @@ a {
   background-color: #5fbb2d;
 }
 
-.actions .buy svg:hover {
-  opacity: 1;
-}
 
 .actions .buy:active {
   background-color: #518534;
-}
-
-
-.actions .buy:hover,
-.actions .buy:active {
-  opacity: 1;
 }
 
 
@@ -760,8 +761,6 @@ a {
   opacity: 0.3;
 
 }
-
-
 
 
 .shop-button button,
