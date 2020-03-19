@@ -1302,7 +1302,8 @@ body {
  outline: 2px solid red;*/
 }
 
-.page-header-logo {
+.page-header-logo,
+.page-header-logo a {
   width: 220px;
   height: 47px;
   padding: 0;
