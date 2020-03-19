@@ -1294,6 +1294,7 @@ body {
 }
 
 .page-search {
+  display: inline-block;
   position: relative;
   margin: 0;
   padding: 0;
@@ -1322,15 +1323,7 @@ body {
   outline: 2px solid red;*/
 }
 
-.page-search svg:hover {
-  opacity: 1;
-}
-
-.page-search svg:active {
-  fill: #ee3643;
-}
-
-.page-search .input-search {
+.page-search input {
   display: inline-block;
   margin: 0;
   margin-top: 13px;
@@ -1338,12 +1331,41 @@ body {
   margin-left: 48px;
   padding: 0;
   opacity: 1;
-
-}
-
-.input-search {
   border: none;
+
 }
+
+.page-search:hover svg {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.page-search:hover input {
+  background-color: #212a3a;
+}
+
+.page-search input:hover::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.page-search input:hover:-moz-placeholder {
+  color: #ffffff;
+}
+
+.page-search input:focus .page-search {
+  background-color:  #ffffff;
+  opacity: 1; 
+}
+
+.page-search:active svg {
+  fill: #ee3643;
+}
+
+
+
+
+
+
 
  .user-link-list {
   display: flex;
