@@ -721,6 +721,22 @@ a {
   background-repeat: no-repeat;
 }
 
+.popular-products .product-card::before {
+  display: none;
+}
+
+.popular-products .product-card:nth-child(4)::before {
+  display: block;
+}
+
+.catalog-product-container .product-card::before {
+  display: none;
+}
+
+.catalog-product-container .product-card:nth-child(2n+1):not(:first-child):not(:last-child)::before {
+  display: block;
+}
+
 .product-card img {
   max-width: 100%;
 }
