@@ -779,6 +779,7 @@ a {
 
 .actions .buy:hover {
   background-color: #5fbb2d;
+  cursor: pointer;
 }
 
 
