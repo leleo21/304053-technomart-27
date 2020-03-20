@@ -195,6 +195,11 @@ a {
   background-color: #212a3a;
 }
 
+.user-link:hover svg {
+  fill: #ffffff;
+  opacity: 1;
+}
+
 .bookmarks {
   position: relative;
 }
@@ -1518,6 +1523,10 @@ body {
 }
 
 .page-search:active svg {
+  fill: #ee3643;
+}
+
+.page-search:focus + svg {
   fill: #ee3643;
 }
 
