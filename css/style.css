@@ -1291,11 +1291,13 @@ body {
   outline: 3px solid black;*/ 
 }
 
-.page-header-logo a:hover {
+.page-header-logo a:hover,
+.page-footer-logo a:hover {
   background-color: #ca2c37;
 }
 
-.page-header-logo a:active {
+.page-header-logo a:active,
+.page-footer-logo a:active {
   background-color: #ba2732;
 }
 
