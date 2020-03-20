@@ -1538,10 +1538,9 @@ body {
 .shop-info {
   width: 196px;
   margin: 0;
-  margin-top: 46px;
+  margin-top: 48px;
   padding: 0;
   margin-left: 53px;
-  /*margin-bottom: 41px;*/
   
    /* Временно для сетки
    min-height: 70px;
@@ -2018,8 +2017,6 @@ body {
 }
 
 .page-footer-info {
-  /*display: flex;
-  justify-content: space-between;*/
   width: auto;
   min-height: 107px;
   margin: 0 auto;
@@ -2169,7 +2166,7 @@ body {
 .social-buttons-list {  
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  width: 130px;
   height: 42px;
   margin-left: 50px;
 
@@ -2199,7 +2196,7 @@ body {
   content: "";
   position: absolute;
   top: 12px;
-  right: 10px;
+  right: 6px;
   
   width: 26px;
   height: 15px;
@@ -2216,8 +2213,8 @@ body {
 .fb-button a::before {
   content: "";
   position: absolute;
-  top: 12px;
-  right: 15px;
+  top: 8px;
+  right: 13px;
   
   width: 12px;
   height: 22px;
@@ -2234,8 +2231,8 @@ body {
 .inst-button a::before {
   content: "";
   position: absolute;
-  top: 12px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
   
   width: 21px;
   height: 21px;
@@ -2470,23 +2467,22 @@ body {
    outline: 3px solid red;*/ 
 }
 
-.sorting-container::after {
-  content: "";
+.sorting-container .icon-up svg {
   position: absolute;
   top: 14px;
   right: 50px;
   
   width: 11px;
   height: 10px;
+
+  fill: #c5c5c5;
   
-  background: url("../img/icon-up-dir.svg");
-  background-repeat: no-repeat;
 
 }
 
 
 
-.sorting-container::before {
+.sorting-container .icon-down svg{
   content: "";
   position: absolute;
   top: 14px;
@@ -2494,9 +2490,8 @@ body {
   
   width: 11px;
   height: 10px;
-  
-  background: url("../img/icon-down-dir.svg");
-  background-repeat: no-repeat;
+
+  fill: #c5c5c5;
 
 }
 
@@ -2506,19 +2501,19 @@ body {
   align-items: center;
   width: 481px;
   margin: 0;
-  margin-right: 106px;
+  margin-right: 70px;
   padding: 0;
 
 
-   /* Временно для сетки 
+   /* Временно для сетки  
    min-height: 38px;
    list-style: none;
-   outline: 3px solid red; */
+   outline: 3px solid red;*/
 }
 
-.sorting-container a{
+.sorting-container a {
   display: block;
-  margin-left: 50px;
+  white-space: nowrap;
 }
 
 
@@ -2548,6 +2543,14 @@ color: #000000;
 .sorting-container a {
   color: rgba(0, 0, 0, 0.18);
   border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-container svg:hover {
+  fill: #000000;
+}
+
+.sorting-container svg:active {
+  fill: #ee3643;
 }
 
 .sorting-container a:hover {
