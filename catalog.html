@@ -163,10 +163,27 @@
                         <h2 class="filter-title-container "><span class="h2-title">Фильтр:</span></h2>  
                         <div class="filter filter-container">
                             <div class="price-filter-container">
-                                <h3 class="h3-title">Цена:</h3>
-                                <div class="pricecount-container">
-                                    0 <input type="range" id="pricecount" name="pricecount" min="0" max="3000" step="100"> 3000
-                                </div>    
+                                <fieldset class="filter-item">
+                                    <legend>Цена:</legend>
+                                    <div class="range-filter">
+                                        <div class="range-controls">
+                                            <div class="scale">
+                                                <div class="bar"></div>
+                                            </div>
+                                            <div class="toggle toggle-min"></div>
+                                            <div class="toggle toggle-max"></div>
+                                        </div>
+                                        <div class="price-controls">
+                                            <label class="min-price">
+                                                <input name="min-price" type="number" value="0">
+                                            </label>
+                                            <p>–</p>
+                                            <label class="max-price">
+                                                <input name="max-price" type="number" value="30000">
+                                            </label>
+                                      </div>
+                                    </div>
+                                </fieldset> 
                             </div>
                             <h3 class="h3-title">Производители:</h3>       
                             <ul class="select-company-list list-styles-reset">
