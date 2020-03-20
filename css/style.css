@@ -319,6 +319,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
+  white-space: nowrap;
   margin: 0;
   margin-left: 10px;
   margin-right: 10px;
@@ -336,7 +337,6 @@ a {
   margin-top: 46px;
   margin-right: auto;
   margin-left: 69px;
-  /*margin-bottom: 67px;*/
   
 
     /*Временно для сетки*/
@@ -345,27 +345,8 @@ a {
    list-style: none; 
 }
 
-.user-login-catalog {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 299px;
-  min-height: 45px;
-  margin: 0;
-  padding: 0;
-  margin-top: 46px;
-  margin-right: auto;
-  margin-left: 69px;
-  
-
-    /*Временно для сетки*/
-   
-   outline: 3px solid red; 
-   list-style: none; 
-}
 
 .user-login a,
-.user-login p,
 .user-login-main {
   font-size: 21px;
   line-height: 21px;
@@ -431,10 +412,37 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 299px;
   height: 70px;
+  margin: 0;
+  margin-top: 46px;
+  margin-left: 48px;
+  padding: 0;
+
+  border: 2px solid rebeccapurple;
 }
 
-.user-login-list {
+.user-login-catalog {
+  position: relative;
+  display: block;
+  width: 299px;
+  min-height: 45px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+
+
+    /*Временно для сетки*/
+   
+   outline: 3px solid red; 
+   list-style: none; 
+}
+
+
+  /*border: 2px solid red;*/
+}
+
+.user-link-catalog {
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -442,9 +450,12 @@ a {
   margin-right: 40px;
   margin-bottom: 53px;
   padding: 0;
+
+  outline: 3px solid red; 
+  list-style: none; 
 }
 
-.user-login-list a {
+.user-link-catalog a {
   display: block;
   width: 104px;
   height: 14px;
@@ -458,12 +469,12 @@ a {
   text-decoration: underline; 
 }
 
-.user-login-list a:hover {
+.user-link-catalog a:hover {
   color:#ee3643;
   text-decoration: underline; 
 }
 
-.user-login-list a:active {
+.user-link-catalog a:active {
   color:#32425c;
   opacity: 0.3;
   text-decoration: underline; 
@@ -1489,38 +1500,7 @@ body {
 }
 
 
-.login-link-list {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  height: 45px;
-  margin: 0;
-  margin-left: -20px;
-  margin-bottom: 20px;
-  padding: 0;
-  background-color: #ffffff;
-
-  /*border: 2px solid red;*/
-}
-
-.login-link-list p {
-  display: block; 
-  width: 183px;
-  height: 20px;
-  margin: 0;
-  margin-top: 8px;
-  margin-left: 47px;
-  margin-right: 69px;
-  margin-bottom: 12px;
-  padding: 0;
-  white-space: nowrap;
-
-
- /* border: 2px solid red;*/
-}
-
-.login-link-list .user-icon svg {
+.user-login-catalog .user-icon svg {
   position: absolute;
   width: 20px;
   height: 18px;
@@ -1529,7 +1509,7 @@ body {
 
 }
 
-.login-link-list .log-out-icon svg {
+.user-login-catalog .log-out-icon svg {
   position: absolute;
   width: 20px;
   height: 18px;
@@ -1539,11 +1519,11 @@ body {
 }
 
 
-.login-link-list svg { 
+.user-login-catalog svg { 
     fill:#c5c5c5; 
   }
 
-.login-link-list svg:hover { 
+.user-login-catalog svg:hover { 
   fill: #32425c; 
 }
 
