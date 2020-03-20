@@ -325,61 +325,104 @@ a {
   color: #32425c; 
 }
 
+.user-login-main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  margin-top: 46px;
+  margin-right: auto;
+  margin-left: 69px;
+  /*margin-bottom: 67px;*/
+  
+
+    /*Временно для сетки*/
+   
+   outline: 3px solid red; 
+   list-style: none; 
+}
+
+.user-login-catalog {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 299px;
+  min-height: 45px;
+  margin: 0;
+  padding: 0;
+  margin-top: 46px;
+  margin-right: auto;
+  margin-left: 69px;
+  
+
+    /*Временно для сетки*/
+   
+   outline: 3px solid red; 
+   list-style: none; 
+}
+
 .user-login a,
-.user-login p {
+.user-login p,
+.user-login-main {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
-  display: block;
-  padding: 0;
-  margin:0;
-  margin-top: 8px;
   text-align: center;
   color: #000000; 
 }
 
+.user-login-main .log-in-main {
+  display: block;
+  width: 121px;
+  height: 45px;
+  padding-left: 22px;
+  background-color: #ffffff;
+  border: 0;
+  margin:0;
 
-.log-in {
- width: 121px;
- height: 45px;
- background-color: #ffffff;
 }
 
-.log-in {
-  position: relative;
-  padding-left: 24px;
-  
- }
 
- .log-in svg {
-  position: absolute;
-  top: 10px;
-  right: 87px;
-  
-  width: 20px;
-  height: 17px;
-  background-position: 0 0;
-  fill: #c5c5c5;
-  
- }
-
- .log-in svg:hover {
-   fill: #293449;
- } 
-
-.registration {
+.user-login-main .registration {
+  display: block;
   width: 150px;
   height: 45px;
   margin-left: 10px;
+  padding-right: 1px;
   background-color: #ffffff;
+  border: 0;
  }
 
-.user-login a:hover {
-  color:#ee3643; 
-}
+
+ .user-login-main svg {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  
+  width: 20px;
+  height: 17px;
+  fill: #c5c5c5;
+
+  
+ }
+
+ .user-login-main button{
+   display: inline-block;
+ }
+
+.user-login button:hover {
+  color:#ee3643;
+ }
+
+.user-login button:hover svg {
+  fill: #293449;
+ }
 
 
-.user-login a:active {
+.user-login button:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -1388,11 +1431,6 @@ body {
 }
 
 
-
-
-
-
-
  .user-link-list {
   display: flex;
   justify-content: space-between;
@@ -1450,23 +1488,6 @@ body {
    outline: 3px solid red; */
 }
 
-.user-login {
-  display: flex;
-  justify-content: space-between;
-  width: 281px;
-  margin: 0;
-  padding: 0;
-  margin-top: 46px;
-  margin-right: auto;
-  margin-left: 69px;
-  /*margin-bottom: 67px;*/
-  
-
-   /* Временно для сетки
-   min-height: 45px;
-   outline: 3px solid red; 
-   list-style: none; */
-}
 
 .login-link-list {
   position: relative;
