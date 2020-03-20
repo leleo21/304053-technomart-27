@@ -2027,7 +2027,8 @@ body {
    outline: 3px solid green; */
 }
 
-.page-footer-logo {
+.page-footer-logo,
+.page-footer-logo a {
   width: 220px;
   height: 68px;
   padding: 0;
@@ -2040,14 +2041,10 @@ body {
   outline: 3px solid black;*/ 
 }
 
-.page-footer-logo {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
 .page-footer-logo img {
   padding-top: 20px;
+  padding-left: 41px;
+ 
 }
 
 
