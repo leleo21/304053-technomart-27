@@ -210,11 +210,11 @@ a {
   opacity: 0.3;
 }
 
-.cart {
+.cart-icon {
   position: relative;
 }
 
-.cart svg {
+.cart-icon svg {
   position: absolute;
   top: 12px;
   left: 20px;
