@@ -438,17 +438,56 @@ a {
    list-style: none; 
 }
 
+.user-name-catalog {
+  display: block;
+  margin-top: 10px;
+  margin-right: 16px;
 
-  /*border: 2px solid red;*/
 }
+
+.user-login-catalog .user-icon svg {
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 10px;
+  left: 16px;
+
+}
+
+.user-login-catalog .log-out-icon svg {
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 10px;
+  right: 9px;
+
+}
+
+.user-login-catalog a {
+  display: inline-block;
+  margin-left: 47px;
+}
+
+
+.user-login-catalog svg { 
+    fill:#c5c5c5; 
+  }
+
+.user-login-catalog a:hover svg { 
+  fill: #32425c; 
+}
+
+.user-login-catalog a:active svg { 
+  fill:#c5c5c5;
+}
+
 
 .user-link-catalog {
   display: flex;
   justify-content: space-between;
-  height: 20px;
+  height: 30px;
   margin: 0;
-  margin-right: 40px;
-  margin-bottom: 53px;
+  margin-top: 5px;
   padding: 0;
 
   outline: 3px solid red; 
@@ -456,18 +495,44 @@ a {
 }
 
 .user-link-catalog a {
-  display: block;
-  width: 104px;
-  height: 14px;
-  margin: 0;
-  margin-top: -10px;
-  margin-left: -10px;
   font-size: 16px;
   line-height: 18px;
   font-style: normal;
   color: #32425c;
   text-decoration: underline; 
 }
+
+.user-link-catalog .my-orders {
+  display: block;
+  min-height: 14px;
+  width: 75px;
+  margin-left: 18px;
+  
+}
+
+
+.user-link-catalog .personal-account {
+  position: relative;
+  display: block;
+  min-height: 14px;
+  width: 104px;
+  margin-right: 70px;
+  
+}
+
+.user-link-catalog .personal-account::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -18px;
+  
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+
+} 
+
+
 
 .user-link-catalog a:hover {
   color:#ee3643;
@@ -1499,33 +1564,6 @@ body {
    outline: 3px solid red; */
 }
 
-
-.user-login-catalog .user-icon svg {
-  position: absolute;
-  width: 20px;
-  height: 18px;
-  top: 13px;
-  left: 13px;
-
-}
-
-.user-login-catalog .log-out-icon svg {
-  position: absolute;
-  width: 20px;
-  height: 18px;
-  top: 13px;
-  right: 14px;
-
-}
-
-
-.user-login-catalog svg { 
-    fill:#c5c5c5; 
-  }
-
-.user-login-catalog svg:hover { 
-  fill: #32425c; 
-}
 
 
 .site-navigation {
@@ -2774,6 +2812,12 @@ color: #000000;
    outline: 3px solid blue; */
 }
 
+.catalog-page-number {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
 .number {
   display: flex;
   justify-content: center;
@@ -2806,6 +2850,7 @@ color: #000000;
 
 .active a {
   background-color: #ee3643;
+  color: #ffffff;
 }
 
 .gray-wide-background {
