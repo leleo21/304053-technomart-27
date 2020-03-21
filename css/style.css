@@ -178,7 +178,8 @@ a {
   color: #ffffff;
 }
 
- .user-link {
+ .user-link,
+ .bookmarks {
   display: inline-block;
   color: #ffffff;
   padding: 0;
@@ -3086,6 +3087,10 @@ color: #000000;
 .active a {
   background-color: #ee3643;
   color: #ffffff;
+}
+
+.active {
+  background-color: #ee3643;
 }
 
 .gray-wide-background {
