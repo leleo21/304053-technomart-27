@@ -2161,16 +2161,15 @@ body {
   width: auto;
   min-height: 107px;
   margin: 0 auto;
-  margin-bottom: 60px;
   padding: 0;
   background-color: #293449;
  
   
 
 
-   /* Временно для сетки 
+   /* Временно для сетки
    list-style: none;
-   outline: 3px solid yellow; */
+   outline: 3px solid yellow;  */
 }
 
 .page-footer-info .container {
@@ -2304,12 +2303,14 @@ body {
 
 
 
-.social-buttons-list {  
+.social-buttons-list { 
+  position: relative; 
   display: flex;
   justify-content: space-between;
   width: 130px;
   height: 42px;
-  margin-left: 50px;
+  margin-left: 5px;
+  margin-top: 16px;
 
    /* Временно для сетки
    min-height: 42px;
@@ -2326,6 +2327,10 @@ body {
   border-radius: 50%;
 }
 
+.social-button svg {
+  fill: #ffffff;
+}
+
 .social-button:hover,
 .social-button:active {
   background-color: #ee3643;
@@ -2333,17 +2338,16 @@ body {
 }
 
 
-.vk-button a::before {
-  content: "";
+.vk-button svg {
   position: absolute;
-  top: 12px;
-  right: 6px;
+  top: 10px;
+  right: 10px;
   
   width: 26px;
   height: 15px;
+
+ 
   
-  background: url("../img/vk-icon.svg");
-  background-repeat: no-repeat;
  
    /* Временно для сетки 
    list-style: none;
@@ -2351,40 +2355,47 @@ body {
 }
 
 
-.fb-button a::before {
+.fb-button svg {
   content: "";
   position: absolute;
   top: 8px;
-  right: 13px;
+  right: 16px;
   
   width: 12px;
   height: 22px;
-
-  background: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
  
    /* Временно для сетки 
    list-style: none;
    outline: 3px solid blue;*/ 
 }
 
-
-.inst-button a::before {
+.inst-button svg {
   content: "";
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 10px;
   
   width: 21px;
   height: 21px;
-  
 
-  background: url("../img/insta-icon.svg");
-  background-repeat: no-repeat;
  
    /* Временно для сетки 
    list-style: none;
    outline: 3px solid blue; */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 284px;
+  min-height: 107px;
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+
+
+ /*  Временно для сетки 
+  outline: 3px solid blue;*/
 }
 
 .catalog-navigation {
@@ -2396,9 +2407,7 @@ body {
   padding: 0;
   height: 59px;
 
-
-   /* Временно для сетки
-   min-height: 59px;
+   /*min-height: 59px;
    list-style: none;
    outline: 3px solid blue;  */
 }
