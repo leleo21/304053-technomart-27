@@ -1669,15 +1669,33 @@ body {
   background-color: transparent;
 }
 
-.page-search:active svg {
+.page-search:active input::-webkit-input-placeholder {
+  color: #000000;
+  background-color: transparent;
+}
+
+.page-search:active input:-moz-placeholder {
+  color: #000000;
+  background-color: transparent;
+}
+
+.page-search input:active svg {
   fill: #ee3643;
 }
 
-.page-search:focus + svg {
+.page-search:focus svg {
+  fill: #ee3643;
+}
+
+.page-search input:focus svg {
   fill: #ee3643;
 }
 
 .page-search:active {
+  background-color: #ffffff;
+}
+
+.page-search input:active {
   background-color: #ffffff;
 }
 
