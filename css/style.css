@@ -255,7 +255,22 @@ a {
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 13px;
+}
+
+.user-link-list p {
+  display: block;
+  width: 78px;
+  height: 15px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0;
+  padding-left: 46px;
+  padding-top: 12px;
+  margin: 0;
+}
+
+.make-order p {
+  padding-left: 20px;
 }
 
 .user-link a {
@@ -1631,9 +1646,7 @@ body {
 
 }
 
-.page-search input[type=text]:focus svg {
-  fill: #ee3643;
-}
+
 
 .page-search:hover svg {
   fill: #ffffff;
@@ -1692,23 +1705,45 @@ body {
   background-color: #ffffff;
 }
 
-.page-search input:active {
+.page-search input:active input{
   background-color: #ffffff;
 }
 
 .page-search:active input {
   background-color: #ffffff;
+  color: #000000;
 }
 
-.page-search input:focus {
-  color: #ffffff;
-  background-color: #293449;
-  opacity: 1;
-  border: none; 
+
+.page-search:focus svg {
+  fill: #ee3643;
+}
+
+.page-search:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-search:focus input {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .page-search input:focus svg {
   fill: #ee3643;
+}
+
+.page-search input:focus {
+  color: #ffffff;
+}
+
+.page-search input:focus .page-search {
+  background-color: #ffffff;
+}
+
+.page-search input:focus input {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 
@@ -3089,9 +3124,10 @@ color: #000000;
   color: #ffffff;
 }
 
-.active {
+.user-link-list .active {
   background-color: #ee3643;
 }
+
 
 .gray-wide-background {
   width: auto;
