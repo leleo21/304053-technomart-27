@@ -141,13 +141,13 @@ a {
 }
 
 .hammer-drill-about .h2-title-style {
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Cuprum', 'Arial', sans-serif;
-    color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  color: #000000;   
 }
 
 .hammer-drill-about .h2-title-style {
@@ -2608,7 +2608,7 @@ body {
    outline: 3px solid red;*/ 
 }
 
-.sorting-container .icon-up svg {
+.icon-up svg {
   position: absolute;
   top: 14px;
   right: 50px;
@@ -2623,7 +2623,7 @@ body {
 
 
 
-.sorting-container .icon-down svg{
+.icon-down svg {
   content: "";
   position: absolute;
   top: 14px;
