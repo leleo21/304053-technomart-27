@@ -1687,10 +1687,6 @@ body {
   fill: #ee3643;
 }
 
-.page-search input:focus svg {
-  fill: #ee3643;
-}
-
 .page-search:active {
   background-color: #ffffff;
 }
@@ -1708,6 +1704,10 @@ body {
   background-color: #293449;
   opacity: 1;
   border: none; 
+}
+
+.page-search input:focus svg {
+  fill: #ee3643;
 }
 
 
