@@ -1683,7 +1683,7 @@ body {
   fill: #ee3643;
 }
 
-.page-search:focus svg {
+.page-search:active svg {
   fill: #ee3643;
 }
 
@@ -1706,8 +1706,12 @@ body {
 .page-search input:focus {
   color: #ffffff;
   background-color: #293449;
-  opacity: 1; 
+  opacity: 1;
+  border: none; 
 }
+
+
+
 
  .user-link-list {
   display: flex;
