@@ -851,13 +851,14 @@ a {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   color: #ffffff;
   width: 120px;
   height: 40px;
   margin:0;
   margin-left: 42px;
   padding: 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  padding-left: 4px;
   background-color: #ee3643;
   } 
 
@@ -1416,8 +1417,8 @@ a {
 
 .footer-offers-list a {
   display: block;
-  margin-left: 60px;
-  margin-top: 28px;
+  margin-left: 62px;
+  margin-top: 27px;
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
@@ -1663,8 +1664,6 @@ body {
 .page-search input:focus {
   color: #ffffff;
   background-color: #212a3a;
-}
-
 }
 
 .page-search input:hover input {
@@ -2288,7 +2287,8 @@ body {
   margin: 0;
   margin: 0 auto;
   padding: 0;
-  padding-top: 28px;
+  padding-top: 27px;
+  margin-left: 2px;
 
 
     /*Временно для сетки
@@ -2324,8 +2324,8 @@ body {
   height: 30px;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
-  margin-left: 45px;
+  margin-top: 38px;
+  margin-left: 46px;
 
 }
 
