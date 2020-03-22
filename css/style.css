@@ -184,12 +184,6 @@ a {
 }
 
 
-.user-link:hover,
-.page-search:hover,
-.page-search input:hover {
-  background-color: #212a3a;
-}
-
 .user-link:hover svg {
   fill: #ffffff;
   opacity: 1;
@@ -1597,12 +1591,21 @@ body {
 
 }
 
-
+.user-link:hover,
+.page-search:hover {
+  background-color: #212a3a;
+}
 
 .page-search:hover svg {
   fill: #ffffff;
   opacity: 1;
 }
+
+.page-search input:hover input {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
 
 .page-search:hover input {
   background-color: #212a3a;
@@ -1614,87 +1617,59 @@ body {
 
 .page-search input:-moz-placeholder {
   color: #ffffff;
-}
 
-.page-search input:hover::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.page-search input:hover:-moz-placeholder {
-  color: #ffffff;
-}
-
-.page-search input:active::-webkit-input-placeholder {
-  color: #000000;
-  background-color: transparent;
-}
-
-.page-search input:active:-moz-placeholder {
-  color: #000000;
-  background-color: transparent;
 }
 
 .page-search:active input::-webkit-input-placeholder {
   color: #000000;
-  background-color: transparent;
 }
 
 .page-search:active input:-moz-placeholder {
   color: #000000;
-  background-color: transparent;
-}
 
-.page-search input:active svg {
-  fill: #ee3643;
 }
 
 .page-search:active svg {
   fill: #ee3643;
 }
 
-.page-search:active {
-  background-color: #ffffff;
-}
 
-.page-search input:active input{
+.page-search:active {
+  color: #000000;
   background-color: #ffffff;
 }
 
 .page-search:active input {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-
-.page-search:focus svg {
-  fill: #ee3643;
-}
-
-.page-search:focus {
   color: #000000;
   background-color: #ffffff;
 }
 
-.page-search:focus input {
-  color: #000000;
-  background-color: #ffffff;
+.page-search input:active {
+  color: #ffffff;
+  background-color: #212a3a;
 }
 
-.page-search input:focus svg {
-  fill: #ee3643;
+
+.page-search input:active input {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.page-search input:focus input {
+  color: #ffffff;
+  background-color: #212a3a;
 }
 
 .page-search input:focus {
   color: #ffffff;
+  background-color: #212a3a;
 }
 
-.page-search input:focus .page-search {
-  background-color: #ffffff;
 }
 
-.page-search input:focus input {
-  color: #000000;
-  background-color: #ffffff;
+.page-search input:hover input {
+  color: #ffffff;
+  background-color: #212a3a;
 }
 
 
