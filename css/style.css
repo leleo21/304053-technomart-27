@@ -114,14 +114,14 @@ a {
 
 .main-contacts .h2-title {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 18px;
   margin-bottom: 25px;
 }
 
 .company-about-container .h2-title {
   display: block;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 19px;
   padding: 0;
 }
 
@@ -306,6 +306,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   text-align: middle;
   color: #e9292a;
   border: 3px solid #ffffff;
@@ -1197,7 +1198,7 @@ a {
   width: 220px;
   height: 38px;
   margin: 0;
-  margin-top: 32px;
+  margin-top: 30px;
   background-color: #ee3643;
 }
 
@@ -1205,16 +1206,34 @@ a {
   margin-top: 25px;
 }
 
+.partners-list {
+  display: block;
+  width: 175px;
+  height: 110px;
+
+  /*outline: 2px solid blue;*/
+}
+
 .partners-list li {
+  display: block;
   position: relative;
-  margin-top: 22px;
+  width: 138px;
+  height: 17px;
+  
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 0;
 }
 
 .partners-list li::before {
   content: "";
   position: absolute;
   top: 10px;
-  right: 485px;
+  left: -40px;
   width: 25px;
   height: 2px;
   background-color: #ee3643;
@@ -1231,7 +1250,7 @@ a {
   align-items: center;
   width: 300px;
   height: 38px;
-  margin-top: 30px;
+  margin-top: 33px;
   border-radius: 2px;
   border: none;
   background-color: #ee3643;
@@ -1806,8 +1825,8 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  margin-top: -20px;
-  margin-bottom: 60px;
+  margin-top: -18px;
+  margin-bottom: 56px;
   padding: 0;
   width: 940px;
 
@@ -1895,8 +1914,8 @@ body {
 
 .slider-title {
   position: absolute;
-  top: -10px;
-  left: 20px;
+  top: -12px;
+  left: 24px;
   width: 94px;
   height: 30px;
 
@@ -1907,8 +1926,8 @@ body {
 
 .slider-description {
   position: absolute;
-  top: 45px;
-  left: 20px;
+  top: 42px;
+  left: 25px;
   width: 161px;
   height: 17px;
   white-space: nowrap;
@@ -1921,8 +1940,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 200px;
-  left: 20px;
+  top: 205px;
+  left: 25px;
   width: 195px;
   height: 38px;
   background-color: #ee3643;
@@ -1975,8 +1994,8 @@ body {
 
 .slider-left {
   position: absolute;
-  top: 110px;
-  left: 20px;
+  top: 112px;
+  left: 23px;
   width: 22px;
   height: 40px;
 
@@ -1996,8 +2015,8 @@ body {
 
 .slider-right {
   position: absolute;
-  top: 110px;
-  left: 570px;
+  top: 112px;
+  left: 575px;
   width: 22px;
   height: 40px;
 
