@@ -93,12 +93,6 @@ a {
   background-color: #f4f7f9;  
 }
 
-/*.button {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-}*/
-
 
 .hammer-drill-title,
 .services .h2-title,
@@ -1182,7 +1176,7 @@ a {
   text-transform: uppercase;
   color: #32425c;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
   } 
 
 
@@ -2914,7 +2908,7 @@ color: #000000;
   width: 240px;
   height: 183px;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 18px;
   padding: 0;
 
 
@@ -2937,13 +2931,13 @@ color: #000000;
 
 }
 
-.services-slide {
+.delivery-slide {
   position: relative;
   display: block;
   margin: 0;
   padding: 0;
   width: 470px;
-  height: 61px;
+  height: 261px;
 
 
    /* Временно для сетки
@@ -2952,11 +2946,11 @@ color: #000000;
 
 }
 
-.delivery::after {
+.delivery-slide::after {
   content: "";
   position: absolute;
-  top: 21px;
-  left: 231px;
+  top: 26px;
+  left: 190px;
   width: 468px;
   height: 261px;
   background-image: url("../img/delivery.png");
@@ -2966,10 +2960,25 @@ color: #000000;
 
 }
 
-.guarantee::after {
+.guarantee-slide {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 470px;
+  height: 261px;
+
+
+   /* Временно для сетки 
+   list-style: none;
+   outline: 3px solid blue;*/ 
+
+}
+
+.guarantee-slide::after {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 1px;
   left: 271px;
   width: 389px;
   height: 283px;
@@ -2980,11 +2989,26 @@ color: #000000;
 
 }
 
-.credit::after {
+.credit-slide {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 470px;
+  min-height: 261px;
+
+
+   /* Временно для сетки
+   list-style: none;
+   outline: 3px solid blue; */ 
+
+}
+
+.credit-slide::after {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 200px;
+  top: 1px;
+  left: 195px;
   width: 465px;
   height: 285px;
   background-image: url("../img/credit.png");
@@ -2999,11 +3023,12 @@ color: #000000;
 }
 
 .credit-slide-button {
+  position: absolute;
+  top: 131px;
+  left: 41px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 80px;
-  margin-top: 45px;
   font-size: 14px;
   line-height: 18px;
   color:#ffffff;
@@ -3019,6 +3044,8 @@ color: #000000;
   display: block;
   font-size: 21px;
   line-height: 30px;
+  font-weight: bold;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   width: 240px;
   height: 61px;
   color: #ffffff;
@@ -3031,7 +3058,7 @@ color: #000000;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 23px;
+  margin-left: 16px;
 }
 
 .services-buttons-container button:hover {
@@ -3063,7 +3090,7 @@ color: #000000;
 
 .services-slide p {
   margin: 0;
-  margin-left: 80px;
+  margin-left: 42px;
 
 }
 
@@ -3124,7 +3151,7 @@ color: #000000;
   color: #ffffff;
 }
 
-.user-link-list .active {
+.buy:active .user-link-list .active {
   background-color: #ee3643;
 }
 
