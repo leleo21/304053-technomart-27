@@ -1918,12 +1918,12 @@ body {
   background-color: #ba2732;
 }
 
-.main-contacts button:hover {
+.main-contacts .write-us:hover {
   background-color: #ca2c37;
 
 }
 
-.main-contacts button:active {
+.main-contacts .write-us:active {
   background-color: #ba2732;
 
 }
