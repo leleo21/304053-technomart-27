@@ -1204,7 +1204,9 @@ a {
   width: 620px;
   height: 430px;
 
-  display: none; 
+  display: none;
+
+
 }
 
 .added-cart-message {   /*окно скрыто*/
@@ -1218,18 +1220,13 @@ a {
   z-index: 200;
   width: 620px;
   height: 282px;
-
+  
+  display: none;
   
 }
 
 .map-message-container {
-  top: 120px;
-  left: 50%;
-
   width: 620px;
-  height: 430px;
-  margin-left: -400px;
-  padding: 50px 80px;
 }
 
 
@@ -1362,6 +1359,7 @@ a {
   height: 38px;
   border: solid 2px #dee3e4;
   box-sizing: border-box;
+  padding-left: 10px;
 
 }
 
@@ -1369,6 +1367,7 @@ a {
   width: 458px;
   height: 114px;
   border: solid 2px #dee3e4;
+  padding-left: 10px;
 
 }
 
