@@ -1914,22 +1914,28 @@ body {
 
 .main-contacts button:hover {
   background-color: #ca2c37;
+
 }
 
 .main-contacts button:active {
   background-color: #ba2732;
+
 }
 
 .company-about a:hover {
   background-color: #ca2c37;
+
 }
 
 .company-about a:active {
   background-color: #ba2732;
+
 }
 
+.slider {
+  position: relative;
 
-
+}
 
 .slider-left ,
 .slider-right {
@@ -1937,6 +1943,34 @@ body {
   background-color: transparent;
   border: 0;
   z-index: 20;
+
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 220px;
+  left: 295px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 60;
+
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 220px;
+  left: 317px;
+  width: 6px;
+  height: 6px;
+  background-color: #ee3643;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  z-index: 60;
+
 }
 
 .slider-left {
