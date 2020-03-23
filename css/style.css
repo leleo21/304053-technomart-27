@@ -1193,25 +1193,33 @@ a {
 
 
 .map-message {   /*окно скрыто*/
-  position: fixed; 
+  position: fixed;
+  top: 120px;
+  left: 30%; 
   color: #000000;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   z-index: 200;
+  width: 620px;
+  height: 430px;
 
   display: none; 
 }
 
 .added-cart-message {   /*окно скрыто*/
-  position: fixed; 
+  position: fixed;
+  top: 120px;
+  left: 30%; 
   color: #000000;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   z-index: 200;
+  width: 620px;
+  height: 282px;
 
-  display: none; 
+  
 }
 
 .map-message-container {
@@ -1224,36 +1232,46 @@ a {
   padding: 50px 80px;
 }
 
-.cart-message-container {
-  top: 120px;
-  left: 50%;
 
-  width: 620px;
-  height: 282px;
-  margin-left: -400px;
-  padding: 50px 80px;
+.cart-message-container p {
+  display: block;
+  position: relative;
+  width: 460px;
+  margin-bottom: 65px;
+  margin-top: 75px;
+  padding: 0;
+  padding-left: 32px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'Cuprum', 'Arial', sans-serif;;
+  color: #000000;
+  text-decoration: none;
+
+
 }
 
 .cart-message p {
   display: block;
-  margin: 0;
-  margin-bottom: 68px;
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-  text-decoration: none;
+  width: 316px;
+  margin-left: 120px;
+
 }
 
-.cart-message {
+.cart-message-container {
   position: relative;
+  width: 460px;
+  margin-left: 80px;
+  margin-top: 75px;
 }
 
 .cart-message svg {
   position: absolute;
   top: -20px;
-  left: 40px;
+  left: 1px;
   width: 66px;
   height: 66px;
+  opacity: 1;
+
 }
 
 .modal-close {
@@ -1266,6 +1284,7 @@ a {
   cursor: pointer;
   background-color: transparent;
   border: 0;
+
 }
 
 
@@ -1273,9 +1292,11 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  fill: #ee3643;
   
   width: 21px;
   height: 21px;
+  opacity: 1;
 }
 
 .message-form label {
@@ -1361,14 +1382,23 @@ a {
   background-color: #f4f4f4;
 }
 
-.cart-buttons-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.cart-buttons-background {
   width: auto;
   height: 112px;
   margin: 0;
   margin-top: 37px;
+  background-color: #f4f4f4;
+}
+
+.cart-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 460px;
+  height: 112px;
+  margin: 0;
+  margin-top: 37px;
+  margin-left: 80px;
   background-color: #f4f4f4;
 }
 
