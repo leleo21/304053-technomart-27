@@ -720,11 +720,20 @@ a {
   left: 160px;
 }
 
-.price-controls {
+/*.price-controls {
   font-size: 0;
   margin: 0;
-  margin-left: -2px;
+  margin-left: -5px;
   margin-top: -10px;
+}*/
+
+.price-controls {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  margin: 0;
+  width: 220px;
+  margin-top: -7px;
 }
 
 .price-controls label {
@@ -734,7 +743,7 @@ a {
 }
 
 .price-controls input {
-  width: 95px;
+  width: 93px;
   height: 38px;
   font-size: 17px;
   text-align: center;
@@ -782,7 +791,7 @@ a {
    min-height: 318px;
    list-style: none;
    outline: 3px solid yellow; */
-}
+}*/
 
 .new::before {
   content: "";
@@ -810,7 +819,8 @@ a {
   margin: 0;
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  } 
+
+} 
 
 .product-card p {
   font-size: 17px;
@@ -823,7 +833,8 @@ a {
   margin-bottom: 8px;
   color: #999999;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  } 
+
+} 
 
 .product-card a {
   position: relative;
@@ -843,23 +854,24 @@ a {
   padding: 0;
   padding-left: 4px;
   background-color: #ee3643;
-  } 
+
+} 
 
 .product-card a::after {
   content: "";
   position: absolute;
   top: 0px;
   right: -40px;
-  
   width: 0;
   height: 0;
-  
   border: 20px solid white;
   border-left-color: #ee3643;
-  } 
+
+} 
 
 .price-invisible {
   opacity: 0;
+
 }
 
 .product-card .actions {
@@ -879,6 +891,7 @@ a {
   
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
+
 }
 
 .product-card .actions .buy,
@@ -901,61 +914,72 @@ a {
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+
 }
 
 .product-card .actions .bookmark {
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
+
 }
 
 .product-card .actions {
   display: none;
+
 }
 
 .product-card:hover img {
   visibility: hidden;
+
 }
 
 .product-card:hover .actions {
   display: block;
+
 }
 
 .product-card:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+
 }
 
 .product-card svg {
   fill: #ffffff;
   opacity: 0.3;
+
 }
 
 .shop-button button {
   display: inline-block;
+
 }
 
 .shop-button button:hover svg {
   fill: #ffffff;
   opacity: 1;
+
 }
 
 .pop-up-cart {
   display: none;
+
 }
 
 .actions .buy:hover {
   background-color: #5fbb2d;
   cursor: pointer;
-}
 
+}
 
 .actions .buy:active {
   background-color: #518534;
-}
 
+}
 
 .actions .buy {
   position: relative;
+
 }
 
 .actions .buy svg {
@@ -966,17 +990,16 @@ a {
 
 }
 
-
 .product-card .actions .bookmark:hover {
   border: 3px solid #32425c;
   cursor: pointer;
+
 }
 
 .product-card .actions .bookmark:active {
   opacity: 0.3;
 
 }
-
 
 .shop-button button,
 .offers-list-promo a,
