@@ -791,7 +791,7 @@ a {
    min-height: 318px;
    list-style: none;
    outline: 3px solid yellow; */
-}*/
+}
 
 .new::before {
   content: "";
@@ -836,7 +836,7 @@ a {
 
 } 
 
-.product-card a {
+.product-card .price-link {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -857,7 +857,7 @@ a {
 
 } 
 
-.product-card a::after {
+.product-card .price-link::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -874,15 +874,17 @@ a {
 
 }
 
+
 .product-card .actions {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   top: 44px;
   left: 45px;
   
-  width: 150px;
+  width: 131px;
   height: 110px;
   margin: 0;
   padding: 0;
@@ -894,10 +896,11 @@ a {
 
 }
 
-.product-card .actions .buy,
-.product-card .actions .bookmark {
-  display: block;
-  width: 129px;
+
+.actions .buy,
+.actions .bookmark {
+  display: inline-block;
+  width: 131px;
   margin: 0;
   margin-bottom: 7px;
   padding: 7px 0;
@@ -917,11 +920,11 @@ a {
 
 }
 
-.product-card .actions .bookmark {
+
+.actions .bookmark {
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
-
 }
 
 .product-card .actions {
@@ -950,12 +953,8 @@ a {
 
 }
 
-.shop-button button {
-  display: inline-block;
 
-}
-
-.shop-button button:hover svg {
+.shop-button .buy:hover svg {
   fill: #ffffff;
   opacity: 1;
 
@@ -990,18 +989,18 @@ a {
 
 }
 
-.product-card .actions .bookmark:hover {
+.actions .bookmark:hover {
   border: 3px solid #32425c;
   cursor: pointer;
 
 }
 
-.product-card .actions .bookmark:active {
+.actions .bookmark:active {
   opacity: 0.3;
 
 }
 
-.shop-button button,
+.shop-button .buy,
 .offers-list-promo a,
 .all-popular-products,
 .all-popular-companies {
@@ -1009,7 +1008,8 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  } 
+
+}
 
 .promo-row p,
 .promo-column p {
