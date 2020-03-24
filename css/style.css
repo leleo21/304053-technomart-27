@@ -569,8 +569,6 @@ a {
 
 } 
 
-
-
 .user-link-catalog a:hover {
   color:#ee3643;
   text-decoration: underline; 
@@ -580,6 +578,10 @@ a {
   color:#32425c;
   opacity: 0.3;
   text-decoration: underline; 
+}
+
+.user-link-container .active {
+  background-color: #ee3643;
 }
 
 
@@ -1298,7 +1300,7 @@ a {
 
 .map-open img {
   max-width: 100%;
-  
+
 }
 
 
