@@ -46,6 +46,12 @@
   font-style: normal;
 }
 
+html,
+body {
+  min-width: 960px;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -57,6 +63,7 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
 
 svg path {
   stroke:inherit;
@@ -149,6 +156,7 @@ a {
   width: 911px;
   height: 30px;
   margin: 0;
+  margin-left: 5px;
   padding: 0;
   padding-top: 67px;
 
@@ -159,6 +167,7 @@ a {
   width: 911px;
   height: 80px;
   margin: 0;
+  margin-left: 5px;
   padding: 0;
   padding-top: 25px;
   white-space: nowrap;
@@ -1536,25 +1545,13 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-
-html,
-body {
-  min-width: 300px;
-}
-
-/*body {
-  /* Временно для сетки
-  background-image: url("../css/technomart-catalog.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}*/
-
 .container{
   width: 940px;
   margin: 0 auto;
   padding: 0;
    /* Временно для сетки
   outline: 2px solid blue;*/
+
 }
 
 .page-header {
@@ -1564,6 +1561,7 @@ body {
   background-color: #f4f7f9;
   /* Временно для сетки
   outline: 2px solid green;*/
+
 }
 
 .user-navigation-container {
@@ -2324,9 +2322,9 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки */
+   /* Временно для сетки 
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue;*/ 
 }
 
 .page-footer-navigation {
@@ -2336,9 +2334,9 @@ body {
   padding: 0;
   background-color: #32425c;
 
-   /* Временно для сетки*/ 
+   /* Временно для сетки
    list-style: none;
-   outline: 3px solid blue; 
+   outline: 3px solid blue; */ 
 }
 
 .page-footer-info {
@@ -3430,7 +3428,7 @@ color: #000000;
    /* Временно для сетки
    min-height: 261px;
    list-style: none;
-   outline: 3px solid blue;  */
+   outline: 3px solid red; */ 
 }
 
 
