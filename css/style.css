@@ -573,7 +573,7 @@ a {
 }
 
 .user-link-catalog .personal-account::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 8px;
   left: -18px;
@@ -734,7 +734,7 @@ a {
 }
 
 .range-filter::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 152px;
   left: 1px;
@@ -934,7 +934,7 @@ a {
 } 
 
 .product-card .price-link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   right: -40px;
@@ -2060,7 +2060,7 @@ a {
 }
 
 .slider::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 220px;
   left: 295px;
@@ -2073,7 +2073,7 @@ a {
 }
 
 .slider::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 220px;
   left: 317px;
@@ -2143,7 +2143,7 @@ a {
 }
 
 .promo-materials::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 31px;
   left: 213px;
@@ -2204,7 +2204,7 @@ a {
 }
 
 .promo-discounts::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 26px;
   left: 196px;
@@ -2224,7 +2224,7 @@ a {
 }
 
 .promo-delivery::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 32px;
   left: 191px;
@@ -3126,7 +3126,7 @@ color: #000000;
 }
 
 .guarantee-slide::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 1px;
   left: 271px;
