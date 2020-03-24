@@ -2805,12 +2805,10 @@ body {
 
 }
 
-
 .select-company-list input {
   display: none;
 
 }
-
 
 .select-company-list label::before {
   content: "";
@@ -2818,25 +2816,29 @@ body {
   top: -2px;
   left: -32px;
   
-  width: 23px;
+  width: 27px;
   height: 23px;
   
   background: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+
 }
 
 .select-company-list input:checked + label:before {
-
   background: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+
 }
+
 .select-company-list input:disabled + label:before {
   background: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
+
 .h3-title-charge {
   margin-top: 42px;
+  
 }
 
 .charge-type-list {
