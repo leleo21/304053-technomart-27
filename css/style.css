@@ -1180,7 +1180,6 @@ a {
   background-color: #ee3643;
 }
 
-
 .main-contacts img {
   margin-top: 20px;
 }
@@ -1197,8 +1196,6 @@ a {
   background-color: #ee3643;
 
 }
-
-
 
 .map-message {   /*окно скрыто*/
   position: fixed;
@@ -3180,7 +3177,6 @@ color: #000000;
   background-repeat: no-repeat;
 
   /*border: 2px solid green;*/
-
 }
 
 .guarantee-slide {
@@ -3270,10 +3266,10 @@ color: #000000;
   font-weight: bold;
   font-family: 'Cuprum', 'Arial', sans-serif;
   width: 240px;
-  height: 61px;
+  height: 62px;
   color: #ffffff;
   background-color: #32425c;
-  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  box-shadow: 0px 1px 0 0 #293449;
   border: 0;
   } 
 
@@ -3282,6 +3278,16 @@ color: #000000;
   align-items: center;
   justify-content: flex-start;
   margin-left: 16px;
+}
+
+.services-buttons-container .active {
+  color:  #32425c;
+  background-color: #ffffff;
+}
+
+.services-buttons-container .active:hover {
+  color:  #ffffff;
+  background-color: #293449;
 }
 
 .services-buttons-container button:hover {
