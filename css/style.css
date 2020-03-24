@@ -298,8 +298,6 @@ a {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
-  text-align: left;
-  white-space: nowrap;
   margin: 0;
   color: #ee3643;
 }
@@ -1795,10 +1793,13 @@ a {
   margin-top: 48px;
   padding: 0;
   margin-left: 53px;
+  height: 70px;
+
+
   
-   /* Временно для сетки
+   /* Временно для сетки 
    min-height: 70px;
-   outline: 3px solid red; */ 
+   outline: 3px solid red; */
 }
 
 .header-contacts {
@@ -1819,7 +1820,7 @@ a {
 
 .page-navigation-container {
   width: 940px;
-  
+
 }
 
 .site-navigation {
