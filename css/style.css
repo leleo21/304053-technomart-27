@@ -1817,7 +1817,10 @@ a {
    outline: 3px solid red; */
 }
 
-
+.page-navigation-container {
+  width: 940px;
+  
+}
 
 .site-navigation {
   display: flex;
