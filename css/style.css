@@ -1213,8 +1213,6 @@ a {
   height: 430px;
 
   display: none;
-
-
 }
 
 .added-cart-message {   /*окно скрыто*/
@@ -1228,13 +1226,14 @@ a {
   z-index: 200;
   width: 620px;
   height: 275px;
+
+  display: none;
  
 }
 
 .map-message-container {
   width: 620px;
 }
-
 
 .cart-message-container .cart-message {
   display: block;
