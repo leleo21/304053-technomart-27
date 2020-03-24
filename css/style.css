@@ -1596,7 +1596,18 @@ a {
 }
 
 .page-footer-navigation a:active {
+  text-decoration: none;
+
+}
+
+.footer-navigation-list a:active {
   color:rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+
+}
+
+.footer-offers-list a:active {
+  color: rgba(255, 209, 128, 0.5);
   text-decoration: none;
 
 }
