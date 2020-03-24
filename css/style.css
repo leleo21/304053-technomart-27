@@ -170,7 +170,7 @@ a {
   margin-left: 5px;
   padding: 0;
   padding-top: 25px;
-  white-space: nowrap;
+
 }
 
 
@@ -825,7 +825,11 @@ a {
   line-height: 20px;
   font-weight: bold;
   min-height: 40px;
+  padding: 0 25px;
   margin: 0;
+ /* margin-top: 10px;*/
+  margin-bottom: 15px;
+
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
 
@@ -2366,13 +2370,17 @@ a {
   padding: 0;
   padding-top: 20px;
  
-
-
    /* Временно для сетки 
    
    list-style: none;
    outline: 3px solid blue; */
 }
+
+.all-rights-reserved-container {
+  display: block;
+  width: 230px;
+} 
+
 
 .footer-navigation-container {
   display: flex;
@@ -2581,9 +2589,16 @@ a {
   padding: 0;
 
 
- /*  Временно для сетки 
-  outline: 3px solid blue;*/
+ /*  Временно для сетки */
+  outline: 3px solid blue;
 }
+
+.mail-to {
+  display: block;
+  margin-right: 53px;
+
+}
+
 
 .catalog-navigation {
   position: relative;
