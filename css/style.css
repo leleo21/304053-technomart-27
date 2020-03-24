@@ -1227,12 +1227,8 @@ a {
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   z-index: 200;
   width: 620px;
-  height: 282px;
-
-  display: none;
-  
-
-  
+  height: 275px;
+ 
 }
 
 .map-message-container {
@@ -1247,7 +1243,7 @@ a {
   margin-bottom: 65px;
   margin-top: 75px;
   padding: 0;
-  padding-left: 92px;
+  padding-left: 100px;
   font-size: 30px;
   line-height: 30px;
   font-family: 'Cuprum', 'Arial', sans-serif;;
@@ -1259,6 +1255,7 @@ a {
 .cart-message p {
   display: block;
   width: 316px;
+  margin-top: -9px;
   font-size: 30px;
   line-height: 30px;
   font-family: 'Cuprum', 'Arial', sans-serif;;
@@ -1270,7 +1267,7 @@ a {
 
 .cart-message-container {
   position: relative;
-  width: 460px;
+  width: 455px;
   margin-left: 80px;
   margin-top: 75px;
 }
@@ -1282,6 +1279,7 @@ a {
   width: 66px;
   height: 66px;
   opacity: 1;
+  fill: #f2f6f8;
 
 }
 
@@ -1427,7 +1425,7 @@ a {
 
 .cart-buttons-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 460px;
   height: 112px;
@@ -1457,9 +1455,18 @@ a {
   width: 220px;
   height: 38px;
   background-color: #ee3643;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 0;
 
+}
+
+.cart-buttons-container .make-order-button {
+  background-color: #ee3643;
+}
+
+.cart-buttons-container .continue-shop-button {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 
