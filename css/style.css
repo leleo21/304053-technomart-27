@@ -2225,13 +2225,12 @@ body {
 .popular-conpanies-list {
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
   width: 940px;
-  height: 310px;
+  /*height: 310px;*/
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 85px;
+  margin-bottom: 60px;
 
 
    /* Временно для сетки
@@ -2248,6 +2247,7 @@ body {
   width: 220px;
   height: 145px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   background-color: #ffffff;
   border: 1px solid  #e5e5e5;
@@ -2256,6 +2256,28 @@ body {
    /* Временно для сетки 
    list-style: none;
    outline: 3px solid blue;*/ 
+}
+
+
+.interskol-logo img {
+  padding-bottom: 14px;
+  
+}
+
+.lg-logo img {
+  padding-bottom: 10px;
+  
+}
+
+.aeg-logo img {
+  padding-bottom: 10px;
+  
+}
+
+.metabo-logo img {
+  padding-bottom: 12px;
+  padding-left: 4px;
+  
 }
 
 .popular-conpanies-list a:hover {
@@ -2838,7 +2860,7 @@ body {
 
 .h3-title-charge {
   margin-top: 42px;
-  
+
 }
 
 .charge-type-list {
