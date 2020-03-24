@@ -591,20 +591,74 @@ a {
   background-color: #ee3643;
 }
 
-
 .site-navigation a {
   display: flex;
+  justify-content: space-between;
   justify-content: center;
   align-items: center;
   height: 60px;
   margin-left: -3px;
-  padding-left: 33px;
-  padding-right: 35px;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 
   /*outline: 2px solid pink;*/
 
+}
+
+.site-navigation .nav-main {
+  display: flex;
+  width: 52px;
+  padding-left: 52px;
+  padding-right: 32px;
+ 
+}
+
+.site-navigation .nav-company {
+  display: flex;
+  width: 65px;
+  padding-left: 32px;
+  padding-right: 30px;
+ 
+}
+
+.site-navigation .nav-catalog {
+  display: flex;
+  width: 52px;
+  padding-left: 30px;
+  padding-right: 30px;
+ 
+}
+
+.site-navigation .nav-news {
+  display: flex;
+  width: 52px;
+  padding-left: 30px;
+  padding-right: 31px;
+ 
+}
+
+.site-navigation .nav-special {
+  display: flex;
+  width: 121px;
+  padding-left: 29px;
+  padding-right: 31px;
+ 
+}
+
+.site-navigation .nav-delivery {
+  display: flex;
+  width: 60px;
+  padding-left: 31px;
+  padding-right: 32px;
+ 
+}
+
+.site-navigation .nav-contacts {
+  display: flex;
+  width: 61px;
+  padding-left: 32px;
+  padding-right: 55px;
+ 
 }
 
 
