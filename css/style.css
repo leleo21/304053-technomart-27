@@ -3027,12 +3027,23 @@ color: #000000;
   border-bottom: 1px dotted #ee3643;
 }
 
+.sorting-container .active {
+  color: #ee3643;
+  border: none;
+
+}
+
 .sorting-container svg:hover {
   fill: #000000;
 }
 
 .sorting-container svg:active {
   fill: #ee3643;
+}
+
+.active svg {
+  fill: #ee3643;
+  
 }
 
 .sorting-container a:hover {
