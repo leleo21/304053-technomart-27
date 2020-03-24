@@ -1539,7 +1539,7 @@ a {
 
 html,
 body {
-  min-width: 100px;
+  min-width: 300px;
 }
 
 /*body {
@@ -2227,7 +2227,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 940px;
-  /*height: 310px;*/
   margin: 0 auto;
   padding: 0;
   margin-bottom: 60px;
@@ -2325,9 +2324,9 @@ body {
   padding: 0;
 
 
-   /* Временно для сетки 
+   /* Временно для сетки */
    list-style: none;
-   outline: 3px solid blue; */
+   outline: 3px solid blue; 
 }
 
 .page-footer-navigation {
@@ -2337,9 +2336,9 @@ body {
   padding: 0;
   background-color: #32425c;
 
-   /* Временно для сетки 
+   /* Временно для сетки*/ 
    list-style: none;
-   outline: 3px solid blue; */
+   outline: 3px solid blue; 
 }
 
 .page-footer-info {
