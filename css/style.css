@@ -452,11 +452,6 @@ a {
 
 }
 
-/*.user-login a:hover svg {
-  fill: #293449;
-
-}*/
-
 .user-icon:hover svg {
   fill: #293449;
 
@@ -1060,8 +1055,16 @@ a {
 
 }
 
+.buy svg {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  fill: #ffffff;
+  opacity: 0.3;
 
-.shop-button .buy:hover svg {
+}
+
+.buy:hover svg {
   fill: #ffffff;
   opacity: 1;
 
@@ -1088,14 +1091,6 @@ a {
 
 .actions .buy {
   position: relative;
-
-}
-
-.actions .buy svg {
-  position: absolute;
-  top: 8px;
-  left: 12px;
-  opacity: 0.3;
 
 }
 
@@ -1702,7 +1697,7 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-.container{
+.container {
   width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -1831,12 +1826,6 @@ a {
 
 }
 
-.page-search input:hover input {
-  color: #ffffff;
-  background-color: #212a3a;
-
-}
-
 .page-search:hover input {
   background-color: #212a3a;
 
@@ -1885,26 +1874,7 @@ a {
 
 }
 
-
-.page-search input:active input {
-  color: #ffffff;
-  background-color: #212a3a;
-
-}
-
-.page-search input:focus input {
-  color: #ffffff;
-  background-color: #212a3a;
-
-}
-
 .page-search input:focus {
-  color: #ffffff;
-  background-color: #212a3a;
-
-}
-
-.page-search input:hover input {
   color: #ffffff;
   background-color: #212a3a;
 
@@ -3391,11 +3361,6 @@ color: #000000;
 .active a {
   background-color: #ee3643;
   color: #ffffff;
-
-}
-
-.buy:active .user-link-list .active {
-  background-color: #ee3643;
 
 }
 
