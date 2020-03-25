@@ -537,6 +537,12 @@ a {
 
 }
 
+.log-out-icon:focus svg {
+  stroke: #000000;
+  stroke-width: 1px;
+
+}
+
 .user-login-catalog a {
   display: inline-block;
   margin-left: 47px;
@@ -1047,6 +1053,11 @@ a {
 }
 
 .product-card:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+
+}
+
+.product-card:focus {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 
 }
@@ -2624,6 +2635,12 @@ a {
 
 }
 
+.home-page:focus svg {
+  stroke: #000000;
+  stroke-width: 1px;
+
+}
+
 .catalog-navigation .catalog-page {
   position: absolute;
   top: -12px;
@@ -2837,6 +2854,12 @@ a {
 
 .select-company-list input:disabled ~ label {
   color: rgba(0, 0, 0, 0.4);
+
+}
+
+.select-company-list input:checked:focus ~ svg {
+  stroke: #000000;
+  stroke-width: 1px;
 
 }
 
@@ -3058,6 +3081,12 @@ color: #000000;
 .sorting-container a:active {
   color: #ee3643;
   border: 0;
+
+}
+
+.up-down:focus svg {
+  stroke: #3bbce3;
+  stroke-width: 2px;
 
 }
 
