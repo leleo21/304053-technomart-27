@@ -1126,8 +1126,7 @@ a {
 } 
 
 .promo-card a:hover {
-  opacity: 0.2;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.2);
 
 } 
 
