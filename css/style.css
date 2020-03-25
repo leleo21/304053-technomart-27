@@ -982,7 +982,6 @@ a {
   padding: 7px 0;
   
   background-color: #63a63e;
-  border: 3px solid #63a63e;
   border-bottom-color: #367315;
 
   border-radius:3px;
@@ -996,10 +995,17 @@ a {
 
 }
 
+.actions .buy {
+  width: 137px;
+  padding: 10px 0;
+  box-shadow: inset 0px -3px 0 0 #367315;
+
+}
 
 .actions .bookmark {
   color: #32425c;
   background: white;
+  border: 3px solid #63a63e;
   border-bottom-color: #63a63e;
 }
 
@@ -1042,13 +1048,16 @@ a {
 }
 
 .actions .buy:hover {
+  width: 137px;
   background-color: #5fbb2d;
+  box-shadow: inset 0px -3px 0 0 #367315;
   cursor: pointer;
 
 }
 
 .actions .buy:active {
   background-color: #518534;
+  box-shadow: none;
 
 }
 
@@ -1312,7 +1321,7 @@ a {
   width: 620px;
   height: 423px;
 
-  /*display: none;*/
+  display: none;
  
 }
 
