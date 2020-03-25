@@ -452,7 +452,12 @@ a {
 
 }
 
-.user-login a:hover svg {
+/*.user-login a:hover svg {
+  fill: #293449;
+
+}*/
+
+.user-icon:hover svg {
   fill: #293449;
 
 }
@@ -462,7 +467,7 @@ a {
   
 }
 
-.user-login a:active svg {
+.user-icon:active svg {
   opacity: 0.3;
 
 }
@@ -498,7 +503,7 @@ a {
 
 }
 
-.user-login-catalog .user-icon svg {
+.user-icon svg {
   position: absolute;
   width: 20px;
   height: 18px;
@@ -507,12 +512,32 @@ a {
 
 }
 
-.user-login-catalog .log-out-icon svg {
+.log-out-icon svg {
   position: absolute;
   width: 20px;
   height: 18px;
   top: 10px;
   right: 9px;
+
+}
+
+.log-out-icon svg:hover { 
+  fill: #1d2739;
+
+}
+
+.log-out-icon svg:active { 
+  fill: #c5c5c5;
+
+}
+
+.log-in-icon:hover svg { 
+  fill: #1d2739;
+
+}
+
+.log-in-icon:active svg { 
+  fill: #c5c5c5;
 
 }
 
@@ -526,12 +551,12 @@ a {
 
 }
 
-.user-login-catalog a:hover svg { 
+.user-icon:hover svg { 
   fill: #32425c; 
 
 }
 
-.user-login-catalog a:active svg { 
+.user-icon:active svg { 
   fill:#c5c5c5;
 
 }
