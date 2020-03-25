@@ -2778,7 +2778,6 @@ a {
   padding-left: 0;
   margin-left: 0;
 
-
 }
 
 .select-company-list input {
@@ -2789,10 +2788,12 @@ a {
 .checkbox-on {
   display: none;
   fill: #c5c5c5;
+
 }
 
 .checkbox-off {
   fill: #c5c5c5;
+
 }
 
 .select-company-list input:checked ~ .checkbox-off {
@@ -2855,10 +2856,12 @@ a {
 .radio-on {
   fill: #c5c5c5;
   display: none;
+
 }
 
 .radio-off {
   fill: #c5c5c5;
+
 }
 
 .charge-type-list input:checked ~ .radio-off {
@@ -2880,7 +2883,6 @@ a {
   opacity: 0.4;
   
 }
-
 
 .filter .show-button {
   width: 140px;
